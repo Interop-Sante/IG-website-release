@@ -1,0 +1,17 @@
+{
+    "website": {
+        "style": "fhir.layout",
+        "url": "https://hl7.fr/ig",
+        "server": "apache",
+        "org": "InteropSante"
+    },
+    "feeds" : {
+      "package" : "package-feed.xml",
+      "publication" : "publication-feed.xml"
+    },
+    "layout-rules" : [{
+      "npm" : "hl7.fr.*",
+      "canonical" : "https://hl7.fr/ig/{3}",
+      "destination" : "/{3}"
+    }]
+}

@@ -1,0 +1,18 @@
+{
+    "website": {
+        "style": "fhir.layout",
+        "url": "https://hl7.fr/ig/fhir",
+        "server": "apache",
+        "org": "InteropSante",
+        "index-template":"index.template"
+    },
+    "feeds" : {
+      "package" : "package-feed.xml",
+      "publication" : "publication-feed.xml"
+    },
+    "layout-rules" : [{
+      "npm" : "hl7.fhir.fr.*",
+      "canonical" : "https://hl7.fr/ig/fhir/{4}",
+      "destination" : "/{4}"
+    }]
+}
