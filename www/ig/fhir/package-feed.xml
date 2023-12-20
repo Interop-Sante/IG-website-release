@@ -5,7 +5,7 @@
         <link>https://hl7.fr/ig/package-feed.xml</link>
         <generator>HL7, Inc FHIR Publication tooling</generator>
         <lastBuildDate>Tue, 05 Dec 2023 01:20:06 +0000</lastBuildDate>
-        <atom:link href="https://hl7.fr/ig/package-feed.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://hl7.fr/ig/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
         <pubDate>Tue, 05 Dec 2023 01:20:06 +0000</pubDate>
         <language>en&gt;</language>
         <ttl>600</ttl>
