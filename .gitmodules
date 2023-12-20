@@ -1,6 +1,3 @@
 [submodule "ig-registry"]
 	path = ig-registry
 	url = https://github.com/FHIR/ig-registry
-[submodule "ig-history"]
-	path = fhir-ig-history-template
-	url = https://github.com/HL7/fhir-ig-history-template
