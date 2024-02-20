@@ -4,11 +4,22 @@
         <description>Packages publiés par InteropSanté</description>
         <link>https://hl7.fr/ig/package-feed.xml</link>
         <generator>HL7, Inc FHIR Publication tooling</generator>
-        <lastBuildDate>Tue, 05 Dec 2023 01:20:06 +0000</lastBuildDate>
+        <lastBuildDate>Tue, 20 Feb 2024 09:40:07 +0100</lastBuildDate>
         <atom:link href="https://hl7.fr/ig/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Tue, 05 Dec 2023 01:20:06 +0000</pubDate>
+        <pubDate>Tue, 20 Feb 2024 09:40:07 +0100</pubDate>
         <language>en&gt;</language>
         <ttl>600</ttl>
-      </channel>
+      
+    <item>
+      <title>hl7.fhir.fr.core#2.0.0-ballot</title>
+      <description>Guide d'implémentation Fr Core repris depuis simplifier</description>
+      <link>https://hl7.fr/ig/fhir/core/2.0.0-ballot/package.tgz</link>
+      <guid isPermaLink="true">https://hl7.fr/ig/fhir/core/2.0.0-ballot/package.tgz</guid>
+      <dc:creator>InteropSante</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Tue, 20 Feb 2024 09:40:07 +0100</pubDate>
+      <fhir:details>Publication run at 20/02/2024 by root using vVersion 1.5.16 (Git# 2dd71bdfb01d). Built 2024-01-30T12:42:56.541Z (20 days old) source id Unknown (todo) Run #1</fhir:details>
+    </item></channel>
     <script/>
 </rss>
