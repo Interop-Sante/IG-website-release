@@ -3,7 +3,7 @@ FrCore : Validation Results
 
 err = 18, warn = 103, info = 15
 IG Publisher Version: 1.5.16
-Generated Tue Feb 20 09:46:16 CET 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0 (canonical = https://hl7.fr/ig/fhir/core)
+Generated Tue Feb 20 11:19:52 CET 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 0 / 11 / 0
  /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.0/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 0 / 1
  /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.0/fsh-generated/resources/CodeSystem-fr-core-cs-contact-relationship : 0 / 0 / 1
@@ -270,10 +270,10 @@ WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureD
 == fsh-generated/resources/StructureDefinition-fr-core-organization-uf.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-core-patient.json ==
-INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.snapshot.element[49].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.snapshot.element[58].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
+INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.snapshot.element[40].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.snapshot.element[49].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient: StructureDefinition.differential.element[18].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-core-patient-birth-list-given-name.json ==
 WARNING: StructureDefinition/fr-core-patient-birth-list-given-name: StructureDefinition.context[0]: Review the extension type for fr-core-patient-birth-list-given-name: the context of Patient.name appears to be a simple element, so the context type should be element not fhirpath
@@ -288,15 +288,15 @@ WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureD
 == fsh-generated/resources/StructureDefinition-fr-core-patient-death-place.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json ==
-INFORMATION: StructureDefinition.snapshot.element[170]: The slice definition for Patient.contact.relationship has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[83].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[92].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[119].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[128].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[4].pattern.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
-INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0
+INFORMATION: StructureDefinition.snapshot.element[161]: The slice definition for Patient.contact.relationship has a maximum of 1 but the slices add up to a maximum of 2. Check that this is what is intended
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[35].pattern.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[74].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[83].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[110].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.snapshot.element[119].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[4].pattern.ofType(Coding): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-fiabilite-identite|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
+INFORMATION: StructureDefinition/fr-core-patient-ins: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept): Reference to draft CodeSystem https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-v2-0203|2.0.0-ballot
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-fr-core-patient-nationality.json ==
 WARNING: StructureDefinition.where(url = 'https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality'): The Implementation Guide contains no examples for this extension

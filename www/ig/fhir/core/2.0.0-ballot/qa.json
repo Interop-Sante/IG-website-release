@@ -5,12 +5,12 @@
   "description" : null,
   "status" : "draft",
   "package-id" : "hl7.fhir.fr.core",
-  "ig-ver" : "2.0.0",
-  "date" : "Tue, 20 Feb, 2024 09:40:49 +0100",
+  "ig-ver" : "2.0.0-ballot",
+  "date" : "Tue, 20 Feb, 2024 11:14:35 +0100",
   "errs" : 18,
   "warnings" : 103,
   "hints" : 15,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 1454789384
+  "maxMemory" : 1378649480
 }

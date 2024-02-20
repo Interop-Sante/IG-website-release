@@ -1,6 +1,6 @@
 {
-  "version" : "2.0.0",
+  "version" : "2.0.0-ballot",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20240220094007",
+  "date" : "20240220111353",
   "name" : "hl7.fhir.fr.core"
 }
