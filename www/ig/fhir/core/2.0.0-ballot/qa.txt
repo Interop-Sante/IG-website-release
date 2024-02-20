@@ -3,7 +3,7 @@ FrCore : Validation Results
 
 err = 18, warn = 103, info = 15
 IG Publisher Version: 1.5.16
-Generated Tue Feb 20 11:19:52 CET 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
+Generated Tue Feb 20 11:35:14 CET 2024. FHIR version 4.0.1 for hl7.fhir.fr.core#2.0.0-ballot (canonical = https://hl7.fr/ig/fhir/core)
  Build Errors : 0 / 11 / 0
  /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.0/fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie : 0 / 0 / 1
  /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.0/fsh-generated/resources/CodeSystem-fr-core-cs-contact-relationship : 0 / 0 / 1
