@@ -1,0 +1,25 @@
+{
+  "list" : [
+    {
+      "version" : "current",
+      "path" : "https://interop-sante.github.io/hl7.fhir.fr.core/ig/main/",
+      "status" : "ci-build",
+      "sequence" : "ci-build"
+    },
+    {
+      "version" : "2.0.0-ballot",
+      "path" : "https://hl7.fr/ig/fhir/core/2.0.0-ballot",
+      "status" : "release",
+      "sequence" : "trial-use",
+      "fhirversion" : "4.0.1",
+      "date" : "2024-02-20",
+      "current" : true,
+      "desc" : "Guide d'implémentation Fr Core repris depuis simplifier"
+    }
+  ],
+  "package-id" : "hl7.fhir.fr.core",
+  "canonical" : "https://hl7.fr/ig/fhir/core",
+  "title" : "Guide d'implémentation Fr Core",
+  "category" : "National Base",
+  "introduction" : "Guide d'implémentation Fr Core."
+}
