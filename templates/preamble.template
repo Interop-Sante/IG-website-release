@@ -3,8 +3,8 @@
   <div class="container">  <!-- container -->
 
     <div id="project-nav">
-      <a id="ihe-logo" no-external="true" href="https://esante.gouv.fr">
-        <img height="71" alt="Visit the ANS website" src="assets/images/logo-ANS.svg"/>
+      <a id="ihe-logo" no-external="true" href="https://www.interopsante.org/">
+        <img height="71" alt="Site d'InteropSanté" src="assets/images/IS_LOGO.png"/>
       </a>
     </div>
     <div id="family-nav">
