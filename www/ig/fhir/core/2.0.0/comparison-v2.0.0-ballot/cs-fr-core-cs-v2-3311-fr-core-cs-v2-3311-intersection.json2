@@ -1,0 +1,48 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "06a3cffe-53d0-4206-8577-14b6a085ac3f-54",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/06a3cffe-53d0-4206-8577-14b6a085ac3f-54",
+  "name" : "IntersectionFRCoreCodeSystemv2_3311AndFRCoreCodeSystemv2_3311",
+  "title" : "Intersection of FR Core CodeSystem v2-3311 And FR Core CodeSystem v2-3311",
+  "status" : "draft",
+  "date" : "2024-03-25T12:20:00+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "MCO",
+    "display" : "MCO"
+  },
+  {
+    "code" : "SSR",
+    "display" : "SSR"
+  },
+  {
+    "code" : "HD",
+    "display" : "HAD"
+  },
+  {
+    "code" : "EHPD",
+    "display" : "EHPAD"
+  },
+  {
+    "code" : "LG_SJR",
+    "display" : "Long séjour"
+  },
+  {
+    "code" : "MSN_RTRT",
+    "display" : "Maison de retraite"
+  },
+  {
+    "code" : "PSY",
+    "display" : "Psy"
+  },
+  {
+    "code" : "URG",
+    "display" : "Urgence"
+  }]
+}

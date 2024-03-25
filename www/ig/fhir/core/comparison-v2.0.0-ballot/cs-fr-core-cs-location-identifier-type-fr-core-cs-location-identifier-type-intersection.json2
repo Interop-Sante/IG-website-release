@@ -1,0 +1,32 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "4a5d9bf6-c4fe-48ab-b398-785db4070b2a-15",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/4a5d9bf6-c4fe-48ab-b398-785db4070b2a-15",
+  "name" : "IntersectionFRCoreCodeSystemLocationIdentifierTypeAndFRCoreCodeSystemLocationIdentifierType",
+  "title" : "Intersection of FR Core CodeSystem Location Identifier Type And FR Core CodeSystem Location Identifier Type",
+  "status" : "draft",
+  "date" : "2024-03-25T12:26:37+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "INTRN",
+    "display" : "Identifiant interne"
+  },
+  {
+    "code" : "EXTRN",
+    "display" : "Identifiant externe"
+  },
+  {
+    "code" : "GLBL",
+    "display" : "Identifiant global"
+  },
+  {
+    "code" : "IDNST",
+    "display" : "Identification nationale de structure définie par l’ASIP-SANTE dans le CI_SIS"
+  }]
+}
