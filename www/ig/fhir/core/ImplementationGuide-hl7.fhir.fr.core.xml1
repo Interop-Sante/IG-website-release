@@ -6,11 +6,11 @@
     <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>
   </text>
   <url value="https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"/>
-  <version value="2.0.0-ballot"/>
+  <version value="2.0.0"/>
   <name value="FrCore"/>
   <title value="Guide d'implémentation Fr Core"/>
-  <status value="draft"/>
-  <date value="2024-02-20T11:36:44+01:00"/>
+  <status value="active"/>
+  <date value="2024-03-25T12:26:12+01:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>
@@ -56,7 +56,7 @@
   <dependsOn id="ans_fr_nos">
     <uri value="https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos"/>
     <packageId value="ans.fr.nos"/>
-    <version value="1.1.0"/>
+    <version value="1.2.0"/>
   </dependsOn>
   <definition>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -464,6 +464,16 @@
     </extension>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/ExamplefrCorePatient001"/>
+      </reference>
+      <name value="ExamplefrCorePatient001"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -514,7 +524,7 @@
         <reference value="StructureDefinition/fr-core-appointment"/>
       </reference>
       <name value="FR Core Appointment Profile"/>
-      <description value="Profile of the Appointment resource for France | Profil de la ressource Appointment pour la France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment | Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV."/>
+      <description value="Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.&#xD;&#xA;&#xA;Profil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -777,7 +787,7 @@
         <reference value="StructureDefinition/fr-core-encounter"/>
       </reference>
       <name value="FR Core Encounter Profile"/>
-      <description value="This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. | Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue."/>
+      <description value="This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.&#xD;&#xA;&#xA;Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -788,7 +798,7 @@
         <reference value="StructureDefinition/fr-core-healthcare-service"/>
       </reference>
       <name value="FR Core Healthcare Service Profile"/>
-      <description value="Profile of the HealthcareService resource for France | Profil de la ressource HealthcareService pour l'usage en France.&#xA;This profile adds the element serviceTypeDuration to associate the service with the duration of this service | Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service."/>
+      <description value="Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. &#xA;&#xD;&#xA;Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -821,7 +831,7 @@
         <reference value="StructureDefinition/fr-core-location"/>
       </reference>
       <name value="FR Core Location Profile"/>
-      <description value="French profile of Location | Profil français de la ressource Location"/>
+      <description value="French profile of Location.&#xD;&#xA;&#xA;Profil français de la ressource Location"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -843,6 +853,7 @@
         <reference value="StructureDefinition/fr-core-medication-administration-inhaled-oxygen"/>
       </reference>
       <name value="FR Core Medication Administration Inhaled Oxygen Profile"/>
+      <description value="Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -861,10 +872,21 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/fr-core-observation-bp"/>
+      </reference>
+      <name value="FR Core Observation Blood Pressure Profile"/>
+      <description value="French profile for blood pressure.&#xA;&#xD;&#xA;Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/fr-core-observation-bmi"/>
       </reference>
       <name value="FR Core Observation Bmi Profile"/>
-      <description value="French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio]. | Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"/>
+      <description value="French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio].&#xA;&#xD;&#xA;Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -875,6 +897,7 @@
         <reference value="StructureDefinition/fr-core-observation-body-height"/>
       </reference>
       <name value="FR Core Observation Body Height Profile"/>
+      <description value="French profile for body height.&#xA;&#xD;&#xA;Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -896,7 +919,7 @@
         <reference value="StructureDefinition/fr-core-observation-body-temperature"/>
       </reference>
       <name value="FR Core Observation Body Temperature Profile"/>
-      <description value="French profil body temperature | Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"/>
+      <description value="French profil body temperature.&#xA;&#xD;&#xA;Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -907,18 +930,7 @@
         <reference value="StructureDefinition/fr-core-observation-body-weight"/>
       </reference>
       <name value="FR Core Observation Body Weight Profile"/>
-      <description value="French profil Body weight based on the FHIR profil BodyWeightMeas. | Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-observation-bp"/>
-      </reference>
-      <name value="FR Core Observation Bp Profile"/>
-      <description value="French profil Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component (systolic and/or diastolic and/or mean) | Profil français de pression artérielle avec tous les éléments fils optionnels. Il s'agit d'une Observation avec l'élément Observation.valueQuantity n'est pas renseigné et qui contient au moins un composant Pression systolique, Pression diastolique, Pression moyenne."/>
+      <description value="French profil Body weight based on the FHIR profil BodyWeightMeas.&#xA;&#xD;&#xA;Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -929,7 +941,7 @@
         <reference value="StructureDefinition/fr-core-observation-head-circum"/>
       </reference>
       <name value="FR Core Observation Head Circum Profile"/>
-      <description value="HL7 Vital Signs Head Occipital-frontal circumference profil | Profil HL7 Vital Signs Circonférence de la tête"/>
+      <description value="HL7 Vital Signs Head Occipital-frontal circumference profil.&#xA;&#xD;&#xA;Profil HL7 Vital Signs Circonférence de la tête"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -940,7 +952,7 @@
         <reference value="StructureDefinition/fr-core-observation-heartrate"/>
       </reference>
       <name value="FR Core Observation Heart Rate Profile"/>
-      <description value="French profiling of the FHIR Vital Sign Heart Rate Profile | Profilage français du profil Vital Signs Heart rate"/>
+      <description value="French profiling of the FHIR Vital Sign Heart Rate Profile.&#xA;&#xD;&#xA;Profilage français du profil Vital Signs Heart rate"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -973,7 +985,18 @@
         <reference value="StructureDefinition/fr-core-observation-saturation-oxygen"/>
       </reference>
       <name value="FR Core Observation Oxygen Saturation Profile"/>
-      <description value="Oxygen saturation in Arterial blood  | Saturation en oxygène du sang artériel"/>
+      <description value="Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/fr-core-observation-resp-rate"/>
+      </reference>
+      <name value="FR Core Observation Respiratory Rate Profile"/>
+      <description value="Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.&#xA;&#xD;&#xA;Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1082,6 +1105,7 @@
         <reference value="StructureDefinition/fr-core-organization-pole"/>
       </reference>
       <name value="FR Core Organization Pole Profile"/>
+      <description value="FR Core Organization Pole Profile"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1103,7 +1127,7 @@
         <reference value="StructureDefinition/fr-core-organization"/>
       </reference>
       <name value="FR Core Organization Profile"/>
-      <description value="Profile of the Organization resource for France | Profil de la ressource Organization pour la France&#xA;This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. | Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises."/>
+      <description value="Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. &#xA;&#xD;&#xA;Profil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1135,7 +1159,7 @@
         <reference value="StructureDefinition/fr-core-organization-uac"/>
       </reference>
       <name value="FR Core Organization UAC Profile"/>
-      <description value="This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"/>
+      <description value="This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.&#xA;&#xD;&#xA;Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1146,18 +1170,7 @@
         <reference value="StructureDefinition/fr-core-organization-uf"/>
       </reference>
       <name value="FR Core Organization UF Profile"/>
-      <description value="This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-observation-resp-rate"/>
-      </reference>
-      <name value="FR Core Oservation Resp Rate Profile"/>
-      <description value="Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France"/>
+      <description value="This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.&#xA;&#xD;&#xA;Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1169,17 +1182,6 @@
       </reference>
       <name value="FR Core Patient Birth List Given name Extension"/>
       <description value="Prénoms de l'acte de naissance"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:extension"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/fr-core-patient-birth-place"/>
-      </reference>
-      <name value="FR Core Patient Birth Place Extension"/>
-      <description value="The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1233,7 +1235,7 @@
         <reference value="StructureDefinition/fr-core-patient-ins"/>
       </reference>
       <name value="FR Core Patient INS Profile"/>
-      <description value="Profil FRCorePatientProfile appliqué à l'INS avec identité validée, permettant d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec une INS validée. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS ."/>
+      <description value="Profil FRCorePatientProfile enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée. Ce profil permet d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1244,7 +1246,7 @@
         <reference value="StructureDefinition/fr-core-patient"/>
       </reference>
       <name value="FR Core Patient Profile"/>
-      <description value="Profile of the Patient resource for France | Profil de la ressource Patient pour l'usage en France&#xA;This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France."/>
+      <description value="Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.&#xA;&#xD;&#xA;Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1266,7 +1268,7 @@
         <reference value="StructureDefinition/fr-core-practitioner"/>
       </reference>
       <name value="FR Core Practitioner Profile"/>
-      <description value="French profile of the Practitioner resource | Profil de la ressource Practitionner pour la France&#xA;This profile specifies the types of identifiers for practitioners in France | Ce profil contraint les types d'identifiants du professionnel de santé en France"/>
+      <description value="French profile of the Practitioner resource. This profile specifies the types of identifiers for practitioners in France.&#xD;&#xA;&#xA;Profil de la ressource Practitionner pour la France. Ce profil contraint les types d'identifiants du professionnel de santé en France"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1276,7 +1278,7 @@
       <reference>
         <reference value="StructureDefinition/fr-core-role-code-categorie-professionnelle"/>
       </reference>
-      <name value="Fr Core Practitioner Role Code Categorie Professionnelle"/>
+      <name value="FR Core Practitioner Role Code Categorie Professionnelle Extension"/>
       <description value="Catégorie professionnelle selon le MOS de l'ANS. Indispensable pour discriminer les étudiants (internes, élèves, etc.)"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1288,7 +1290,7 @@
         <reference value="StructureDefinition/fr-core-practitioner-role-exercice"/>
       </reference>
       <name value="FR Core Practitioner Role Exercice"/>
-      <description value="Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."/>
+      <description value="Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization.&#xD;&#xA;&#xA;Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1299,7 +1301,7 @@
         <reference value="StructureDefinition/fr-core-practitioner-role-profession"/>
       </reference>
       <name value="FR Core Practitioner Role Profession"/>
-      <description value="Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France| Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France."/>
+      <description value="Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France.&#xD;&#xA;&#xA;Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1321,7 +1323,7 @@
         <reference value="StructureDefinition/fr-core-related-person"/>
       </reference>
       <name value="FR Core Related Person Profile"/>
-      <description value="Profile of the RelatedPerson resource for France | Profil de la ressource RelatedPerson pour l'usage en France"/>
+      <description value="Profile of the RelatedPerson resource for France.&#xD;&#xA;&#xA;Profil de la ressource RelatedPerson pour l'usage en France"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1343,7 +1345,7 @@
         <reference value="StructureDefinition/fr-core-schedule"/>
       </reference>
       <name value="FR Core Schedule Profile"/>
-      <description value="Profile of the Schedule resource for France | Profil de la ressource Schedule pour l'usage en France.&#xA;This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule | Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation."/>
+      <description value="Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule&#xA;&#xD;&#xA;Profil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1376,7 +1378,7 @@
         <reference value="StructureDefinition/fr-core-slot"/>
       </reference>
       <name value="FR Core Slot Profile"/>
-      <description value="fr-core-slot ValueSet"/>
+      <description value="Profil of the Slot resource for France.&#xD;&#xA;&#xA;Profil de la ressource Slot pour la France"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1658,6 +1660,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/fr-core-vs-patient-contact-role"/>
+      </reference>
+      <name value="FR Core ValueSet Patient contact role"/>
+      <description value="ValueSet patient contact role"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/fr-core-vs-marital-status"/>
       </reference>
       <name value="FR Core ValueSet Patient gender INS ValueSet"/>
@@ -1746,21 +1759,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/fr-core-vs-related-person"/>
+        <reference value="ValueSet/fr-core-vs-relation-type"/>
       </reference>
-      <name value="FR Core ValueSet Related person role"/>
-      <description value="Value set related person role"/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/fr-core-vs-related-person-role"/>
-      </reference>
-      <name value="FR Core ValueSet Related person role"/>
-      <description value="Value set related person role"/>
+      <name value="FR Core ValueSet relation type"/>
+      <description value="ValueSet relation type"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1798,6 +1800,116 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Appointment"/>
+      </extension>
+      <reference>
+        <reference value="Appointment/FRCoreAppointmentExample"/>
+      </reference>
+      <name value="FRCoreAppointmentExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Encounter"/>
+      </extension>
+      <reference>
+        <reference value="Encounter/FRCoreEncounterExample"/>
+      </reference>
+      <name value="FRCoreEncounterExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationBMIExample"/>
+      </reference>
+      <name value="FRCoreObservationBMIExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationBodyHeightExample"/>
+      </reference>
+      <name value="FRCoreObservationBodyHeightExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationBodyTemperatureExample"/>
+      </reference>
+      <name value="FRCoreObservationBodyTemperatureExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationBodyWeightExample"/>
+      </reference>
+      <name value="FRCoreObservationBodyWeightExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationBPExample"/>
+      </reference>
+      <name value="FRCoreObservationBPExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationHeadCircumExample"/>
+      </reference>
+      <name value="FRCoreObservationHeadCircumExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/FRCoreObservationHeartRateExample"/>
+      </reference>
+      <name value="FRCoreObservationHeartRateExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Schedule"/>
+      </extension>
+      <reference>
+        <reference value="Schedule/FRCoreScheduleExample"/>
+      </reference>
+      <name value="FRCoreScheduleExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Slot"/>
+      </extension>
+      <reference>
+        <reference value="Slot/FRCoreSlotExample"/>
+      </reference>
+      <name value="FRCoreSlotExample"/>
+      <exampleCanonical value="https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="ValueSet"/>
       </extension>
       <reference>
@@ -1820,6 +1932,14 @@
         </extension>
         <nameUrl value="index.html"/>
         <title value="Accueil"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="profile_list.html"/>
+        </extension>
+        <nameUrl value="profile_list.html"/>
+        <title value="Liste des profils"/>
         <generation value="markdown"/>
       </page>
       <page>

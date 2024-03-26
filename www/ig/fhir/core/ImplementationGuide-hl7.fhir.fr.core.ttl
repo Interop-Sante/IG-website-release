@@ -13,11 +13,11 @@
      fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.0-ballot"] ; # 
+  fhir:version [ fhir:v "2.0.0"] ; # 
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
-  fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2024-02-20T11:36:44+01:00"^^xsd:dateTime] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2024-03-25T12:26:12+01:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -74,7 +74,7 @@
        fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.1.0" ]
+     fhir:version [ fhir:v "1.2.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -534,6 +534,20 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExamplefrCorePatient001> ;
+         fhir:reference [ fhir:v "Patient/ExamplefrCorePatient001" ]
+       ] ;
+       fhir:name [ fhir:v "ExamplefrCorePatient001" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -589,7 +603,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-appointment" ]
        ] ;
        fhir:name [ fhir:v "FR Core Appointment Profile" ] ;
-       fhir:description [ fhir:v "Profile of the Appointment resource for France | Profil de la ressource Appointment pour la France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment | Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV." ] ;
+       fhir:description [ fhir:v "Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.\r\n\nProfil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -876,7 +890,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-encounter" ]
        ] ;
        fhir:name [ fhir:v "FR Core Encounter Profile" ] ;
-       fhir:description [ fhir:v "This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay. | Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue." ] ;
+       fhir:description [ fhir:v "This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.\r\n\nCe profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -888,7 +902,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-healthcare-service" ]
        ] ;
        fhir:name [ fhir:v "FR Core Healthcare Service Profile" ] ;
-       fhir:description [ fhir:v "Profile of the HealthcareService resource for France | Profil de la ressource HealthcareService pour l'usage en France.\nThis profile adds the element serviceTypeDuration to associate the service with the duration of this service | Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service." ] ;
+       fhir:description [ fhir:v "Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. \n\r\nProfil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -924,7 +938,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-location" ]
        ] ;
        fhir:name [ fhir:v "FR Core Location Profile" ] ;
-       fhir:description [ fhir:v "French profile of Location | Profil français de la ressource Location" ] ;
+       fhir:description [ fhir:v "French profile of Location.\r\n\nProfil français de la ressource Location" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -948,6 +962,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-medication-administration-inhaled-oxygen" ]
        ] ;
        fhir:name [ fhir:v "FR Core Medication Administration Inhaled Oxygen Profile" ] ;
+       fhir:description [ fhir:v "Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -967,11 +982,23 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-bp" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Observation Blood Pressure Profile" ] ;
+       fhir:description [ fhir:v "French profile for blood pressure.\n\r\nProfil français de la pression artérielle. Profil basé sur le profil bp d'HL7" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-bmi" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Bmi Profile" ] ;
-       fhir:description [ fhir:v "French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio]. | Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI" ] ;
+       fhir:description [ fhir:v "French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio].\n\r\nProfil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -983,6 +1010,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-body-height" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Body Height Profile" ] ;
+       fhir:description [ fhir:v "French profile for body height.\n\r\nProfil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1006,7 +1034,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-body-temperature" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Body Temperature Profile" ] ;
-       fhir:description [ fhir:v "French profil body temperature | Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7" ] ;
+       fhir:description [ fhir:v "French profil body temperature.\n\r\nProfil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1018,19 +1046,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-body-weight" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Body Weight Profile" ] ;
-       fhir:description [ fhir:v "French profil Body weight based on the FHIR profil BodyWeightMeas. | Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-bp" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Observation Bp Profile" ] ;
-       fhir:description [ fhir:v "French profil Blood pressure panel with all children optional - This is a component observation. It has no value in Observation.valueQuantity and contains at least one component (systolic and/or diastolic and/or mean) | Profil français de pression artérielle avec tous les éléments fils optionnels. Il s'agit d'une Observation avec l'élément Observation.valueQuantity n'est pas renseigné et qui contient au moins un composant Pression systolique, Pression diastolique, Pression moyenne." ] ;
+       fhir:description [ fhir:v "French profil Body weight based on the FHIR profil BodyWeightMeas.\n\r\nProfil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1042,7 +1058,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-head-circum" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Head Circum Profile" ] ;
-       fhir:description [ fhir:v "HL7 Vital Signs Head Occipital-frontal circumference profil | Profil HL7 Vital Signs Circonférence de la tête" ] ;
+       fhir:description [ fhir:v "HL7 Vital Signs Head Occipital-frontal circumference profil.\n\r\nProfil HL7 Vital Signs Circonférence de la tête" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1054,7 +1070,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-heartrate" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Heart Rate Profile" ] ;
-       fhir:description [ fhir:v "French profiling of the FHIR Vital Sign Heart Rate Profile | Profilage français du profil Vital Signs Heart rate" ] ;
+       fhir:description [ fhir:v "French profiling of the FHIR Vital Sign Heart Rate Profile.\n\r\nProfilage français du profil Vital Signs Heart rate" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1090,7 +1106,19 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-saturation-oxygen" ]
        ] ;
        fhir:name [ fhir:v "FR Core Observation Oxygen Saturation Profile" ] ;
-       fhir:description [ fhir:v "Oxygen saturation in Arterial blood  | Saturation en oxygène du sang artériel" ] ;
+       fhir:description [ fhir:v "Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-resp-rate" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core Observation Respiratory Rate Profile" ] ;
+       fhir:description [ fhir:v "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.\n\r\nProfilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1209,6 +1237,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-organization-pole" ]
        ] ;
        fhir:name [ fhir:v "FR Core Organization Pole Profile" ] ;
+       fhir:description [ fhir:v "FR Core Organization Pole Profile" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1232,7 +1261,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-organization" ]
        ] ;
        fhir:name [ fhir:v "FR Core Organization Profile" ] ;
-       fhir:description [ fhir:v "Profile of the Organization resource for France | Profil de la ressource Organization pour la France\nThis profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. | Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises." ] ;
+       fhir:description [ fhir:v "Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. \n\r\nProfil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1267,7 +1296,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-organization-uac" ]
        ] ;
        fhir:name [ fhir:v "FR Core Organization UAC Profile" ] ;
-       fhir:description [ fhir:v "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement" ] ;
+       fhir:description [ fhir:v "This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.\n\r\nCe profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1279,19 +1308,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-organization-uf" ]
        ] ;
        fhir:name [ fhir:v "FR Core Organization UF Profile" ] ;
-       fhir:description [ fhir:v "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions | Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-observation-resp-rate" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Oservation Resp Rate Profile" ] ;
-       fhir:description [ fhir:v "Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France | Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France" ] ;
+       fhir:description [ fhir:v "This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.\n\r\nCe profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1304,18 +1321,6 @@
        ] ;
        fhir:name [ fhir:v "FR Core Patient Birth List Given name Extension" ] ;
        fhir:description [ fhir:v "Prénoms de l'acte de naissance" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-place> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-birth-place" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Patient Birth Place Extension" ] ;
-       fhir:description [ fhir:v "The registered place of birth of the patient. A sytem may use the address.text if they don't store the birthPlace address in discrete elements." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1374,7 +1379,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
-       fhir:description [ fhir:v "Profil FRCorePatientProfile appliqué à l'INS avec identité validée, permettant d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec une INS validée. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS ." ] ;
+       fhir:description [ fhir:v "Profil FRCorePatientProfile enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée. Ce profil permet d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1386,7 +1391,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient Profile" ] ;
-       fhir:description [ fhir:v "Profile of the Patient resource for France | Profil de la ressource Patient pour l'usage en France\nThis profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions | Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France." ] ;
+       fhir:description [ fhir:v "Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.\n\r\nCe profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1410,7 +1415,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner" ]
        ] ;
        fhir:name [ fhir:v "FR Core Practitioner Profile" ] ;
-       fhir:description [ fhir:v "French profile of the Practitioner resource | Profil de la ressource Practitionner pour la France\nThis profile specifies the types of identifiers for practitioners in France | Ce profil contraint les types d'identifiants du professionnel de santé en France" ] ;
+       fhir:description [ fhir:v "French profile of the Practitioner resource. This profile specifies the types of identifiers for practitioners in France.\r\n\nProfil de la ressource Practitionner pour la France. Ce profil contraint les types d'identifiants du professionnel de santé en France" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1421,7 +1426,7 @@
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle> ;
          fhir:reference [ fhir:v "StructureDefinition/fr-core-role-code-categorie-professionnelle" ]
        ] ;
-       fhir:name [ fhir:v "Fr Core Practitioner Role Code Categorie Professionnelle" ] ;
+       fhir:name [ fhir:v "FR Core Practitioner Role Code Categorie Professionnelle Extension" ] ;
        fhir:description [ fhir:v "Catégorie professionnelle selon le MOS de l'ANS. Indispensable pour discriminer les étudiants (internes, élèves, etc.)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1434,7 +1439,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role-exercice" ]
        ] ;
        fhir:name [ fhir:v "FR Core Practitioner Role Exercice" ] ;
-       fhir:description [ fhir:v "Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
+       fhir:description [ fhir:v "Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization.\r\n\nSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1446,7 +1451,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role-profession" ]
        ] ;
        fhir:name [ fhir:v "FR Core Practitioner Role Profession" ] ;
-       fhir:description [ fhir:v "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France| Spécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France." ] ;
+       fhir:description [ fhir:v "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France.\r\n\nSpécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1470,7 +1475,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-related-person" ]
        ] ;
        fhir:name [ fhir:v "FR Core Related Person Profile" ] ;
-       fhir:description [ fhir:v "Profile of the RelatedPerson resource for France | Profil de la ressource RelatedPerson pour l'usage en France" ] ;
+       fhir:description [ fhir:v "Profile of the RelatedPerson resource for France.\r\n\nProfil de la ressource RelatedPerson pour l'usage en France" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1494,7 +1499,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-schedule" ]
        ] ;
        fhir:name [ fhir:v "FR Core Schedule Profile" ] ;
-       fhir:description [ fhir:v "Profile of the Schedule resource for France | Profil de la ressource Schedule pour l'usage en France.\nThis profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule | Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation." ] ;
+       fhir:description [ fhir:v "Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule\n\r\nProfil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1530,7 +1535,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-slot" ]
        ] ;
        fhir:name [ fhir:v "FR Core Slot Profile" ] ;
-       fhir:description [ fhir:v "fr-core-slot ValueSet" ] ;
+       fhir:description [ fhir:v "Profil of the Slot resource for France.\r\n\nProfil de la ressource Slot pour la France" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1837,6 +1842,18 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-patient-contact-role> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-patient-contact-role" ]
+       ] ;
+       fhir:name [ fhir:v "FR Core ValueSet Patient contact role" ] ;
+       fhir:description [ fhir:v "ValueSet patient contact role" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-marital-status" ]
        ] ;
@@ -1933,23 +1950,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-related-person" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type> ;
+         fhir:reference [ fhir:v "ValueSet/fr-core-vs-relation-type" ]
        ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Related person role" ] ;
-       fhir:description [ fhir:v "Value set related person role" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-related-person-role> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-related-person-role" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet Related person role" ] ;
-       fhir:description [ fhir:v "Value set related person role" ] ;
+       fhir:name [ fhir:v "FR Core ValueSet relation type" ] ;
+       fhir:description [ fhir:v "ValueSet relation type" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1990,6 +1995,160 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Appointment" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Appointment/FRCoreAppointmentExample> ;
+         fhir:reference [ fhir:v "Appointment/FRCoreAppointmentExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreAppointmentExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Encounter" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Encounter/FRCoreEncounterExample> ;
+         fhir:reference [ fhir:v "Encounter/FRCoreEncounterExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreEncounterExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-encounter>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBMIExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationBMIExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationBMIExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bmi>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBodyHeightExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationBodyHeightExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationBodyHeightExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBodyTemperatureExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationBodyTemperatureExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationBodyTemperatureExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBodyWeightExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationBodyWeightExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationBodyWeightExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationBPExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationBPExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationBPExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationHeadCircumExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationHeadCircumExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationHeadCircumExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-head-circum>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Observation/FRCoreObservationHeartRateExample> ;
+         fhir:reference [ fhir:v "Observation/FRCoreObservationHeartRateExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreObservationHeartRateExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Schedule" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Schedule/FRCoreScheduleExample> ;
+         fhir:reference [ fhir:v "Schedule/FRCoreScheduleExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreScheduleExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Slot" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://hl7.fr/ig/fhir/core/Slot/FRCoreSlotExample> ;
+         fhir:reference [ fhir:v "Slot/FRCoreSlotExample" ]
+       ] ;
+       fhir:name [ fhir:v "FRCoreSlotExample" ] ;
+       fhir:example [
+         fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot"^^xsd:anyURI ;
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
@@ -2015,6 +2174,14 @@
          ] ) ;
          fhir:name [ fhir:v "index.html"^^xsd:anyURI ] ;
          fhir:title [ fhir:v "Accueil" ] ;
+         fhir:generation [ fhir:v "markdown" ]
+       ] [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "profile_list.html"^^xsd:anyURI ]
+         ] ) ;
+         fhir:name [ fhir:v "profile_list.html"^^xsd:anyURI ] ;
+         fhir:title [ fhir:v "Liste des profils" ] ;
          fhir:generation [ fhir:v "markdown" ]
        ] [
          fhir:extension ( [

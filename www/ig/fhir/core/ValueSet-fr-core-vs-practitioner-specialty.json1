@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/ig/nos/1.1.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"https://interop.esante.gouv.fr/ig/nos/1.2.0/CodeSystem-TRE-R38-SpecialiteOrdinale.html\"><code>https://mos.esante.gouv.fr/NOS/TRE_R38-SpecialiteOrdinale/FHIR/TRE-R38-SpecialiteOrdinale</code></a></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
@@ -25,12 +25,12 @@
     "system" : "urn:oid:1.2.250.1.71.4.2.5",
     "value" : "http://interopsante.org/fhir/ValueSet/fr-core-vs-practitioner-specialty"
   }],
-  "version" : "2.0.0-ballot",
+  "version" : "2.0.0",
   "name" : "FRCoreValueSetPractitionerSpecialty",
   "title" : "FR Core ValueSet Practitioner specialty",
-  "status" : "draft",
+  "status" : "active",
   "experimental" : false,
-  "date" : "2024-02-20T11:36:44+01:00",
+  "date" : "2024-03-25T12:26:12+01:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

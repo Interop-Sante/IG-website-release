@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "4a5d9bf6-c4fe-48ab-b398-785db4070b2a-306",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/4a5d9bf6-c4fe-48ab-b398-785db4070b2a-306",
+  "name" : "IntersectionFRCoreValueSetINSEECodeAndFRCoreValueSetINSEECode",
+  "title" : "Intersection of FR Core ValueSet INSEE code And FR Core ValueSet INSEE code",
+  "status" : "draft",
+  "date" : "2024-03-25T12:26:38+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}

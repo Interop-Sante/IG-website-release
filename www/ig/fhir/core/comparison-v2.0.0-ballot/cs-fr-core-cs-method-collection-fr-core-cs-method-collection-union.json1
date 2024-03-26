@@ -1,0 +1,36 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "4a5d9bf6-c4fe-48ab-b398-785db4070b2a-29",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/4a5d9bf6-c4fe-48ab-b398-785db4070b2a-29",
+  "name" : "UnionFRCoreCodeSystemMethodCollectionAndFRCoreCodeSystemMethodCollection",
+  "title" : "Union of FR Core CodeSystem Mode Validation Identite And FR Core CodeSystem Mode Validation Identite",
+  "status" : "draft",
+  "date" : "2024-03-25T12:26:37+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "SM",
+    "display" : "Saisie manuelle"
+  },
+  {
+    "code" : "CV",
+    "display" : "Carte vitale"
+  },
+  {
+    "code" : "INSI",
+    "display" : "Téléservice INSI"
+  },
+  {
+    "code" : "CB",
+    "display" : "Code à barre"
+  },
+  {
+    "code" : "RFID",
+    "display" : "Puce RFID"
+  }]
+}

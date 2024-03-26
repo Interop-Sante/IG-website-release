@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "06a3cffe-53d0-4206-8577-14b6a085ac3f-366",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/06a3cffe-53d0-4206-8577-14b6a085ac3f-366",
+  "name" : "IntersectionFRCoreValueSetTitleAndFRCoreValueSetTitle",
+  "title" : "Intersection of FR Core ValueSet Title And FR Core ValueSet Title",
+  "status" : "draft",
+  "date" : "2024-03-25T12:20:00+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}
