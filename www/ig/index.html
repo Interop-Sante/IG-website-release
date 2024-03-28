@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Accueil | Interop' Santé</title>
+    <title>Guide d'implémentation | Interop' Santé</title>
 
     <link rel="stylesheet" href="css/semantic.min.css">
     <link rel="stylesheet" href="css/ui.css">
@@ -27,62 +27,27 @@
     <main>
         <div class="one-column">
             <div class="editable">
-                <h1 class="main">HL7</h1>
+                <h1 class="main">Guide d'implémentation</h1>
                 <div class="item-data block-5687 type-html">
                     <div>
-                        <div class="one-column"><div class="editable">
-                            <h4>
-                                HL7 est une organisation internationale fondée en 1987, dédiée à l’interopérabilité des systèmes d’information dans le domaine de la santé.
-                            </h4>
-                            <p>
-                                L’implémentation des standards HL7 par différents systèmes permet d’assurer les trois niveaux d’interopérabilité indispensables au traitement efficient et sécurisé de l’information&nbsp;:
-                            </p>
-                            <ul>
-                                <li>
-                                    Interopérabilité technique qui consiste à transférer les données d’un système A vers un système B,
-                                </li>
-                                <li>
-                                    Interopérabilité sémantique&nbsp;qui permet au système A et au système B d’interpréter de la même façon l’information codée portée par le standard,
-                                </li>
-                                <li>
-                                    Interopérabilité métier qui assure la cohérence entre les processus métier définis dans chaque organisation.
-                                </li>
-                            </ul>
-                            <h4>
-                                Les axes stratégiques développés par HL7 consistent à&nbsp;:
-                            </h4>
-                            <ul>
-                                <li>
-                                    Spécifier des standards cohérents et extensibles d’échange de l’information médicale et administrative, conformément à une méthodologie normalisée de développement des standards,
-                                </li>
-                                <li>
-                                    Collaborer avec les experts du domaine médical et avec d’autres organisations de normalisation nationales ou internationales (ANSI, ISO, etc.).
-                                </li>
-                                <li>
-                                    Eduquer les industriels et les décideurs,
-                                </li>
-                                <li>
-                                    Promouvoir l’implémentation de ces standards sur le plan mondial, au travers de la création des affiliés nationaux HL7. C’est ainsi que l’organisation HPRIM/HL7-France a vu le jour en France en 1990. HPRIM/HL7-France a ensuite évolué en 2004 en intégrant l’affilié français de l’organisation IHE et a pris, à cette occasion, le nom d’Interop’Santé. Interop’Santé abrite donc à ce jour HPRIM, HL7-France et IHE-France.
-                                </li>
-                            </ul>
-                            <p>
-                                Le corpus de standards d’interopérabilité HL7 a couvert successivement différents paradigmes, au fur et à mesure de l’évolution des besoins d’échanges d’information de ce secteur :
-                            </p>
-                            <ul>
-                                <li>
-                                    Le paradigme Messages&nbsp;correspond au premier besoin apparu&nbsp;: notifier des événements concernant des objets métier (séjour d’un patient, demande d’examens, compte rendu, prescription de médicament, facture, …) entre applications du secteur de la santé. Le standard HL7 version 2 est un corpus très large de structures de messages qui continue de s’enrichir et d’évoluer. Le standard HL7 version 3, de conception plus élaborée et de technologie plus récente a évolué à côté de la version 2,
-                                </li>
-                                <li>
-                                    Le paradigme Documents&nbsp;correspond au besoin de dématérialiser les documents cliniques produits par les professionnels de la santé, en y incorporant le contexte clinique et administratif de leur élaboration, dans une forme électronique structurée lisible par les acteurs, exploitable finement par leurs applications, archivable sur le long terme, et préservant l’imputabilité de ces documents à leurs auteurs. Le standard CDA (Clinical Document Architecture) est né pour répondre à ce besoin. CDA release 2 publié en 2005 au sein d’HL7 version 3 est largement adopté dans le monde,
-                                </li>
-                                <li>
-                                    Le paradigme Services est apparu avec le déploiement des architectures orientées services (SOA). Ce paradigme manipule des objets nettement plus atomiques que les deux précédents. HL7 par exemple a élaboré les services de terminologies, avec le standard Common Terminology&nbsp;Services version 2 (CTS2) construit conjointement avec l’OMG en 2014,
-                                </li>
-                                <li>
-                                    Le paradigme Ressources REST (REpresentational State Transfer) correspond à un double mouvement de simplification&nbsp;: le retour au protocole de base du web – HTTP débarrassé de sa pile de web-services – et la simplification des objets interopérables sous la forme de ressources modulaires de taille modeste, interreliées, accessibles par leur URI et manipulables avec les verbes de base d’HTTP. Le standard HL7 FHIR (Fast Healthcare Interoperability Resources) a été conçu pour ce nouveau paradigme en priorité, mais il couvre aussi les trois autres.
-                                </li>
-                            </ul>
-                        </div></div>
+                        <div class="one-column">
+                            <div class="editable">
+                                <table>
+                                    <tr>
+                                        <th>IG</th>
+                                        <th>Détails</th>
+                                        <th>Publication</th>
+                                        <th>Date</th>
+                                    </tr>
+                                    <tr>
+                                        <td><a href="https://hl7.fr/ig/fhir/core/" target="_blank">core</a> </td>
+                                        <td>Profils, extensions, jeux de valeurs, et guides de mise en œuvre normalisant l'échange de données administratives sur les patients, les professionnels de santé et les organisations, et les rencontres avec les patients (programmées ou effectives), ainsi que les signes vitaux en France.</td>
+                                        <td>2.0.0</td>
+                                        <td>2024-03-25</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
                     </div>
 
                 </div>
@@ -99,7 +64,19 @@
         </div>
 
         <item-gallery limit="3" node="370" title="Actualités">
-
+            <div class="three-columns grid">
+                <div class="item">
+                    <div class="content">
+                        <div class="image" style=" order: 1;"><a
+                                href="https://hl7.fr/ig/fhir/core/" target="_blank">
+                            <img src="https://hl7.fr/ig/fhir/core/assets/images/fhir-logo-www.png"> </a></div>
+                        <div class="title" style=" order: 2;"><h3><a
+                                href="https://hl7.fr/ig/fhir/core/" target="_blank">Lancement de l'IG FHIR Core</a></h3></div>
+                        <div class="more"><a
+                                href="https://hl7.fr/ig/fhir/core/" target="_blank">Lire la suite</a></div>
+                    </div>
+                </div>
+            </div>
         </item-gallery>
     </div>
 </section>
