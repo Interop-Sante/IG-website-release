@@ -1,0 +1,351 @@
+body {
+    min-width: unset;
+}
+
+img {
+    image-orientation: from-image;
+}
+
+/* Fix "file image outline" icon in dropdown */
+.ui.dropdown .menu > .item > .image.icon {
+    vertical-align: inherit;
+    width: 1.18em;
+    margin-bottom: 0;
+}
+
+/* Fix scrollbars in page dimmer (Firefox) */
+.ui.page.dimmer {
+    perspective: none;
+}
+
+.ui.disabled.buttons {
+    cursor: default;
+    opacity: .45 !important;
+    background-image: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    pointer-events: none !important;
+}
+
+i.flag.en::before {
+    background-position: -36px -26px;
+}
+
+i.icon.dashed {
+    border: 1px dashed rgba(0,0,0,.6);
+    height: 1em !important;
+}
+
+.ui.form .fields:last-child {
+    margin-bottom: 0;
+}
+
+.ui.form .list:last-child {
+    margin-bottom: 0;
+}
+
+.ui.form textarea:not([rows]) {
+    font: inherit;
+    height: 20em;
+    min-height: 10em;
+    max-height: 40em;
+}
+
+.ui.icon.button.dropdown .menu {
+    min-width: 10em;
+}
+
+.ui.selection.dropdown > .delete.icon {
+    line-height: 0.9em;
+}
+
+.ui.list .icon {
+    padding-right: .3em !important;
+}
+
+.ui.progress .bar {
+    height: 1.2em;
+    min-width: 0;
+    max-width: 100%;
+}
+
+.ui.progress .label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: normal;
+}
+
+.ui.modal > .header {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.ui.modal > .close.icon {
+    top: 1rem;
+    right: 1rem;
+    color: rgba(0,0,0,.87);
+}
+
+.mail.modal .inline.fields .field > label {
+    width: 4em !important;
+}
+
+.mail.modal .inline.fields ui-dropdown,
+.mail.modal .inline.fields mail-recipients {
+    width: 100% !important;
+}
+
+.mail.modal .ui.dropdown .menu .message {
+    display: none;
+}
+
+.mail.modal data-file {
+    display: block;
+    margin-top: 1em;
+}
+
+.config.modal ui-menu {
+    display: block;
+    height: 38em;
+    overflow: auto;
+}
+
+.config.modal .form:not(:last-child) {
+    margin-bottom: 1em;
+}
+
+.list.header,
+.list.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list.header {
+    margin-bottom: 1em;
+}
+
+.list.footer {
+    margin-top: 1em;
+}
+
+@media only screen and (max-width: 900px) {
+
+    .list.header > div > :not(.keep),
+    .list.footer > div > :not(.keep) {
+        display: none;
+    }
+}
+
+.ce-drag-helper {
+    z-index: 1001 !important;
+}
+
+.ce-element--dragging {
+    z-index: 0 !important;
+}
+
+.ce-element--over.ce-element--type-image,
+.ce-element--focused.ce-element--type-image {
+    background-color: #fff !important;
+}
+
+.one-column,
+.two-columns,
+.three-columns,
+.four-columns,
+.six-columns,
+.eight-columns {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: -0.5em -0.5em 0.5em;
+}
+
+.one-column > *,
+.two-columns > *,
+.three-columns > *,
+.four-columns > *,
+.six-columns > *,
+.eight-columns > * {
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: top;
+    padding: 0.5em;
+}
+
+.one-column > * {
+    width: 100%;
+}
+
+.one-column.centered > * {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.two-columns > * {
+    width: 50%;
+}
+
+.two-columns.third-left > :first-child,
+.two-columns.third-right > :last-child {
+    width: 33.33%;
+}
+
+.two-columns.third-left > :last-child,
+.two-columns.third-right > :first-child {
+    width: 66.66%;
+}
+
+.two-columns.quarter-left > :first-child,
+.two-columns.quarter-right > :last-child {
+    width: 25%;
+}
+
+.two-columns.quarter-left > :last-child,
+.two-columns.quarter-right > :first-child {
+    width: 75%;
+}
+
+.three-columns > * {
+    width: 33.33%;
+}
+
+.four-columns > * {
+    width: 25%;
+}
+
+.six-columns > * {
+    width: 16.66%;
+}
+
+.eight-columns > * {
+    width: 12.5%;
+}
+
+.editable > * {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+
+.editable > :not(table) {
+    display: block;
+}
+
+.editable > :last-child {
+    margin-bottom: 0;
+}
+
+.editable .text-left {
+    text-align: left;
+}
+
+.editable .text-center {
+    text-align: center;
+}
+
+.editable .text-right {
+    text-align: right;
+}
+
+.editable .text-justify {
+    text-align: justify;
+}
+
+.editable > p > .button {
+    display: inline-block;
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+.editable > p > .primary.button {
+    border: 1px solid #2185d0;
+    color: #2185d0;
+}
+
+.editable > p > .secondary.button {
+    border: 1px solid #999;
+    color: #999;
+}
+
+.editable > a,
+.editable > img,
+.editable > video,
+.editable > iframe,
+.editable > .ce-element--type-image,
+.editable > .ce-element--type-video {
+    margin: 0 auto 1em;
+    text-align: center;
+    max-width: 100%;
+}
+
+.editable > pre {
+    background: #f3f3f3;
+    padding: 1em;
+    overflow: auto;
+}
+
+.editable > img {
+    height: auto;
+}
+
+.editable > a img {
+    margin: 0;
+}
+
+.editable > .align-left {
+    float: left;
+    margin: 0 1em 0 0;
+}
+
+.editable > .align-right {
+    float: right;
+    margin: 0 0 0 1em;
+}
+
+.editable > table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 100%;
+}
+
+.editable > table tr,
+.editable > table th,
+.editable > table td {
+    vertical-align: middle;
+}
+
+.editable > table th {
+    border-bottom: 1px solid #ccc;
+    font-weight: bold;
+    text-align: left;
+}
+
+.editable > table td {
+    border-bottom: 1px solid #eee;
+    text-align: left;
+}
+
+.editable > .ce-element--type-component {
+    position: relative;
+    margin-top: 0 !important;
+    padding: 1em;
+    background: #666;
+    cursor: pointer;
+    user-select: none;
+}
+
+.editable > .ce-element--type-component.ce-element--over,
+.editable > .ce-element--type-component.ce-element--focused {
+    outline: 4px solid rgba(243, 156, 18, 0.35);
+}
+
+.editable > .ce-element--type-component.ce-element--dragging {
+    background: #666 !important;
+    outline-color: rgba(51, 51, 51, 0.1) !important;
+    opacity: 1;
+}
