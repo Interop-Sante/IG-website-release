@@ -6,15 +6,15 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">SM<a name=\"fr-core-cs-method-collection-SM\"> </a></td><td>Saisie manuelle</td></tr><tr><td style=\"white-space:nowrap\">CV<a name=\"fr-core-cs-method-collection-CV\"> </a></td><td>Carte vitale</td></tr><tr><td style=\"white-space:nowrap\">INSI<a name=\"fr-core-cs-method-collection-INSI\"> </a></td><td>Téléservice INSI</td></tr><tr><td style=\"white-space:nowrap\">CB<a name=\"fr-core-cs-method-collection-CB\"> </a></td><td>Code à barre</td></tr><tr><td style=\"white-space:nowrap\">RFID<a name=\"fr-core-cs-method-collection-RFID\"> </a></td><td>Puce RFID</td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>ThXXXX</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>XXXX</b></td><td><b>XXXX</b></td></tr><tr><td style=\"white-space:nowrap\">SM<a name=\"fr-core-cs-method-collection-SM\"> </a></td><td>Saisie manuelle</td></tr><tr><td style=\"white-space:nowrap\">CV<a name=\"fr-core-cs-method-collection-CV\"> </a></td><td>Carte vitale</td></tr><tr><td style=\"white-space:nowrap\">INSI<a name=\"fr-core-cs-method-collection-INSI\"> </a></td><td>Téléservice INSI</td></tr><tr><td style=\"white-space:nowrap\">CB<a name=\"fr-core-cs-method-collection-CB\"> </a></td><td>Code à barre</td></tr><tr><td style=\"white-space:nowrap\">RFID<a name=\"fr-core-cs-method-collection-RFID\"> </a></td><td>Puce RFID</td></tr></table></div>"
   },
   "url" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-method-collection",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "FRCoreCodeSystemMethodCollection",
   "title" : "FR Core CodeSystem Mode Validation Identite",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-03-25T12:26:12+01:00",
+  "date" : "2024-04-16T11:49:14+02:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

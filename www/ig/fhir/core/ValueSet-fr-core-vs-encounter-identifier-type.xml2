@@ -21,12 +21,12 @@
     <valueCode value="fhir"/>
   </extension>
   <url value="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-identifier-type"/>
-  <version value="2.0.0"/>
+  <version value="2.0.1"/>
   <name value="FRCoreValueSetEncounterIdentifierType"/>
   <title value="FR Core ValueSet Encounter identifier type"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-03-25T12:26:12+01:00"/>
+  <date value="2024-04-16T11:49:14+02:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>

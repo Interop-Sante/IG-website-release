@@ -1,0 +1,600 @@
+FHIR IG Publisher Version 1.6.4 (Git# d3e6eb41536d). Built 2024-04-04T02:21:19.440Z (12 days old)
+Detected Java version: 18.0.1.1 from /Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home on x86_64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core, path = /Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:~/.dotnet/tools:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+Parameters: -go-publish -source /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core -web /Library/WebServer/Documents/InteropSante/IG-website-release/www/ig/fhir -registry /Library/WebServer/Documents/InteropSante/IG-website-release/ig-registry/fhir-ig-list.json -history /Library/WebServer/Documents/InteropSante/IG-website-release/ig-history -templates /Library/WebServer/Documents/InteropSante/IG-website-release/templates -temp /Library/WebServer/Documents/tmp
+---------------
+Publication Run: publish /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core to /Library/WebServer/Documents/InteropSante/IG-website-release/www/ig/fhir
+Run Number: 5
+Relative directory for IG is '/core'
+===== Web Publication Run Details ===============================
+ Source IG: hl7.fhir.fr.core#2.0.1 : https://hl7.fr/ig/fhir/core (R4) from /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core
+All checks passed. Do the publication build from /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core and publish to /Library/WebServer/Documents/tmp/web-root/run-20240416/core
+Prepare Build space in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1
+Build IG at /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core: final copy suitable for publication (in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1)
+FHIR IG Publisher Version 1.6.4 (Git# d3e6eb41536d). Built 2024-04-04T02:21:19.440Z (12 days old)   
+Detected Java version: 18.0.1.1 from /Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home on Mac OS X/x86_64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core, path = /Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:~/.dotnet/tools:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+Parameters: -ig /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1 -resetTx -publish https://hl7.fr/ig/fhir/core/2.0.1 -no-exit
+Start Clock @ mardi 16 avril 2024 à 11:40:49 heure d’été d’Europe centrale (2024-04-16T11:40:49+02:00)
+                                                                                                    
+Build FHIR IG from /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1                           (00:00.090 / 00:00.090, 24Mb)
+Build Formal Publication package, intended for https://hl7.fr/ig/fhir/core/2.0.1                     (00:00.011 / 00:00.101, 24Mb)
+API keys loaded from /var/root/.fhir/fhir-settings.json                                              (00:00.000 / 00:00.102, 24Mb)
+Package Cache: /var/root/.fhir/packages                                                              (00:00.007 / 00:00.110, 24Mb)
+Run Sushi on /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1                                 (00:00.007 / 00:00.116, 24Mb)
+Sushi: info  Running SUSHI v3.9.0 (implements FHIR Shorthand specification v3.0.0-ballot)            (00:00.526 / 00:00.643, 26Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:00.644, 26Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:00.645, 26Mb)
+Sushi: info    --out /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1                         (00:00.001 / 00:00.647, 26Mb)
+Sushi: info    /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1                               (00:00.001 / 00:00.648, 26Mb)
+Sushi: info  Using configuration file: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/sushi-config.yaml (00:01.109 / 00:01.758, 26Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.063 / 00:01.822, 26Mb)
+Sushi: info  Preprocessed 135 documents with 88 aliases.                                             (00:00.257 / 00:02.079, 26Mb)
+Sushi: info  Imported 122 definitions and 12 instances.                                              (00:00.023 / 00:02.103, 26Mb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.fhir.uv.tools#current...             (00:00.000 / 00:02.104, 26Mb)
+Sushi: info  Found hl7.fhir.uv.tools#current in /Users/nicolasriss/.fhir/packages.                   (00:00.041 / 00:02.148, 26Mb)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:01.106 / 00:03.253, 26Mb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.terminology.r4#5.3.0...              (00:00.405 / 00:03.659, 26Mb)
+Sushi: info  Found hl7.terminology.r4#5.3.0 in /Users/nicolasriss/.fhir/packages.                    (00:00.765 / 00:04.424, 26Mb)
+Sushi: info  Loaded package hl7.terminology.r4#5.3.0                                                 (00:00.000 / 00:04.425, 26Mb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...       (00:00.080 / 00:04.505, 26Mb)
+Sushi: info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /Users/nicolasriss/.fhir/packages.             (00:00.619 / 00:05.126, 26Mb)
+Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0                                          (00:00.001 / 00:05.127, 26Mb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for ans.fr.nos#1.2.0...                      (00:00.000 / 00:05.128, 26Mb)
+Sushi: info  Found ans.fr.nos#1.2.0 in /Users/nicolasriss/.fhir/packages.                            (00:00.412 / 00:05.540, 26Mb)
+Sushi: info  Loaded package ans.fr.nos#1.2.0                                                         (00:00.000 / 00:05.541, 26Mb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.fhir.r4.core#4.0.1...                (00:00.000 / 00:05.542, 26Mb)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /Users/nicolasriss/.fhir/packages.                      (00:01.242 / 00:06.784, 26Mb)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.001 / 00:06.786, 26Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.026 / 00:06.812, 26Mb)
+Sushi: info  Converted 65 FHIR StructureDefinitions.                                                 (00:03.282 / 00:10.095, 26Mb)
+Sushi: info  Converted 18 FHIR CodeSystems.                                                          (00:00.259 / 00:10.355, 26Mb)
+Sushi: info  Converted 39 FHIR ValueSets.                                                            (00:01.297 / 00:11.652, 26Mb)
+Sushi: info  Converted 12 FHIR instances.                                                            (00:00.485 / 00:12.137, 26Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.004 / 00:12.141, 26Mb)
+Sushi: info  Exported 134 FHIR resources as JSON.                                                    (00:00.109 / 00:12.251, 26Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:12.254, 26Mb)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.fr.core.json                                     (00:00.015 / 00:12.269, 26Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.001 / 00:12.271, 26Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.002 / 00:12.272, 26Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:12.273, 26Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.001 / 00:12.274, 26Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.002 / 00:12.279, 26Mb)
+Sushi: | |      29       |      36      |      0       |       0       | |                           (00:00.005 / 00:12.286, 26Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.005 / 00:12.287, 26Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:12.288, 26Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:12.289, 26Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:12.289, 26Mb)
+Sushi: | |         39         |        18         |         12         | |                           (00:00.000 / 00:12.290, 26Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.001 / 00:12.291, 26Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:12.292, 26Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:12.293, 26Mb)
+Sushi: | That was a big fish to fry!            0 Errors      0 Warnings |                           (00:00.001 / 00:12.294, 26Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:12.294, 26Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.414 / 00:12.711, 59Mb)
+Load Template from https://github.com/Interop-Sante/hl7.ig.fr.template                               (00:00.448 / 00:13.160, 73Mb)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onLoad-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1                              (00:08.256 / 00:21.417, 94Mb)
+Terminology Cache is at /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/txcache. Clearing now (00:01.459 / 00:22.877, 141Mb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/ohfu-fhir-ig-16108348242044361886.log
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:06.409 / 00:29.285, 244Mb)
+Load Package hl7.fhir.pubpack#0.1.7
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#5.3.0
+Load Package hl7.fhir.uv.extensions.r4#1.0.0
+Load Package ans.fr.nos#1.2.0
+Version mismatch. This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0 (will try to run anyway) (00:05.798 / 00:35.096, 312Mb)
+Load Package hl7.fhir.uv.tools#0.1.0
+Load R5 Specials
+Initialization complete                                                                              (00:01.414 / 00:36.498, 305Mb)
+Fetch https://hl7.fr/ig/fhir/core/package-list.json for version check                                (00:00.012 / 00:36.508, 305Mb)
+Load Content                                                                                         (00:00.248 / 00:36.757, 307Mb)
+loadPrePages from FetchedFile[/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/fsh-generated/includes] as /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/fsh-generated/includes
+loadPrePages from FetchedFile[/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input/data] as /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input/data
+loadPrePages from FetchedFile[/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input/pagecontent] as /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input/pagecontent
+Processing Conformance Resources                                                                     (00:01.895 / 00:38.653, 300Mb)
+Load Dependency Info                                                                                 (00:00.006 / 00:38.659, 301Mb)
+Load Info                                                                                            (00:00.013 / 00:38.681, 301Mb)
+Load Resources                                                                                       (00:00.010 / 00:38.682, 302Mb)
+Load Paths                                                                                           (00:01.096 / 00:39.782, 315Mb)
+Generating Snapshots                                                                                 (00:00.007 / 00:39.786, 315Mb)
+Check R4 / R4B                                                                                       (00:04.026 / 00:43.815, 628Mb)
+Assign Comparison Ids                                                                                (00:00.036 / 00:43.849, 633Mb)
+Propagating status                                                                                   (00:00.001 / 00:43.851, 633Mb)
+Generating Narratives                                                                                (00:00.000 / 00:43.852, 633Mb)
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.ietf.org/rfc/rfc2445 [136-1051576]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.ietf.org/rfc/rfc2445 [136-1051592]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/ValueSet/v3-ActEncounterCode [136-1051610]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/ValueSet/v3-ActEncounterCode [136-1051618]
+Validating Conformance Resources                                                                     (00:16.056 / 00:59.912, 621Mb)
+Check profiles & code systems                                                                        (00:20.499 / 01:20.411, 689Mb)
+Check realm rules                                                                                    (00:00.017 / 01:20.426, 690Mb)
+Previous Version Comparison                                                                          (00:00.001 / 01:20.427, 690Mb)
+Validating Resources                                                                                 (00:09.997 / 01:30.429, 1Gb)
+Processing Provenance Records                                                                        (00:14.059 / 01:44.486, 798Mb)
+Generating Outputs in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/output                 (00:00.003 / 01:44.488, 798Mb)
+Generate Native Outputs                                                                              (00:00.175 / 01:44.663, 822Mb)
+Run Template                                                                                         (00:12.785 / 01:57.452, 1Gb)
+
+onGenerate.checkVersions:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/versions.txt
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 17 files to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.1.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.2.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.groupSort.xslt
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-working.2.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-updated.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/onGenerate-ig-updated.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+     [copy] Warning: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/template/data does not exist.
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                                        (00:03.504 / 02:00.956, 1Gb)
+Generate HTML Outputs                                                                                (00:00.003 / 02:00.957, 1Gb)
+ERROR StatusLogger Log4j2 could not find a logging implementation. Please add log4j-core to the classpath. Using SimpleLogger to log to the console...
+Value set 'http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height#Observation.method not found
+Value set 'http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height#Observation.method not found
+Value set 'http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext#Extension.value[x] not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext#Extension.value[x] not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext#Extension.value[x] not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession#Extension.value[x] not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession#Extension.value[x] not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession#Extension.value[x] not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle#Extension.value[x].coding not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle#Extension.value[x].coding not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle#Extension.value[x].coding not found
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.ietf.org/rfc/rfc2445 [136-1051861]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://www.ietf.org/rfc/rfc2445 [136-1051864]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS [136-1051869]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/JDV_J79-CiviliteExercice-RASS/FHIR/JDV-J79-CiviliteExercice-RASS [136-1051872]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS [136-1051878]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/JDV_J78-Civilite-RASS/FHIR/JDV-J78-Civilite-RASS [136-1051888]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM [136-1051892]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R13-CommuneOM/FHIR/TRE-R13-CommuneOM [136-1051896]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/ValueSet/v3-ActEncounterCode [136-1051905]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system http://terminology.hl7.org/ValueSet/v3-ActEncounterCode [136-1051908]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune [136-1051922]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R13-Commune/FHIR/TRE-R13-Commune [136-1051926]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification [136-1051930]
+Error from http://tx.fhir.org/r4: Unable to provide support for code system https://mos.esante.gouv.fr/NOS/TRE_R47-CommissionQualification/FHIR/TRE-R47-CommissionQualification [136-1051945]
+Generate Summaries                                                                                   (01:46.568 / 03:47.528, 1Gb)
+Generating Summary Outputs                                                                           (00:00.004 / 03:47.530, 1Gb)
+DB Cumulative Time invested: 00:00:00.689
+Sending Usage Stats to Server                                                                        (01:25.099 / 05:12.633, 1Gb)
+## Memory (MB): Use = 1417, Free = 642, Total = 2060, Max = 4096                                     (00:00.022 / 05:12.652, 1Gb)
+Reclaiming memory...                                                                                 (00:00.001 / 05:12.653, 1Gb)
+## Memory (MB): Use = 1122, Free = 937, Total = 2060, Max = 4096                                     (00:00.816 / 05:13.478, 1Gb)
+Run jekyll: jekyll build --destination "/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/output" (in folder /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/temp/pages) (00:00.033 / 05:13.503, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 05:13.505, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 05:13.506, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 05:13.506, 1Gb)
+Jekyll: Ignoring eventmachine-1.2.7 because its extensions are not built. Try: gem pristine eventmachine --version 1.2.7 (00:00.243 / 05:13.750, 1Gb)
+Jekyll: Ignoring ffi-1.15.5 because its extensions are not built. Try: gem pristine ffi --version 1.15.5 (00:00.000 / 05:13.751, 1Gb)
+Jekyll: Ignoring http_parser.rb-0.8.0 because its extensions are not built. Try: gem pristine http_parser.rb --version 0.8.0 (00:00.000 / 05:13.751, 1Gb)
+Jekyll: Ignoring sassc-2.4.0 because its extensions are not built. Try: gem pristine sassc --version 2.4.0 (00:00.000 / 05:13.752, 1Gb)
+Jekyll: Source: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/temp/pages                   (00:00.379 / 05:14.132, 1Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 05:14.133, 1Gb)
+Jekyll: done in 5.365 seconds.                                                                       (00:05.363 / 05:19.497, 1Gb)
+
+Installing hl7.fhir.fr.core#2.0.1 done.
+Checking Output HTML                                                                                 (00:07.647 / 05:27.147, 1Gb)
+found 2200 files                                                                                     (00:00.019 / 05:27.163, 1Gb)
+.......................................
+.......................................
+  ... 2200 html files, 0 pages invalid xhtml (0%)                                                    (00:53.498 / 06:20.665, 1Gb)
+  ... 562824 links, 83 broken links (0%)                                                             (00:00.005 / 06:20.667, 1Gb)
+Build final .zip                                                                                     (00:00.000 / 06:20.668, 1Gb)
+Final .zip built                                                                                     (00:03.671 / 06:24.339, 1Gb)
+Sending usage stats failed: Operation timed out
+Built. Times: loading: 00:01.892, generate: 05:51.210, narrative generation: 00:16.055, realm-rules: 00:00.001, previous-version: 00:09.952, jekyll: 00:06.031, validation: 00:30.993 (#135), template: 00:03.500 (#3) (00:05.579 / 06:29.919, 1Gb)
+Generating QA                                                                                        (00:00.001 / 06:29.921, 1Gb)
+Validation output in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1/output/qa.html
+Errors: 49, Warnings: 95, Info: 34, Broken Links: 83 (01:02.875 / 07:32.802, 2Gb)
+Finished. Max Memory Used = 2Gb. Log file saved in /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/fhir-ig-publisher-tmp.log (00:00.044 / 07:32.841, 2Gb)
+Prepare Build space in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone
+Build IG at /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core: final copy suitable for publication (in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone) (milestone build)
+FHIR IG Publisher Version 1.6.4 (Git# d3e6eb41536d). Built 2024-04-04T02:21:19.440Z (12 days old)   
+Detected Java version: 18.0.1.1 from /Library/Java/JavaVirtualMachines/jdk-18.0.1.1.jdk/Contents/Home on Mac OS X/x86_64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/fr-ig/hl7.fhir.fr.core, path = /Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:~/.dotnet/tools:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+Parameters: -ig /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone -publish https://hl7.fr/ig/fhir/core/2.0.1 -milestone -no-exit
+Start Clock @ mardi 16 avril 2024 à 11:48:35 heure d’été d’Europe centrale (2024-04-16T11:48:35+02:00)
+                                                                                                    
+Build FHIR IG from /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone                 (00:00.514 / 00:00.515, 2Gb)
+Build Formal Publication package, intended for https://hl7.fr/ig/fhir/core/2.0.1                     (00:00.001 / 00:00.515, 2Gb)
+API keys loaded from /var/root/.fhir/fhir-settings.json                                              (00:00.000 / 00:00.516, 2Gb)
+Package Cache: /var/root/.fhir/packages                                                              (00:00.000 / 00:00.516, 2Gb)
+Run Sushi on /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone                       (00:00.000 / 00:00.517, 2Gb)
+Sushi: info  Running SUSHI v3.9.0 (implements FHIR Shorthand specification v3.0.0-ballot)            (00:00.561 / 00:01.079, 2Gb)
+Sushi: info  Arguments:                                                                              (00:00.002 / 00:01.081, 2Gb)
+Sushi: info    --require-latest                                                                      (00:00.001 / 00:01.082, 2Gb)
+Sushi: info    --out /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone               (00:00.000 / 00:01.083, 2Gb)
+Sushi: info    /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone                     (00:00.000 / 00:01.084, 2Gb)
+Sushi: info  Using configuration file: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/sushi-config.yaml (00:01.393 / 00:02.477, 2Gb)
+Sushi: info  Importing FSH text...                                                                   (00:00.064 / 00:02.542, 2Gb)
+Sushi: info  Preprocessed 135 documents with 88 aliases.                                             (00:00.265 / 00:02.807, 2Gb)
+Sushi: info  Imported 122 definitions and 12 instances.                                              (00:00.023 / 00:02.834, 2Gb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.fhir.uv.tools#current...             (00:00.004 / 00:02.835, 2Gb)
+Sushi: info  Found hl7.fhir.uv.tools#current in /Users/nicolasriss/.fhir/packages.                   (00:00.040 / 00:02.875, 2Gb)
+Sushi: info  Loaded package hl7.fhir.uv.tools#current                                                (00:01.105 / 00:03.985, 2Gb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.terminology.r4#5.3.0...              (00:00.530 / 00:04.512, 2Gb)
+Sushi: info  Found hl7.terminology.r4#5.3.0 in /Users/nicolasriss/.fhir/packages.                    (00:00.791 / 00:05.303, 2Gb)
+Sushi: info  Loaded package hl7.terminology.r4#5.3.0                                                 (00:00.000 / 00:05.304, 2Gb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.fhir.uv.extensions.r4#1.0.0...       (00:00.131 / 00:05.435, 2Gb)
+Sushi: info  Found hl7.fhir.uv.extensions.r4#1.0.0 in /Users/nicolasriss/.fhir/packages.             (00:00.660 / 00:06.096, 2Gb)
+Sushi: info  Loaded package hl7.fhir.uv.extensions.r4#1.0.0                                          (00:00.000 / 00:06.097, 2Gb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for ans.fr.nos#1.2.0...                      (00:00.000 / 00:06.097, 2Gb)
+Sushi: info  Found ans.fr.nos#1.2.0 in /Users/nicolasriss/.fhir/packages.                            (00:00.456 / 00:06.554, 2Gb)
+Sushi: info  Loaded package ans.fr.nos#1.2.0                                                         (00:00.001 / 00:06.556, 2Gb)
+Sushi: info  Checking /Users/nicolasriss/.fhir/packages for hl7.fhir.r4.core#4.0.1...                (00:00.000 / 00:06.556, 2Gb)
+Sushi: info  Found hl7.fhir.r4.core#4.0.1 in /Users/nicolasriss/.fhir/packages.                      (00:01.340 / 00:07.899, 2Gb)
+Sushi: info  Loaded package hl7.fhir.r4.core#4.0.1                                                   (00:00.003 / 00:07.900, 2Gb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.022 / 00:07.923, 2Gb)
+Sushi: info  Converted 65 FHIR StructureDefinitions.                                                 (00:03.475 / 00:11.398, 2Gb)
+Sushi: info  Converted 18 FHIR CodeSystems.                                                          (00:00.269 / 00:11.667, 2Gb)
+Sushi: info  Converted 39 FHIR ValueSets.                                                            (00:01.327 / 00:12.995, 2Gb)
+Sushi: info  Converted 12 FHIR instances.                                                            (00:00.514 / 00:13.510, 2Gb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.000 / 00:13.510, 2Gb)
+Sushi: info  Exported 134 FHIR resources as JSON.                                                    (00:00.114 / 00:13.625, 2Gb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:13.629, 2Gb)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.fr.core.json                                     (00:00.015 / 00:13.645, 2Gb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.002 / 00:13.646, 2Gb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:13.647, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.648, 2Gb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:13.649, 2Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:13.649, 2Gb)
+Sushi: | |      29       |      36      |      0       |       0       | |                           (00:00.000 / 00:13.650, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.651, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.652, 2Gb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:13.653, 2Gb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:13.653, 2Gb)
+Sushi: | |         39         |        18         |         12         | |                           (00:00.000 / 00:13.654, 2Gb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.655, 2Gb)
+Sushi: |                                                                 |                           (00:00.000 / 00:13.656, 2Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:13.657, 2Gb)
+Sushi: | Ex-clam-ation point!                   0 Errors      0 Warnings |                           (00:00.000 / 00:13.657, 2Gb)
+Sushi: ===================================================================                           (00:00.000 / 00:13.658, 2Gb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.026 / 00:13.685, 2Gb)
+Load Template from https://github.com/Interop-Sante/hl7.ig.fr.template                               (00:00.049 / 00:13.734, 2Gb)
+
+onLoad.findSpreadsheets:
+
+onLoad.updateIg:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onLoad-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onLoad-ig-updated.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onLoad.xslt
+
+onLoad.extend:
+
+onLoad:
+Root directory: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone                    (00:14.341 / 00:28.079, 1Gb)
+Terminology Cache is at /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/txcache. 20 files in cache (00:01.560 / 00:29.637, 1Gb)
+Core Package hl7.fhir.r4.core#4.0.1
+Running Terminology Log: /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/ohfu-fhir-ig-9010321656128272482.log
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:02.795 / 00:32.436, 1Gb)
+Load Package hl7.fhir.pubpack#0.1.7
+Load Package hl7.fhir.xver-extensions#0.1.0
+Load Package hl7.terminology.r4#5.3.0
+Load Package hl7.fhir.uv.extensions.r4#1.0.0
+Load Package ans.fr.nos#1.2.0
+Version mismatch. This IG is version 4.0.1, while the IG 'hl7.fhir.uv.tools' is from version 5.0.0 (will try to run anyway) (00:03.920 / 00:36.356, 1Gb)
+Load Package hl7.fhir.uv.tools#0.1.0
+Load R5 Specials
+Initialization complete                                                                              (00:00.946 / 00:37.300, 521Mb)
+Fetch https://hl7.fr/ig/fhir/core/package-list.json for version check                                (00:00.001 / 00:37.301, 521Mb)
+Load Content                                                                                         (00:00.268 / 00:37.569, 523Mb)
+loadPrePages from FetchedFile[/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/fsh-generated/includes] as /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/fsh-generated/includes
+loadPrePages from FetchedFile[/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input/data] as /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input/data
+loadPrePages from FetchedFile[/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input/pagecontent] as /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input/pagecontent
+Processing Conformance Resources                                                                     (00:00.850 / 00:38.419, 436Mb)
+Load Dependency Info                                                                                 (00:00.002 / 00:38.422, 437Mb)
+Load Info                                                                                            (00:00.001 / 00:38.423, 437Mb)
+Load Resources                                                                                       (00:00.001 / 00:38.425, 438Mb)
+Load Paths                                                                                           (00:00.468 / 00:38.893, 586Mb)
+Generating Snapshots                                                                                 (00:00.001 / 00:38.895, 586Mb)
+Check R4 / R4B                                                                                       (00:02.557 / 00:41.455, 548Mb)
+Assign Comparison Ids                                                                                (00:00.031 / 00:41.483, 553Mb)
+Propagating status                                                                                   (00:00.000 / 00:41.484, 553Mb)
+Generating Narratives                                                                                (00:00.000 / 00:41.485, 553Mb)
+Validating Conformance Resources                                                                     (00:03.226 / 00:44.715, 875Mb)
+Check profiles & code systems                                                                        (00:14.469 / 00:59.183, 1004Mb)
+Check realm rules                                                                                    (00:00.014 / 00:59.196, 1005Mb)
+Previous Version Comparison                                                                          (00:00.000 / 00:59.196, 1005Mb)
+Validating Resources                                                                                 (00:06.811 / 01:06.011, 1Gb)
+Processing Provenance Records                                                                        (00:04.207 / 01:10.219, 890Mb)
+Generating Outputs in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/output       (00:00.006 / 01:10.222, 890Mb)
+Generate Native Outputs                                                                              (00:00.272 / 01:10.495, 914Mb)
+Run Template                                                                                         (00:12.942 / 01:23.438, 1Gb)
+
+onGenerate.checkVersions:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/versions.txt
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.getVersions.xslt
+
+onGenerate.r5-schemas:
+      [get] Getting: http://build.fhir.org/fhir-single.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R5/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/fhir-xhtml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R5/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R5/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://build.fhir.org/xmldsig-core-schema.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R5/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r4-schemas:
+      [get] Getting: http://hl7.org/fhir/R4/fhir-single.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R4/fhir-single.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/fhir-xhtml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R4/fhir-xhtml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xml.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R4/xml.xsd
+      [get] Not modified - so not downloaded
+      [get] Getting: http://hl7.org/fhir/R4/xmldsig-core-schema.xsd
+      [get] To: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/input-cache/schemas/R4/xmldsig-core-schema.xsd
+      [get] Not modified - so not downloaded
+
+onGenerate.r3-schemas:
+
+onGenerate.r2b-schemas:
+
+onGenerate.r2-schemas:
+
+onGenerate.schemas:
+
+onGenerate.data:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/temp/pages/_data/artifacts.json
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.data.xslt
+
+onGenerate.setup:
+
+onGenerate.infoFile:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/temp/pages/_data/info.json
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.genJson.xslt
+
+onGenerate.processIncludes:
+     [copy] Copying 17 files to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/temp/pages/_includes
+
+onGenerate.processIg:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.1.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.group.xslt
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.1.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.2.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.groupSort.xslt
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-working.2.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-updated.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.final.xslt
+
+onGenerate.igQa:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-updated.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/ongenerate-validation-igqa.json
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/onGenerate.qa.xslt
+
+onGenerate.artifactList:
+     [xslt] Processing /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/onGenerate-ig-updated.xml to /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/temp/pages/_includes/artifacts.xml
+     [xslt] Loading stylesheet /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/scripts/createArtifactSummary.xslt
+
+check-plantumlfiles:
+
+onGenerate.plantUml.ig:
+
+onGenerate.plantUml.template:
+
+onGenerate.plantUml:
+
+onGenerate.copyDataFiles:
+     [copy] Warning: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/template/data does not exist.
+
+onGenerate.extend:
+
+onGenerate:
+Template Done                                                                                        (00:02.396 / 01:25.834, 1Gb)
+Generate HTML Outputs                                                                                (00:00.000 / 01:25.835, 1Gb)
+Value set 'http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height#Observation.method not found
+Value set 'http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height#Observation.method not found
+Value set 'http://models.opencimi.org/ig/vital-signs-fhir-profiles/ValueSet-heightLengthMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-height#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext#Extension.value[x] not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext#Extension.value[x] not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyPositionVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext#Extension.value[x] not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bodyTempMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-weight-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-weight#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/bpMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-bp-measurement-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-bp#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasBodyLocationPrecoordVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-body-position' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.bodySite.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/heartRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-heart-rate-method' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-heartrate#Observation.method.coding not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/respiratoryRateMeasMethodVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-resp-rate#Observation.method not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen#Observation.bodySite not found
+Value set 'http://hl7.org/fhir/hspc/ValueSet/sPO2BodyLocationVS' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-saturation-oxygen#Observation.bodySite not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession#Extension.value[x] not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession#Extension.value[x] not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-profession' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession#Extension.value[x] not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle#Extension.value[x].coding not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle#Extension.value[x].coding not found
+Value set 'https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-categorie-professionnelle' at https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle#Extension.value[x].coding not found
+Generate Summaries                                                                                   (01:12.688 / 02:38.526, 1Gb)
+Generating Summary Outputs                                                                           (00:00.005 / 02:38.529, 1Gb)
+DB Cumulative Time invested: 00:00:00.558
+Sending Usage Stats to Server                                                                        (00:06.334 / 02:44.866, 1Gb)
+## Memory (MB): Use = 1378, Free = 701, Total = 2080, Max = 4096                                     (00:00.007 / 02:44.871, 1Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 02:44.872, 1Gb)
+## Memory (MB): Use = 1123, Free = 956, Total = 2080, Max = 4096                                     (00:00.561 / 02:45.440, 1Gb)
+Run jekyll: jekyll build --destination "/Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/output" (in folder /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/temp/pages) (00:00.015 / 02:45.449, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 02:45.450, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 02:45.451, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 02:45.452, 1Gb)
+Jekyll: Ignoring eventmachine-1.2.7 because its extensions are not built. Try: gem pristine eventmachine --version 1.2.7 (00:00.191 / 02:45.643, 1Gb)
+Jekyll: Ignoring ffi-1.15.5 because its extensions are not built. Try: gem pristine ffi --version 1.15.5 (00:00.000 / 02:45.644, 1Gb)
+Jekyll: Ignoring http_parser.rb-0.8.0 because its extensions are not built. Try: gem pristine http_parser.rb --version 0.8.0 (00:00.000 / 02:45.645, 1Gb)
+Jekyll: Ignoring sassc-2.4.0 because its extensions are not built. Try: gem pristine sassc --version 2.4.0 (00:00.000 / 02:45.645, 1Gb)
+Jekyll: Source: /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/temp/pages         (00:00.341 / 02:45.988, 1Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 02:45.988, 1Gb)
+Jekyll: done in 5.186 seconds.                                                                       (00:05.184 / 02:51.175, 1Gb)
+
+Installing hl7.fhir.fr.core#2.0.1Checking Output HTML                                                                                 (00:05.125 / 02:56.304, 1Gb)
+found 2200 files                                                                                     (00:00.017 / 02:56.316, 1Gb)
+.......................................
+.......................................
+  ... 2200 html files, 0 pages invalid xhtml (0%)                                                    (00:49.005 / 03:45.326, 1Gb)
+  ... 562824 links, 83 broken links (0%)                                                             (00:00.005 / 03:45.328, 1Gb)
+Build final .zip                                                                                     (00:00.000 / 03:45.329, 1Gb)
+Final .zip built                                                                                     (00:03.399 / 03:48.729, 1Gb)
+Built. Times: loading: 00:00.848, generate: 03:14.966, narrative generation: 00:03.225, realm-rules: 00:00.000, previous-version: 00:06.787, jekyll: 00:05.751, validation: 00:15.099 (#135), template: 00:02.395 (#3) (00:04.662 / 03:53.391, 1Gb)
+Generating QA                                                                                        (00:00.022 / 03:53.414, 1Gb)
+Sending usage stats failed: Operation timed out
+Validation output in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/output/qa.html
+Errors: 49, Warnings: 95, Info: 34, Broken Links: 83 (01:05.361 / 04:58.780, 1Gb)
+Finished. Max Memory Used = 2Gb. Log file saved in /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/fhir-ig-publisher-tmp.log (00:00.042 / 04:58.818, 1Gb)
+Keep a copy of the build directory at /Library/WebServer/Documents/tmp/web-root/run-20240416/ig-build-zips/hl7.fhir.fr.core#2.0.1.zip
+
+ok. All checks passed. Publish v2.0.1 to /Library/WebServer/Documents/tmp/web-root/run-20240416/core/2.0.1
+Copy the IG to /Library/WebServer/Documents/tmp/web-root/run-20240416/core/2.0.1
+Update /Library/WebServer/Documents/tmp/web-root/run-20240416/core/package-list.json
+Publish Box Statement: This page is part of the Guide d'implémentation Fr Core (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a>
+no html insert in /Library/WebServer/Documents/tmp/web-root/run-20240416/core/2.0.1/qa-txservers.html
+  .. 958 files checked, 958 updated
+  .. 453 clones checked, 906 updated
+  .. 135 redirections (135 created/updated)
+This is a milestone release - publish v2.0.1 to /Library/WebServer/Documents/tmp/web-root/run-20240416/core
+Publish Box Statement: This page is part of the Guide d'implémentation Fr Core (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a>
+no html insert in /Library/WebServer/Documents/tmp/hl7.fhir.fr.core#2.0.1-milestone/output/qa-txservers.html
+  .. 958 files checked, 958 updated
+  .. 453 clones checked, 906 updated
+  .. 135 redirections (135 created/updated)
+Check for Files to delete
+  ... 0 files
+Copy to new IG to /Library/WebServer/Documents/tmp/web-root/run-20240416/core
+Update history page at /Library/WebServer/Documents/tmp/web-root/run-20240416/core from /Library/WebServer/Documents/InteropSante/IG-website-release/ig-history and /Library/WebServer/Documents/InteropSante/IG-website-release/templates
+Build is complete. Copy from /Library/WebServer/Documents/tmp/web-root/run-20240416
+hl7.fhir.fr.core (https://hl7.fr/ig/fhir/core): Guide d'implémentation Fr Core @ https://interop-sante.github.io/hl7.fhir.fr.core/main/ig
+  release: trial-use 2.0.1/4.0.1 @ https://hl7.fr/ig/fhir/core/2.0.1

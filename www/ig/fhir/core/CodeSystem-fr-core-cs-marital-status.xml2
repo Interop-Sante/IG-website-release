@@ -6,15 +6,15 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">PACS<a name="fr-core-cs-marital-status-PACS"> </a></td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>ThXXXX</p><table class="codes"><tr><td style="white-space:nowrap"><b>XXXX</b></td></tr><tr><td style="white-space:nowrap">PACS<a name="fr-core-cs-marital-status-PACS"> </a></td></tr></table></div>
   </text>
   <url value="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status"/>
-  <version value="2.0.0"/>
+  <version value="2.0.1"/>
   <name value="FRCoreCodeSystemMaritalStatus"/>
   <title value="FR Core CodeSystem Marital Status"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2024-03-25T12:26:12+01:00"/>
+  <date value="2024-04-16T11:49:14+02:00"/>
   <publisher value="Interop'Santé"/>
   <contact>
     <name value="Interop'Santé"/>

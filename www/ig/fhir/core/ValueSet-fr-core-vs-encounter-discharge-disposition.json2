@@ -25,12 +25,12 @@
     "valueCode" : "fhir"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-encounter-discharge-disposition",
-  "version" : "2.0.0",
+  "version" : "2.0.1",
   "name" : "FRCoreValueSetEncounterDischargeDisposition",
   "title" : "FR Core ValueSet Encounter discharge disposition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-03-25T12:26:12+01:00",
+  "date" : "2024-04-16T11:49:14+02:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

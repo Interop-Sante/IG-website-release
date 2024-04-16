@@ -1,0 +1,28 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "b045df19-c792-4b25-b95a-6bd5eb107455-47",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/b045df19-c792-4b25-b95a-6bd5eb107455-47",
+  "name" : "UnionFRCoreValueSetEncounterIdentifierTypeAndFRCoreValueSetEncounterIdentifierType",
+  "title" : "Union of FR Core ValueSet Encounter identifier type And FR Core ValueSet Encounter identifier type",
+  "status" : "draft",
+  "date" : "2024-04-16T11:42:17+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "VN",
+        "display" : "Visit Number"
+      },
+      {
+        "code" : "MN",
+        "display" : "Movement Number"
+      }]
+    }]
+  }
+}
