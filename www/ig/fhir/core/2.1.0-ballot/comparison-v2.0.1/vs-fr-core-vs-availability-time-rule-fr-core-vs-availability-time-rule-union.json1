@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-251",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-251",
+  "name" : "UnionFRCoreValueSetAvailabilityTimeRuleAndFRCoreValueSetAvailabilityTimeRule",
+  "title" : "Union of Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule And Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule",
+  "status" : "active",
+  "date" : "2024-07-17T17:46:53+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "SECONDLY",
+        "display" : "Par seconde"
+      },
+      {
+        "code" : "MINUTELY",
+        "display" : "Par minute"
+      },
+      {
+        "code" : "HOURLY",
+        "display" : "Par heure"
+      },
+      {
+        "code" : "DAILY",
+        "display" : "Par jour"
+      },
+      {
+        "code" : "WEEKLY",
+        "display" : "Par semaine"
+      },
+      {
+        "code" : "MONTHLY",
+        "display" : "Par mois"
+      },
+      {
+        "code" : "YEARLY",
+        "display" : "Par an"
+      }]
+    }]
+  }
+}

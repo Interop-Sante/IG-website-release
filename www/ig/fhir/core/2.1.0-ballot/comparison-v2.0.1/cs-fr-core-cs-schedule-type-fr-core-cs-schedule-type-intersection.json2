@@ -1,0 +1,24 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-36",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-36",
+  "name" : "IntersectionFRCoreCodeSystemScheduleTypeAndFRCoreCodeSystemScheduleType",
+  "title" : "Intersection of FR Core CodeSystem Schedule Type And FR Core CodeSystem Schedule Type",
+  "status" : "draft",
+  "date" : "2024-07-17T17:46:53+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "busy-unavailable",
+    "display" : "Indisponibilité"
+  },
+  {
+    "code" : "free",
+    "display" : "Disponibilité"
+  }]
+}

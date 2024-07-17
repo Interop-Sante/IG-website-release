@@ -1,0 +1,32 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-287",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-287",
+  "name" : "UnionFRCoreValueSetHeightBodyPositionAndFRCoreValueSetHeightBodyPosition",
+  "title" : "Union of FR Core ValueSet BodyPosition And FR Core ValueSet BodyPosition",
+  "status" : "active",
+  "date" : "2024-07-17T17:46:53+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "10904000"
+      }]
+    },
+    {
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "102538003"
+      }]
+    }]
+  }
+}

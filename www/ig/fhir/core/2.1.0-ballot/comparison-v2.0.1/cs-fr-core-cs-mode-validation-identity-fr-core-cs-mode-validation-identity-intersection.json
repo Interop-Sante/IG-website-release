@@ -1,0 +1,56 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-33",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-33",
+  "name" : "IntersectionFRCoreCodeSystemModeValidationIdentiteAndFRCoreCodeSystemModeValidationIdentite",
+  "title" : "Intersection of FR Core CodeSystem Mode Validation Identite And FR Core CodeSystem Mode Validation Identite",
+  "status" : "active",
+  "date" : "2024-07-17T17:46:53+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "AN",
+    "display" : "Extrait d'acte de naissance"
+  },
+  {
+    "code" : "CC",
+    "display" : "Carnet de circulation"
+  },
+  {
+    "code" : "CE",
+    "display" : "Carte Européenne"
+  },
+  {
+    "code" : "CM",
+    "display" : "Carte militaire"
+  },
+  {
+    "code" : "CN",
+    "display" : "Carte nationale d'identité"
+  },
+  {
+    "code" : "CS",
+    "display" : "Carte de séjour"
+  },
+  {
+    "code" : "LE",
+    "display" : "Livret de famille"
+  },
+  {
+    "code" : "PA",
+    "display" : "Passeport"
+  },
+  {
+    "code" : "PC",
+    "display" : "Permis de conduire"
+  },
+  {
+    "code" : "TC",
+    "display" : "Tiers de confiance"
+  }]
+}

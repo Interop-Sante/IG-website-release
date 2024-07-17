@@ -1,0 +1,20 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-27",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/55d3daa1-3f7a-4259-b3ad-ea91c6b24dad-27",
+  "name" : "IntersectionFRCoreCodeSystemMaritalStatusAndFRCoreCodeSystemMaritalStatus",
+  "title" : "Intersection of FR Core CodeSystem Marital Status And FR Core CodeSystem Marital Status",
+  "status" : "draft",
+  "date" : "2024-07-17T17:46:53+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "PACS",
+    "display" : "PACS"
+  }]
+}
