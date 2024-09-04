@@ -1,0 +1,84 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "0e0f972c-2832-4463-9fd9-687c2e4e8023-41",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/0e0f972c-2832-4463-9fd9-687c2e4e8023-41",
+  "name" : "UnionFRCoreCodeSystemTypesOrganisationsAndFRCoreCodeSystemTypesOrganisations",
+  "title" : "Union of FR Core CodeSystem Types d'Organisations And FR Core CodeSystem Types d'Organisations",
+  "status" : "draft",
+  "date" : "2024-09-04T09:59:49+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "LEGAL-ENTITY",
+    "display" : "Entité légale"
+  },
+  {
+    "code" : "GHT",
+    "display" : "Groupement hospitalier de territoire"
+  },
+  {
+    "code" : "GEOGRAPHICAL-ENTITY",
+    "display" : "Entité géographique"
+  },
+  {
+    "code" : "GROUP",
+    "display" : "Groupe privé/hospitalier"
+  },
+  {
+    "code" : "HEBERGEMENT",
+    "display" : "Hébergement"
+  },
+  {
+    "code" : "SOIN",
+    "display" : "Soin"
+  },
+  {
+    "code" : "ADMINISTRATIF",
+    "display" : "Administration"
+  },
+  {
+    "code" : "MEDICAL",
+    "display" : "Médical"
+  },
+  {
+    "code" : "TECHNIQUE",
+    "display" : "Technique"
+  },
+  {
+    "code" : "MEDICOTEC",
+    "display" : "medico technique (radio, scanner …)"
+  },
+  {
+    "code" : "UF",
+    "display" : "Unité fonctionnelle"
+  },
+  {
+    "code" : "SERVICE",
+    "display" : "Service"
+  },
+  {
+    "code" : "UM",
+    "display" : "Unité médicale"
+  },
+  {
+    "code" : "UAC",
+    "display" : "Unité d'activité"
+  },
+  {
+    "code" : "POLE",
+    "display" : "Pôle"
+  },
+  {
+    "code" : "CENTRE-RESP",
+    "display" : "Centre de responsabilité"
+  },
+  {
+    "code" : "CENTRE-ACTIVITE",
+    "display" : "Centre d'activité"
+  }]
+}

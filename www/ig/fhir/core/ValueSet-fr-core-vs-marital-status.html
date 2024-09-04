@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>HL7.FHIR.FR.CORE\FR Core ValueSet Patient gender INS ValueSet - FHIR v4.0.1</title>
+    <title>FR Core ValueSet Patient gender INS ValueSet - Guide d&#39;implémentation Fr Core v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -19,6 +19,7 @@
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
+<link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
     <script type="text/javascript" src="fhir-table-scripts.js"> </script>
 
@@ -38,23 +39,25 @@
   <body onload="document.body.style.opacity='1'">
 
 	  <script src="assets/js/prism.js"></script>
-
-    <style type="text/css">h2{--heading-prefix:"5.92"}
-    h3,h4,h5,h6{--heading-prefix:"5.92"}</style>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"5.90"}
+    h3,h4,h5,h6{--heading-prefix:"5.90"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
         <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+  <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
+</div>
+
 <div id="family-nav">
-    <a id="hl7-search-lnk" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
-  </div>
-  <div id="is-nav">
-    <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
-  </div>
+  <a id="family-logo" no-external="true" href="http://hl7.org/fhir"><img height="50" alt="Visit the FHIR website" src="assets/images/fhir-logo-www.png"/> </a>
+</div>
 
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation Fr Core</span>
             <br/>
-            <span style="display:inline-block;">2.0.1 - trial-use
+            <span style="display:inline-block;">2.1.0 - trial-use
 
 
 
@@ -106,6 +109,9 @@
         <a href="downloads.html">Téléchargements et usage</a>
       </li>
       <li>
+        <a href="a_propos.html">A propos</a>
+      </li>
+      <li>
         <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
       <li>
@@ -151,7 +157,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.0.1: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -203,7 +209,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.0.1<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status|2.0.1"/></span>
+      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-marital-status|2.1.0"/></span>
       </td>
     </tr>
 
@@ -219,7 +225,7 @@
         
           Active
           
-            as of 2024-04-16
+            as of 2024-09-04
           
         
       </td>
@@ -266,12 +272,12 @@
 
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
-<div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p>
+<div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet fr-core-vs-marital-status</b></p><a name="fr-core-vs-marital-status"> </a><a name="hcfr-core-vs-marital-status"> </a><a name="fr-core-vs-marital-status-und"> </a><p>This value set includes codes based on the following rules:</p>
 <ul><li>Include all codes defined in <a href="CodeSystem-fr-core-cs-marital-status.html"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status</code></a></li>
-<li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a></li>
-<li>Include these codes as defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a>
-<table class="none"><tr><td style="white-space:nowrap"><b>XXXX</b></td><td><b>XXXX</b></td><td><b>XXXX</b></td></tr>
-<tr><td><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td>
+<li>Include all codes defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html"><code>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</code></a></li>
+<li>Include these codes as defined in <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html"><code>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</code></a>
+<table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr>
+<tr><td><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td>
 <td>unknown</td>
 <td>**Description:**A proper value is applicable, but not known.<br/><br/>**Usage Notes**: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:<br/><br/>1.  Those properties themselves directly translate to a semantic of "unknown". (E.g. a local code sent as a translation that conveys 'unknown')<br/>2.  Those properties further qualify the nature of what is unknown. (E.g. specifying a use code of "H" and a URL prefix of "tel:" to convey that it is the home phone number that is unknown.)</td></tr></table></li></ul></div>
 
@@ -279,18 +285,18 @@
   <a name="expansion"> </a>
   <h3 id="expansion">Expansion</h3>
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on: </p><ul><li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html">codesystem MaritalStatus v2.1.0 (CodeSystem)</a></li><li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v2.1.0 (CodeSystem)</a></li><li><a href="CodeSystem-fr-core-cs-marital-status.html">codesystem FR Core CodeSystem Marital Status v2.0.1 (CodeSystem)</a></li></ul></div><p>This value set contains 13 concepts.</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="https---hl7.fr-ig-fhir-core-CodeSystem-fr-core-cs-marital-status-PACS"> </a>  <a href="CodeSystem-fr-core-cs-marital-status.html#fr-core-cs-marital-status-PACS">PACS</a></td><td>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status</td><td>PACS</td><td><div/></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-A"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Annulled</td><td><div><p>Marriage contract has been declared null and to not have existed</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-D"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Divorced</td><td><div><p>Marriage contract has been declared dissolved and inactive</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-I"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Interlocutory</td><td><div><p>Subject to an Interlocutory Decree.</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-L"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Legally Separated</td><td><div/></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-M"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Married</td><td><div><p>A current marriage contract is active</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-C"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Common Law</td><td><div><p>a marriage recognized in some jurisdictions and based on the parties' agreement to consider themselves married and can also be based on documentation of cohabitation.</p>
+  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet </b></p><div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px"><p>Expansion based on:</p><ul><li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html">codesystem MaritalStatus v3.0.0 (CodeSystem)</a></li><li><a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html">codesystem NullFlavor v3.0.0 (CodeSystem)</a></li><li><a href="CodeSystem-fr-core-cs-marital-status.html">codesystem FR Core CodeSystem Marital Status v2.1.0 (CodeSystem)</a></li></ul></div><p>This value set contains 13 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap"><a name="x-https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status-PACS"> </a>  <a href="CodeSystem-fr-core-cs-marital-status.html#fr-core-cs-marital-status-PACS">PACS</a></td><td>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-marital-status</td><td>PACS</td><td><div/></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-A"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-A">A</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Annulled</td><td><div><p>Marriage contract has been declared null and to not have existed</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-D"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-D">D</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Divorced</td><td><div><p>Marriage contract has been declared dissolved and inactive</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-I"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-I">I</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Interlocutory</td><td><div><p>Subject to an Interlocutory Decree.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-L"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-L">L</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Legally Separated</td><td><div/></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-M"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-M">M</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Married</td><td><div><p>A current marriage contract is active</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-C"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-C">C</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Common Law</td><td><div><p>a marriage recognized in some jurisdictions and based on the parties' agreement to consider themselves married and can also be based on documentation of cohabitation.</p>
 <p>This definition was based on https://www.merriam-webster.com/dictionary/common-law%20marriage.</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-P"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Polygamous</td><td><div><p>More than 1 current spouse</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-T"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Domestic partner</td><td><div><p>Person declares that a domestic partner relationship exists.</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-U"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>unmarried</td><td><div><p>Currently not in a marriage contract.</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-S"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Never Married</td><td><div><p>No marriage contract has ever been entered</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-MaritalStatus-W"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Widowed</td><td><div><p>The spouse has died</p>
-</div></td></tr><tr><td style="white-space:nowrap"><a name="http---terminology.hl7.org-CodeSystem-v3-NullFlavor-UNK"> </a>  <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td><div><p>**Description:**A proper value is applicable, but not known.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-P"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-P">P</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Polygamous</td><td><div><p>More than 1 current spouse</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-T"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-T">T</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Domestic partner</td><td><div><p>Person declares that a domestic partner relationship exists.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-U"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-U">U</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>unmarried</td><td><div><p>Currently not in a marriage contract.</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-S"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-S">S</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Never Married</td><td><div><p>No marriage contract has ever been entered</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-MaritalStatus-W"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-MaritalStatus.html#v3-MaritalStatus-W">W</a></td><td>http://terminology.hl7.org/CodeSystem/v3-MaritalStatus</td><td>Widowed</td><td><div><p>The spouse has died</p>
+</div></td></tr><tr><td style="white-space:nowrap"><a name="x-http://terminology.hl7.org/CodeSystem/v3-NullFlavor-UNK"> </a>  <a href="http://terminology.hl7.org/6.0.2/CodeSystem-v3-NullFlavor.html#v3-NullFlavor-UNK">UNK</a></td><td>http://terminology.hl7.org/CodeSystem/v3-NullFlavor</td><td>unknown</td><td><div><p>**Description:**A proper value is applicable, but not known.</p>
 <p><strong>Usage Notes</strong>: This means the actual value is not known. If the only thing that is unknown is how to properly express the value in the necessary constraints (value set, datatype, etc.), then the OTH or UNC flavor should be used. No properties should be included for a datatype with this property unless:</p>
 <ol>
 <li>Those properties themselves directly translate to a semantic of &quot;unknown&quot;. (E.g. a local code sent as a translation that conveys 'unknown')</li>
@@ -348,13 +354,7 @@
   <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
   <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
 
-  <script type="text/javascript">
-    $(document).ready(function(){
-      if(window.location.hash != "") {
-          $('a[href="' + window.location.hash + '"]').click()
-      }
-    });
-  </script>
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
   <a name="bottom"> </a>
   <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
     <div class="container">  <!-- container -->
@@ -383,10 +383,14 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.0.1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Tue, Apr 16, 2024 11:49+0200">2024-04-16</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 4, 2024 10:06+0200">2024-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
-                      Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                  | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/new">Issue</a>
+                
+          Liens: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table des matières </a> |
                  <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA </a> |
                  <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://hl7.fr/ig/fhir/core/history.html">Historique des versions </a>
                   | <a style="color: var(--footer-hyperlink-text-color)" target="_blank" href="https://github.com/Interop-Sante/hl7.fhir.fr.core/issues/new">Issue</a>
@@ -402,7 +406,7 @@
     <div class="container">  <!-- container -->
     </div>  <!-- /container -->
   </div>  <!-- /segment-post-footer -->
-  
+
   <!-- JS and analytics only. -->
   <!-- Bootstrap core JavaScript
   ================================================== -->
@@ -412,21 +416,7 @@
   <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
   <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
-  <script>anchors.options.visible = 'hover'
-anchors.add()</script>
-  
-<!-- feedback form - Google forms -->
-<!-- v0.1, 2021-01-09 -->
-
-
-  
-    
-  
-
-
-
-<!-- / feedback form  -->
-
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
   <!-- Analytics Below
   ================================================== -->
   </body>

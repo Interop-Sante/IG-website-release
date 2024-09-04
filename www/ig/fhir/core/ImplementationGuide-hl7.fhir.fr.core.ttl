@@ -9,15 +9,15 @@
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "hl7.fhir.fr.core"] ; # 
   fhir:text [
-     fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide hl7.fhir.fr.core</b></p><a name=\"hl7.fhir.fr.core\"> </a><a name=\"hchl7.fhir.fr.core\"> </a><a name=\"hl7.fhir.fr.core-fr-FR\"> </a><h2>FrCore</h2><p>The official URL for this implementation guide is: </p><pre>https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core</pre></div>"
   ] ; # 
   fhir:url [ fhir:v "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core"^^xsd:anyURI] ; # 
-  fhir:version [ fhir:v "2.0.1"] ; # 
+  fhir:version [ fhir:v "2.1.0"] ; # 
   fhir:name [ fhir:v "FrCore"] ; # 
   fhir:title [ fhir:v "Guide d'implémentation Fr Core"] ; # 
   fhir:status [ fhir:v "active"] ; # 
-  fhir:date [ fhir:v "2024-04-16T11:49:14+02:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2024-09-04T10:06:33+02:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Interop'Santé"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Interop'Santé" ] ;
@@ -54,7 +54,7 @@
        fhir:link <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "5.3.0" ]
+     fhir:version [ fhir:v "6.0.2" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -66,7 +66,7 @@
        fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
      ] ;
      fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
-     fhir:version [ fhir:v "1.0.0" ]
+     fhir:version [ fhir:v "5.1.0" ]
   ] [
      fhir:id [ fhir:v "ans_fr_nos" ] ;
      fhir:uri [
@@ -74,7 +74,7 @@
        fhir:link <https://interop.esante.gouv.fr/ig/nos/ImplementationGuide/ans.fr.nos>
      ] ;
      fhir:packageId [ fhir:v "ans.fr.nos" ] ;
-     fhir:version [ fhir:v "1.2.0" ]
+     fhir:version [ fhir:v "1.3.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
@@ -260,6 +260,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -304,7 +313,7 @@
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
-       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.1.0" ]
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#0.2.0" ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
@@ -488,6 +497,15 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "apply-wg" ]
+       ] [
+         fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "active-tables" ]
        ] [
          fhir:url [ fhir:v "value"^^xsd:anyURI ] ;
@@ -537,10 +555,10 @@
          fhir:value [ fhir:v "Patient" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExamplefrCorePatient001> ;
-         fhir:reference [ fhir:v "Patient/ExamplefrCorePatient001" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/Patient/ExampleFRCorePatient001> ;
+         fhir:reference [ fhir:v "Patient/ExampleFRCorePatient001" ]
        ] ;
-       fhir:name [ fhir:v "ExamplefrCorePatient001" ] ;
+       fhir:name [ fhir:v "ExampleFRCorePatient001" ] ;
        fhir:example [
          fhir:v "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins"^^xsd:anyURI ;
          fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-ins>
@@ -1379,7 +1397,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-patient-ins" ]
        ] ;
        fhir:name [ fhir:v "FR Core Patient INS Profile" ] ;
-       fhir:description [ fhir:v "Profil FRCorePatientProfile enrichi de l'identité INS récupérée par le téléservice INSi et potentiellement qualifiée. Ce profil permet d'indiquer les contraintes fortes nécessaires pour modéliser un patient avec les traits INS et le matricule INS. Une ressource conforme au profil FRCorePatientINSProfile sera également conforme au profil FRCorePatientProfile grâce au principe d'héritage, il n'est donc pas nécessaire d'avoir une instance de chaque profil pour un même patient. Pour plus d'informations sur le contexte du patient INS, consultez le référentiel national d'identitovigilance (RNIV) et la documentation du référentiel INS de l'ANS." ] ;
+       fhir:description [ fhir:v "Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS)." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1415,19 +1433,7 @@
          fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner" ]
        ] ;
        fhir:name [ fhir:v "FR Core Practitioner Profile" ] ;
-       fhir:description [ fhir:v "French profile of the Practitioner resource. This profile specifies the types of identifiers for practitioners in France.\r\n\nProfil de la ressource Practitionner pour la France. Ce profil contraint les types d'identifiants du professionnel de santé en France" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-role-code-categorie-professionnelle> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-role-code-categorie-professionnelle" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Role Code Categorie Professionnelle Extension" ] ;
-       fhir:description [ fhir:v "Catégorie professionnelle selon le MOS de l'ANS. Indispensable pour discriminer les étudiants (internes, élèves, etc.)" ] ;
+       fhir:description [ fhir:v "Profil de la ressource Practitionner pour la France." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1435,23 +1441,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role-exercice> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role-exercice" ]
+         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role> ;
+         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role" ]
        ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Role Exercice" ] ;
-       fhir:description [ fhir:v "Profil of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization.\r\n\nSpécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:resource" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-role-profession> ;
-         fhir:reference [ fhir:v "StructureDefinition/fr-core-practitioner-role-profession" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core Practitioner Role Profession" ] ;
-       fhir:description [ fhir:v "Profile of the PractitionerRole resource. This profile specifies the professions of the practitioner authorized for France.\r\n\nSpécification du profil de la ressource PractitionerRole permettant de spécifier la ou les professions du PS autorisées pour un exercice en France." ] ;
+       fhir:name [ fhir:v "FR Core Practitioner Role" ] ;
+       fhir:description [ fhir:v "Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1938,18 +1932,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-practitioner-role-profession> ;
-         fhir:reference [ fhir:v "ValueSet/fr-core-vs-practitioner-role-profession" ]
-       ] ;
-       fhir:name [ fhir:v "FR Core ValueSet PractitionerRole Profession" ] ;
-       fhir:description [ fhir:v "The profession(s) of the practitioner." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-relation-type> ;
          fhir:reference [ fhir:v "ValueSet/fr-core-vs-relation-type" ]
        ] ;
@@ -2206,6 +2188,14 @@
            ] ) ;
            fhir:name [ fhir:v "downloads.html"^^xsd:anyURI ] ;
            fhir:title [ fhir:v "Téléchargements et usages" ] ;
+           fhir:generation [ fhir:v "markdown" ]
+         ] [
+           fhir:extension ( [
+             fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name"^^xsd:anyURI ] ;
+             fhir:value [ fhir:v "a_propos.html"^^xsd:anyURI ]
+           ] ) ;
+           fhir:name [ fhir:v "a_propos.html"^^xsd:anyURI ] ;
+           fhir:title [ fhir:v "A propos" ] ;
            fhir:generation [ fhir:v "markdown" ]
          ] )
        ] )

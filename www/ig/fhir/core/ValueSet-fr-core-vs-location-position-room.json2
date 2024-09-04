@@ -6,7 +6,7 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-fr-core-cs-location-position-room.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room</code></a></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-location-position-room</b></p><a name=\"fr-core-vs-location-position-room\"> </a><a name=\"hcfr-core-vs-location-position-room\"> </a><a name=\"fr-core-vs-location-position-room-fr-FR\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-fr-core-cs-location-position-room.html\"><code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-location-position-room</code></a></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/valueset-warning",
@@ -25,12 +25,12 @@
     "valueCode" : "fhir"
   }],
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-location-position-room",
-  "version" : "2.0.1",
+  "version" : "2.1.0",
   "name" : "FRCoreValueSetLocationPositionRoom",
   "title" : "FR Core ValueSet Location position room",
   "status" : "active",
   "experimental" : false,
-  "date" : "2024-04-16T11:49:14+02:00",
+  "date" : "2024-09-04T10:06:33+02:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",

@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0e0f972c-2832-4463-9fd9-687c2e4e8023-258",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0e0f972c-2832-4463-9fd9-687c2e4e8023-258",
+  "name" : "IntersectionFRCoreValueSetCivilityExerciceRASSAndFRCoreValueSetCivilityExerciceRASS",
+  "title" : "Intersection of FR Core ValueSet Civility exercice RASS And FR Core ValueSet Civility exercice RASS",
+  "status" : "active",
+  "date" : "2024-09-04T09:59:50+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0e0f972c-2832-4463-9fd9-687c2e4e8023-248",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0e0f972c-2832-4463-9fd9-687c2e4e8023-248",
+  "name" : "UnionFRCoreValueSetAvailabilityTimeDayAndFRCoreValueSetAvailabilityTimeDay",
+  "title" : "Union of First day of the workweek | Premier jour de la semaine de travail And First day of the workweek | Premier jour de la semaine de travail",
+  "status" : "active",
+  "date" : "2024-09-04T09:59:50+02:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "MO",
+        "display" : "Monday"
+      },
+      {
+        "code" : "TU",
+        "display" : "Tuesday"
+      },
+      {
+        "code" : "WE",
+        "display" : "Wednesday"
+      },
+      {
+        "code" : "TH",
+        "display" : "Thursday"
+      },
+      {
+        "code" : "FR",
+        "display" : "Friday"
+      },
+      {
+        "code" : "SA",
+        "display" : "Saturday"
+      },
+      {
+        "code" : "SU",
+        "display" : "Sunday"
+      }]
+    }]
+  }
+}

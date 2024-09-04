@@ -1,0 +1,19 @@
+{
+  "url" : "https://hl7.fr/ig/fhir/core/ImplementationGuide/hl7.fhir.fr.core",
+  "name" : "FrCore",
+  "title" : "Guide d'implémentation Fr Core",
+  "description" : null,
+  "status" : "active",
+  "package-id" : "hl7.fhir.fr.core",
+  "ig-ver" : "2.1.0",
+  "date" : "Wed, 04 Sep, 2024 09:58:56 +0200",
+  "dateISO8601" : "2024-09-04T09:58:56+02:00",
+  "errs" : 32,
+  "warnings" : 91,
+  "hints" : 12,
+  "suppressed-hints" : 0,
+  "suppressed-warnings" : 0,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1982951200
+}
