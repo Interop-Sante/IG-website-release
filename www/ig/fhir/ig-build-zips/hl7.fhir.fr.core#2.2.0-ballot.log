@@ -1,0 +1,169 @@
+FHIR IG Publisher Version 2.0.26 (Git# 0a43ac207d1f). Built 2025-11-06T09:21:35.314Z (11 days old)
+Detected Java version: 21.0.8 from /opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home on aarch64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core, path = /Users/nicolasriss/.gem/ruby/3.3.3/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/lib/ruby/gems/3.3.0/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/bin:/opt/homebrew/opt/openjdk@21/bin:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:~/.dotnet/tools:/opt/homebrew/opt/openjdk@21/bin:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin
+Parameters: -go-publish -source /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core -web /Library/WebServer/Documents/InteropSante/IG-website-release/www/ig/fhir -registry /Library/WebServer/Documents/InteropSante/IG-website-release/ig-registry/fhir-ig-list.json -history /Library/WebServer/Documents/InteropSante/IG-website-release/ig-history -templates /Library/WebServer/Documents/InteropSante/IG-website-release/templates -temp /Library/WebServer/Documents/tmp
+---------------
+Publication Run: publish /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core to /Library/WebServer/Documents/InteropSante/IG-website-release/www/ig/fhir
+Relative directory for IG is '/core'
+===== Web Publication Run Details ===============================
+ Source IG: hl7.fhir.fr.core#2.2.0-ballot : https://hl7.fr/ig/fhir/core (R4) from /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core
+All checks passed. Do the publication build from /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core and publish to /Library/WebServer/Documents/tmp/web-root/run-20251117/core
+Prepare Build space in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot
+Build IG at /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core: final copy suitable for publication (in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot)
+FHIR IG Publisher Version 2.0.26 (Git# 0a43ac207d1f). Built 2025-11-06T09:21:35.314Z (11 days old)  
+Detected Java version: 21.0.8 from /opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home on Mac OS X/aarch64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/fr-ig/1.Projet-FRCore/hl7.fhir.fr.core, path = /Users/nicolasriss/.gem/ruby/3.3.3/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/lib/ruby/gems/3.3.0/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/bin:/opt/homebrew/opt/openjdk@21/bin:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/opt/pmk/env/global/bin:~/.dotnet/tools:/opt/homebrew/opt/openjdk@21/bin:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v21.6.2/bin:/Library/Frameworks/Python.framework/Versions/3.10/bin
+Parameters: -publish https://hl7.fr/ig/fhir/core/2.2.0-ballot -no-exit -ig /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot -resetTx
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ lundi 17 novembre 2025, 13:38:57 heure normale d’Europe centrale (2025-11-17T13:38:57+01:00)
+                                                                                                    
+Build FHIR IG from /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot          (00:00.094 / 00:00.094, 37Mb)
+Build Formal Publication package, intended for https://hl7.fr/ig/fhir/core/2.2.0-ballot              (00:00.001 / 00:00.095, 37Mb)
+API keys loaded from /var/root/.fhir/fhir-settings.json                                              (00:00.000 / 00:00.096, 37Mb)
+Package Cache: /var/root/.fhir/packages                                                              (00:00.001 / 00:00.098, 37Mb)
+Found dependency on ans.fr.terminologies#latest in Sushi config. Pre-installing                      (00:00.002 / 00:00.100, 37Mb)
+Unable to install ans.fr.terminologies#latest: Invalid criteria: latest: (Expected numeric identifier at position 0) (00:00.010 / 00:00.110, 38Mb)
+Trying to go on                                                                                      (00:00.000 / 00:00.111, 38Mb)
+Run Sushi on /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot                (00:00.001 / 00:00.112, 38Mb)
+Sushi: info  Running SUSHI v3.16.5 (implements FHIR Shorthand specification v3.0.0)                  (00:02.423 / 00:02.536, 40Mb)
+Sushi: info  Arguments:                                                                              (00:00.000 / 00:02.536, 40Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:02.537, 40Mb)
+Sushi: info    --out /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot        (00:00.000 / 00:02.538, 40Mb)
+Sushi: info    /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot              (00:00.000 / 00:02.538, 40Mb)
+Sushi: info  Using configuration file: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/sushi-config.yaml (00:01.239 / 00:03.777, 40Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.049 / 00:03.827, 40Mb)
+Sushi: info  Preprocessed 134 documents with 85 aliases.                                             (00:00.193 / 00:04.020, 40Mb)
+Sushi: info  Imported 125 definitions and 17 instances.                                              (00:00.023 / 00:04.043, 40Mb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.069 / 00:04.112, 40Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 0.8.0                          (00:00.338 / 00:04.450, 40Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#0.8.0 with 110 resources                                    (00:00.044 / 00:04.495, 40Mb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 7.0.0                            (00:00.061 / 00:04.556, 40Mb)
+Sushi: info  Loaded hl7.terminology.r4#7.0.0 with 4096 resources                                     (00:00.995 / 00:05.551, 40Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.2.0                     (00:00.085 / 00:05.637, 40Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.2.0 with 759 resources                               (00:00.243 / 00:05.881, 40Mb)
+Sushi: info  Resolved ans.fr.terminologies#latest to concrete version 1.4.0                          (00:00.063 / 00:05.944, 40Mb)
+Sushi: info  Loaded ans.fr.terminologies#1.4.0 with 1050 resources                                   (00:00.286 / 00:06.230, 40Mb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:01.191 / 00:07.422, 40Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.003 / 00:07.425, 40Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.013 / 00:07.438, 40Mb)
+Sushi: info  Converted 62 FHIR StructureDefinitions.                                                 (00:03.900 / 00:11.339, 40Mb)
+Sushi: info  Converted 18 FHIR CodeSystems.                                                          (00:00.264 / 00:11.603, 40Mb)
+Sushi: info  Converted 45 FHIR ValueSets.                                                            (00:01.142 / 00:12.746, 40Mb)
+Sushi: info  Converted 17 FHIR instances.                                                            (00:01.015 / 00:13.761, 40Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.000 / 00:13.762, 40Mb)
+Sushi: info  Exported 142 FHIR resources as JSON.                                                    (00:00.107 / 00:13.870, 40Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:13.873, 40Mb)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.fr.core.json                                     (00:00.026 / 00:13.899, 40Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:13.900, 40Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:13.901, 40Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.902, 40Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:13.902, 40Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:13.903, 40Mb)
+Sushi: | |      28       |      34      |      0       |       0       | |                           (00:00.000 / 00:13.904, 40Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.905, 40Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.905, 40Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:13.906, 40Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:13.907, 40Mb)
+Sushi: | |         45         |        18         |         17         | |                           (00:00.000 / 00:13.907, 40Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:13.908, 40Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:13.909, 40Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:13.910, 40Mb)
+Sushi: | You've turned the tide.                0 Errors      0 Warnings |                           (00:00.000 / 00:13.910, 40Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:13.911, 40Mb)
+Root directory: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot             (00:00.011 / 00:13.922, 40Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.261 / 00:14.184, 25Mb)
+Load Template from https://github.com/Interop-Sante/ig-style                                         (00:00.257 / 00:14.441, 30Mb)
+ Load Template from fhir.base.template#current                                                       (00:01.271 / 00:15.712, 38Mb)
+Scanning directory: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/template
+======================================================================
+Terminology Cache is at /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/input-cache/txcache. Clearing now (00:03.894 / 00:19.606, 132Mb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.002 / 00:19.609, 133Mb)
+Running Terminology Log: /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/ohfu-fhir-ig-4693549245750796605.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:02.795 / 00:22.404, 210Mb)
+[39mLoad Package hl7.fhir.pubpack#0.2.3
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.terminology.r4#7.0.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.2.0
+[0;39m[39mLoad Package hl7.terminology.r4#6.5.0
+[0;39m[39mLoad Package hl7.terminology.r4#5.0.0
+[0;39m[39mLoad Package fhir.dicom#2022.4.20221006
+[0;39m[39mLoad Package hl7.fhir.uv.ips#1.1.0
+[0;39m[39mLoad Package ans.fr.terminologies#1.4.0
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r4#0.8.0
+[0;39mLoad R5 Specials
+Initialization complete                                                                              (00:08.845 / 00:31.250, 487Mb)
+Load IG                                                                                              (00:00.000 / 00:31.251, 487Mb)
+Load Content                                                                                         (00:00.005 / 00:31.257, 489Mb)
+Using fr_FR as the default narrative language. (inferred from ImplementationGuide.jurisdiction=FR)   (00:00.037 / 00:31.295, 501Mb)
+Process Loaded Resources                                                                             (00:01.237 / 00:32.532, 392Mb)
+Generating Snapshots                                                                                 (00:00.368 / 00:32.901, 604Mb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch https://hl7.fr/ig/fhir/core/package-list.json for version check                                (00:01.179 / 00:34.081, 770Mb)
+Checking Language                                                                                    (00:00.159 / 00:34.240, 780Mb)
+Load Dependency Info                                                                                 (00:00.002 / 00:34.243, 781Mb)
+Load Info                                                                                            (00:00.001 / 00:34.245, 781Mb)
+Load Paths                                                                                           (00:00.001 / 00:34.246, 782Mb)
+Check R4 / R4B                                                                                       (00:00.000 / 00:34.247, 782Mb)
+Assign Comparison Ids                                                                                (00:00.022 / 00:34.270, 796Mb)
+Propagating status                                                                                   (00:00.000 / 00:34.270, 796Mb)
+Generating Narratives                                                                                (00:00.000 / 00:34.271, 796Mb)
+Validating Conformance Resources                                                                     (00:23.416 / 00:57.688, 793Mb)
+Check profiles & code systems                                                                        (00:21.766 / 01:19.455, 1Gb)
+Check realm rules                                                                                    (00:00.011 / 01:19.466, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:19.467, 1Gb)
+Checking for Bundles to sign                                                                         (00:07.470 / 01:26.938, 1Gb)
+Validating Resources                                                                                 (00:00.001 / 01:26.939, 1Gb)
+Processing Provenance Records                                                                        (00:11.485 / 01:38.425, 1Gb)
+Generating Outputs in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/output (00:00.001 / 01:38.426, 1Gb)
+Warning @ Git URL is not a valid URl. Source: git remote origin url
+Generate Native Outputs                                                                              (00:00.415 / 01:38.842, 1Gb)
+Run Template                                                                                         (00:10.768 / 01:49.610, 1Gb)
+Generate HTML Outputs                                                                                (00:01.947 / 01:51.557, 1Gb)
+Generate Spreadsheets                                                                                (00:28.359 / 02:19.916, 1Gb)
+Generate Summaries                                                                                   (00:12.216 / 02:32.133, 1Gb)
+Generating Summary Outputs                                                                           (00:00.001 / 02:32.135, 1Gb)
+DB Cumulative Time invested: 00:00:01.614
+Sending Usage Stats to Server                                                                        (00:18.247 / 02:50.382, 2Gb)
+## Memory (MB): Use = 2094, Free = 125, Total = 2220, Max = 4096                                     (00:00.006 / 02:50.388, 2Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 02:50.389, 2Gb)
+## Memory (MB): Use = 1135, Free = 1084, Total = 2220, Max = 4096                                    (00:00.593 / 02:50.982, 1Gb)
+Run jekyll: jekyll build --destination "/Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/output" (in folder /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/temp/pages) (00:00.002 / 02:50.984, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 02:50.986, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.000 / 02:50.986, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 02:50.987, 1Gb)
+Jekyll: Source: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/temp/pages  (00:00.552 / 02:51.540, 1Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 02:51.542, 1Gb)
+Jekyll: done in 5.039 seconds.                                                                       (00:05.038 / 02:56.581, 1Gb)
+[39m
+[0;39m[39mInstalling hl7.fhir.fr.core#2.2.0-ballot
+[0;39m[39m done.
+[0;39mChecking Output HTML                                                                                 (00:03.387 / 02:59.968, 1Gb)
+Processed /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/output - % reduction = 100 (152148992 ==> 972932)
+found 2472 files                                                                                     (00:02.562 / 03:02.530, 1Gb)
+........................................
+........................................
+  ... 2472 html files, 0 pages invalid xhtml (0%)                                                    (00:41.958 / 03:44.488, 1Gb)
+  ... 624369 links, 4 broken links (0%)                                                              (00:00.004 / 03:44.493, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 03:44.493, 1Gb)
+Build final .zip                                                                                     (00:00.009 / 03:44.503, 1Gb)
+Final .zip built                                                                                     (00:05.248 / 03:49.751, 1Gb)
+Built. Times: loading: 00:02.983, generate: 03:20.408, narrative generation: 00:23.415, realm-rules: 00:00.001, previous-version: 00:07.443, jekyll: 00:05.620, validation: 00:32.874 (#143), template: 00:01.913 (#3) (00:04.898 / 03:54.649, 1Gb)
+Generating QA                                                                                        (00:00.001 / 03:54.650, 1Gb)
+Validation output in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.core#2.2.0-ballot/output/qa.html
+Errors: 5, Warnings: 62, Info: 212, Broken Links: 5 (00:00.365 / 03:55.016, 1Gb)
+Finished @ 17/11/2025 13:42. Max Memory Used = 2Gb. Log file saved in /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/fhir-ig-publisher-tmp.log (00:00.014 / 03:55.031, 1Gb)
+Keep a copy of the build directory at /Library/WebServer/Documents/tmp/web-root/run-20251117/ig-build-zips/hl7.fhir.fr.core#2.2.0-ballot.zip
+Sending usage stats failed: Operation timed out
+
+ok. All checks passed. Publish v2.2.0-ballot to /Library/WebServer/Documents/tmp/web-root/run-20251117/core/2.2.0-ballot
+Copy the IG to /Library/WebServer/Documents/tmp/web-root/run-20251117/core/2.2.0-ballot
+Update /Library/WebServer/Documents/tmp/web-root/run-20251117/core/package-list.json
+Publish Box Statement: This page is part of the Guide d'implémentation Fr Core (v2.2.0-ballot: final-text Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This version is a pre-release. The current official version is <a data-no-external="true" href="https://hl7.fr/ig/fhir/core{{fn}}">2.1.0</a>.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a>
+  .. 997 files checked, 997 updated
+  .. 581 clones checked, 1162 updated
+  .. 143 redirections (143 created/updated)
+hl7.fhir.fr.core (https://hl7.fr/ig/fhir/core): Guide d'implémentation Fr Core @ https://interop-sante.github.io/hl7.fhir.fr.core/main/ig
+  candidate: final-text Ballot 2.2.0-ballot/4.0.1 @ https://hl7.fr/ig/fhir/core/2.2.0-ballot
+Build is complete. Copy from /Library/WebServer/Documents/tmp/web-root/run-20251117
+Update history page at /Library/WebServer/Documents/tmp/web-root/run-20251117/core from /Library/WebServer/Documents/InteropSante/IG-website-release/ig-history and /Library/WebServer/Documents/InteropSante/IG-website-release/templates

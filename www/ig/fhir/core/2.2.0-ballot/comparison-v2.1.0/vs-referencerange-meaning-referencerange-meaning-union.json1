@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-215",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f542971e-3448-4848-8318-62a3018418fd-215",
+  "name" : "UnionObservationReferenceRangeMeaningCodesAndObservationReferenceRangeMeaningCodes",
+  "title" : "Union of Observation Reference Range Meaning Codes And Observation Reference Range Meaning Codes",
+  "status" : "draft",
+  "date" : "2025-11-17T13:40:22+01:00"
+}

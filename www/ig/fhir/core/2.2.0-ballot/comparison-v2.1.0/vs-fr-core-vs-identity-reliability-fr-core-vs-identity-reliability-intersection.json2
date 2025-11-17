@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-375",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f542971e-3448-4848-8318-62a3018418fd-375",
+  "name" : "IntersectionFRCoreValueSetIdentityReliabilityStatusAndFRCoreValueSetIdentityReliabilityStatus",
+  "title" : "Intersection of FR Core ValueSet Identity reliability And FR Core ValueSet Identity reliability",
+  "status" : "active",
+  "date" : "2025-11-17T13:40:22+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}

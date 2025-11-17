@@ -1,0 +1,30 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-392",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f542971e-3448-4848-8318-62a3018418fd-392",
+  "name" : "UnionFRCoreValueSetMaritalStatusAndFRCoreValueSetMaritalStatus",
+  "title" : "Union of FR Core ValueSet Patient gender INS ValueSet And FR Core ValueSet Marital Status ValueSet",
+  "status" : "active",
+  "date" : "2025-11-17T13:40:22+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      
+    },
+    {
+      "concept" : [{
+        "code" : "UNK",
+        "display" : "unknown"
+      }]
+    }]
+  }
+}

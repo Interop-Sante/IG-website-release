@@ -1,0 +1,28 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-21",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/f542971e-3448-4848-8318-62a3018418fd-21",
+  "name" : "IntersectionFRCoreCodeSystemLocationPositionRoomAndFRCoreCodeSystemLocationPositionRoom",
+  "title" : "Intersection of FR Core CodeSystem Location Position Room And FR Core CodeSystem Location Position Room",
+  "status" : "draft",
+  "date" : "2025-11-17T13:40:22+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "FNTR",
+    "display" : "Coté fenetre"
+  },
+  {
+    "code" : "CLR",
+    "display" : "coté couloir"
+  },
+  {
+    "code" : "ML",
+    "display" : "au mileu de la chambre"
+  }]
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-197",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f542971e-3448-4848-8318-62a3018418fd-197",
+  "name" : "UnionSNOMEDCTAdministrationMethodCodesAndSNOMEDCTAdministrationMethodCodes",
+  "title" : "Union of SNOMED CT Administration Method Codes And SNOMED CT Administration Method Codes",
+  "status" : "draft",
+  "date" : "2025-11-17T13:40:22+01:00",
+  "compose" : {
+    "include" : [{
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "422096002"
+      }]
+    }]
+  }
+}

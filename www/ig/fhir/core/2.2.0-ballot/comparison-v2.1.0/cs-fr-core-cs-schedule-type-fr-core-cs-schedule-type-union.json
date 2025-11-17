@@ -1,0 +1,26 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-35",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/f542971e-3448-4848-8318-62a3018418fd-35",
+  "name" : "UnionFRCoreCodeSystemScheduleTypeAndFRCoreCodeSystemScheduleType",
+  "title" : "Union of FR Core CodeSystem Schedule Type And FR Core CodeSystem Schedule Type",
+  "status" : "draft",
+  "date" : "2025-11-17T13:40:22+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "busy-unavailable",
+    "display" : "Indisponibilité",
+    "definition" : "Indisponibilité"
+  },
+  {
+    "code" : "free",
+    "display" : "Disponibilité",
+    "definition" : "Disponibilité"
+  }]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "f542971e-3448-4848-8318-62a3018418fd-407",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/f542971e-3448-4848-8318-62a3018418fd-407",
+  "name" : "UnionFRCoreValueSetOrganizationUFActivityFieldAndFRCoreValueSetOrganizationUFActivityField",
+  "title" : "Union of FR Core ValueSet Organization UF activity field And FR Core ValueSet Organization UF activity field",
+  "status" : "draft",
+  "date" : "2025-11-17T13:40:22+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "MCO",
+        "display" : "MCO"
+      },
+      {
+        "code" : "SSR",
+        "display" : "SSR"
+      },
+      {
+        "code" : "HD",
+        "display" : "HAD"
+      },
+      {
+        "code" : "EHPD",
+        "display" : "EHPAD"
+      },
+      {
+        "code" : "LG_SJR",
+        "display" : "Long séjour"
+      },
+      {
+        "code" : "MSN_RTRT",
+        "display" : "Maison de retraite"
+      },
+      {
+        "code" : "PSY",
+        "display" : "Psy"
+      },
+      {
+        "code" : "URG",
+        "display" : "Urgence"
+      }]
+    }]
+  }
+}
