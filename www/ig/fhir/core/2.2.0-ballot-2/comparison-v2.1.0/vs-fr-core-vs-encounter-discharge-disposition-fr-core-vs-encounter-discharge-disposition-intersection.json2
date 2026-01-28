@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-360",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-360",
+  "name" : "IntersectionFRCoreValueSetEncounterDischargeDispositionAndFRCoreValueSetEncounterDischargeDisposition",
+  "title" : "Intersection of FR Core ValueSet Encounter discharge disposition And FR Core ValueSet Encounter discharge disposition",
+  "status" : "active",
+  "date" : "2025-11-17T13:35:44+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-128",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-128",
+  "name" : "UnionDiagnosisRoleAndDiagnosisRole",
+  "title" : "Union of DiagnosisRole And DiagnosisRole",
+  "status" : "draft",
+  "date" : "2025-11-17T13:35:44+01:00"
+}

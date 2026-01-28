@@ -1,0 +1,26 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "117bab80-6a66-493f-9260-82ab00331836-323",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/117bab80-6a66-493f-9260-82ab00331836-323",
+  "name" : "UnionFRCoreValueSetPatientIdentifierUseINSAndFRCoreValueSetPatientIdentifierUseINS",
+  "title" : "Union of FR Core ValueSet Patient identifier use INS And FR Core ValueSet Patient identifier use INS",
+  "status" : "active",
+  "date" : "2026-01-28T13:53:59+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "official"
+      },
+      {
+        "code" : "old"
+      }]
+    }]
+  }
+}

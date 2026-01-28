@@ -1,0 +1,31 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-20",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-20",
+  "name" : "UnionFRCoreCodeSystemLocationPositionRoomAndFRCoreCodeSystemLocationPositionRoom",
+  "title" : "Union of FR Core CodeSystem Location Position Room And FR Core CodeSystem Location Position Room",
+  "status" : "draft",
+  "date" : "2025-11-17T13:35:44+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "FNTR",
+    "display" : "Coté fenetre",
+    "definition" : "Coté fenetre"
+  },
+  {
+    "code" : "CLR",
+    "display" : "coté couloir",
+    "definition" : "coté couloir"
+  },
+  {
+    "code" : "ML",
+    "display" : "au mileu de la chambre",
+    "definition" : "au mileu de la chambre"
+  }]
+}
