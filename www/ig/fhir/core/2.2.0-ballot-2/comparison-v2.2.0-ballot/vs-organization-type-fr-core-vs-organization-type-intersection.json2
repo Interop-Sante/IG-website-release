@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "92e25eae-ac64-4ddf-b961-c65e26e23a41-102",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/92e25eae-ac64-4ddf-b961-c65e26e23a41-102",
+  "name" : "IntersectionOrganizationTypeAndFRCoreValueSetOrganizationType",
+  "title" : "Intersection of Organization type And FR Core ValueSet Organization type",
+  "status" : "draft",
+  "date" : "2026-01-29T09:42:49+01:00"
+}

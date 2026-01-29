@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "92e25eae-ac64-4ddf-b961-c65e26e23a41-150",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/92e25eae-ac64-4ddf-b961-c65e26e23a41-150",
+  "name" : "IntersectionFRCoreValueSetEncounterDischargeDispositionAndFRCoreValueSetEncounterDischargeDisposition",
+  "title" : "Intersection of FR Core ValueSet Encounter discharge disposition And FR Core ValueSet Encounter discharge disposition",
+  "status" : "active",
+  "date" : "2026-01-29T09:42:49+01:00"
+}

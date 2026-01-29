@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "92e25eae-ac64-4ddf-b961-c65e26e23a41-96",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/92e25eae-ac64-4ddf-b961-c65e26e23a41-96",
+  "name" : "IntersectionFRCoreValueSetEncounterIdentifierTypeAndFRCoreValueSetEncounterIdentifierType",
+  "title" : "Intersection of FR Core ValueSet Encounter identifier type And FR Core ValueSet Encounter identifier type",
+  "status" : "active",
+  "date" : "2026-01-29T09:42:49+01:00"
+}

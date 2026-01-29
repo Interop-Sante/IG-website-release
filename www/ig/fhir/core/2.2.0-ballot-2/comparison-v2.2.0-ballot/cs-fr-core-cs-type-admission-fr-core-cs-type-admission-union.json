@@ -1,0 +1,33 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "92e25eae-ac64-4ddf-b961-c65e26e23a41-35",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/92e25eae-ac64-4ddf-b961-c65e26e23a41-35",
+  "name" : "UnionFRCoreCodeSystemTypeAdmissionAndFRCoreCodeSystemTypeAdmission",
+  "title" : "Union of FR Core CodeSystem Type Admission And FR Core CodeSystem Type Admission",
+  "status" : "draft",
+  "date" : "2026-01-29T09:42:48+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
+  "concept" : [{
+    "code" : "RM",
+    "display" : "Rétrocession de médicament",
+    "definition" : "Rétrocession de médicament"
+  },
+  {
+    "code" : "IE",
+    "display" : "Prestation inter-établissements",
+    "definition" : "Prestation inter-établissements"
+  }]
+}

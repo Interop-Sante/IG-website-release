@@ -1,0 +1,107 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "92e25eae-ac64-4ddf-b961-c65e26e23a41-104",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/92e25eae-ac64-4ddf-b961-c65e26e23a41-104",
+  "name" : "UnionFRCoreValueSetOrganizationTypeAndFRCoreValueSetOrganizationType",
+  "title" : "Union of FR Core ValueSet Organization type And FR Core ValueSet Organization type",
+  "status" : "active",
+  "date" : "2026-01-29T09:42:49+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "GHT",
+        "display" : "Groupement hospitalier de territoire"
+      },
+      {
+        "code" : "LEGAL-ENTITY",
+        "display" : "Entité juridique"
+      },
+      {
+        "code" : "GEOGRAPHICAL-ENTITY",
+        "display" : "Entité géographique"
+      },
+      {
+        "code" : "GROUP",
+        "display" : "Groupe privé / hospitalier"
+      },
+      {
+        "code" : "HEBERGEMENT",
+        "display" : "Hébergement"
+      },
+      {
+        "code" : "SOIN",
+        "display" : "Soin"
+      },
+      {
+        "code" : "ADMINISTRATIF",
+        "display" : "Administration"
+      },
+      {
+        "code" : "MEDICAL",
+        "display" : "Médical"
+      },
+      {
+        "code" : "TECHNIQUE",
+        "display" : "Technique"
+      },
+      {
+        "code" : "MEDICOTEC",
+        "display" : "medico technique (radio, scanner …)"
+      },
+      {
+        "code" : "UF",
+        "display" : "Unité fonctionnelle"
+      },
+      {
+        "code" : "SERVICE",
+        "display" : "Service"
+      },
+      {
+        "code" : "UM",
+        "display" : "Unité médicale"
+      },
+      {
+        "code" : "UAC",
+        "display" : "Unité d'activité"
+      },
+      {
+        "code" : "POLE",
+        "display" : "Pole"
+      },
+      {
+        "code" : "CENTRE-RESP",
+        "display" : "Centre de responsabilité"
+      },
+      {
+        "code" : "CENTRE-ACTIVITE",
+        "display" : "Centre d'activité"
+      },
+      {
+        "code" : "STRUCT-INTERNE",
+        "display" : "Structure interne"
+      },
+      {
+        "code" : "SECTEUR",
+        "display" : "Secteur"
+      },
+      {
+        "code" : "DEPARTEMENT",
+        "display" : "Département"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "92e25eae-ac64-4ddf-b961-c65e26e23a41-146",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/92e25eae-ac64-4ddf-b961-c65e26e23a41-146",
+  "name" : "UnionHl7VSReAdmissionIndicatorAndHl7VSReAdmissionIndicator",
+  "title" : "Union of hl7VS-re-admissionIndicator And hl7VS-re-admissionIndicator",
+  "status" : "active",
+  "date" : "2026-01-29T09:42:49+01:00"
+}
