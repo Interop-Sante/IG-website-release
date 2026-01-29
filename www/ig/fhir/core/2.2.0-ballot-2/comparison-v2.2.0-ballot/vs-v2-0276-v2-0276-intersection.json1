@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "117bab80-6a66-493f-9260-82ab00331836-72",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/117bab80-6a66-493f-9260-82ab00331836-72",
-  "name" : "IntersectionHl7VSAppointmentReasonCodesAndHl7VSAppointmentReasonCodes",
-  "title" : "Intersection of hl7VS-appointmentReasonCodes And hl7VS-appointmentReasonCodes",
-  "status" : "active",
-  "date" : "2026-01-28T13:53:59+01:00"
-}

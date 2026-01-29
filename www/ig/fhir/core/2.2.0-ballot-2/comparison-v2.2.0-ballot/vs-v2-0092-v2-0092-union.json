@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "117bab80-6a66-493f-9260-82ab00331836-146",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/117bab80-6a66-493f-9260-82ab00331836-146",
-  "name" : "UnionHl7VSReAdmissionIndicatorAndHl7VSReAdmissionIndicator",
-  "title" : "Union of hl7VS-re-admissionIndicator And hl7VS-re-admissionIndicator",
-  "status" : "active",
-  "date" : "2026-01-28T13:53:59+01:00"
-}

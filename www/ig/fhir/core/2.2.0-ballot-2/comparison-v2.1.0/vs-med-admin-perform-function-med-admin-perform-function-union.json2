@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-185",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-185",
-  "name" : "UnionMedicationAdministration Performer Function CodesAndMedicationAdministration Performer Function Codes",
-  "title" : "Union of Medication administration  performer  function  codes And Medication administration  performer  function  codes",
-  "status" : "draft",
-  "date" : "2025-11-17T13:35:44+01:00"
-}

@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-207",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-207",
-  "name" : "IntersectionObservationCategoryCodesAndObservationCategoryCodes",
-  "title" : "Intersection of Observation Category Codes And Observation Category Codes",
-  "status" : "draft",
-  "date" : "2025-11-17T13:35:44+01:00"
-}

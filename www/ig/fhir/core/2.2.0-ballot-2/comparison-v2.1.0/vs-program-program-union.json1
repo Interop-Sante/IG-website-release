@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-155",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/98862b12-5fb6-45e1-a3a5-ba8ad4d37fb4-155",
-  "name" : "UnionProgramAndProgram",
-  "title" : "Union of Program And Program",
-  "status" : "draft",
-  "date" : "2025-11-17T13:35:44+01:00"
-}
