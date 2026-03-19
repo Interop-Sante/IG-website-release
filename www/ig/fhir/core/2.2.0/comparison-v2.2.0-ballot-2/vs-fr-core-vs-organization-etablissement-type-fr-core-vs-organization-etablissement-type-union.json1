@@ -1,0 +1,35 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-290",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-290",
+  "name" : "UnionFRCoreValueSetOrganizationEtablissementTypeAndFRCoreValueSetOrganizationEtablissementType",
+  "title" : "Union of FR Core ValueSet Organization Etablisement type And FR Core ValueSet Organization Etablisement type",
+  "status" : "active",
+  "date" : "2026-03-19T12:08:18+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "LEGAL-ENTITY",
+        "display" : "Entité légale"
+      },
+      {
+        "code" : "GEOGRAPHICAL-ENTITY",
+        "display" : "Entité géographique"
+      }]
+    }]
+  }
+}

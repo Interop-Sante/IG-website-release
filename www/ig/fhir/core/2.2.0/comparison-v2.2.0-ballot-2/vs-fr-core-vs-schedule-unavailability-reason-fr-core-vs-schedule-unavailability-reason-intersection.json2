@@ -1,0 +1,17 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-420",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-420",
+  "name" : "IntersectionFRCoreValueSetUnavailabilityReasonAndFRCoreValueSetUnavailabilityReason",
+  "title" : "Intersection of FR Core ValueSet Unavailability Reason And FR Core ValueSet Unavailability Reason",
+  "status" : "active",
+  "date" : "2026-03-19T12:08:18+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "busy-unavailable",
+        "display" : "Indisponibilité"
+      }]
+    }]
+  }
+}

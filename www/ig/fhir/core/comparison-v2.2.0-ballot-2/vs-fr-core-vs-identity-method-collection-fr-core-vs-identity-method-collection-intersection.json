@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9890eee0-f03e-48fe-80bd-90257ef96b1b-321",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9890eee0-f03e-48fe-80bd-90257ef96b1b-321",
+  "name" : "IntersectionFRCoreValueSetIdentityMethodCollectionAndFRCoreValueSetIdentityMethodCollection",
+  "title" : "Intersection of FR Core ValueSet Identity method collection And FR Core ValueSet Identity method collection",
+  "status" : "active",
+  "date" : "2026-03-19T13:12:16+01:00"
+}

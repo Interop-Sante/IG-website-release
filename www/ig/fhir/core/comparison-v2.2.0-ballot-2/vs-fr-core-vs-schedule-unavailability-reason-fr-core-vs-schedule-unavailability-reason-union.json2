@@ -1,0 +1,31 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9890eee0-f03e-48fe-80bd-90257ef96b1b-404",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9890eee0-f03e-48fe-80bd-90257ef96b1b-404",
+  "name" : "UnionFRCoreValueSetUnavailabilityReasonAndFRCoreValueSetUnavailabilityReason",
+  "title" : "Union of FR Core ValueSet Unavailability Reason And FR Core ValueSet Unavailability Reason",
+  "status" : "active",
+  "date" : "2026-03-19T13:12:16+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "busy-unavailable",
+        "display" : "Indisponibilité"
+      }]
+    }]
+  }
+}

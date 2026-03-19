@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-393",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-393",
+  "name" : "IntersectionFRCoreValueSetModeValidationIdentityINSAndFRCoreValueSetModeValidationIdentityINS",
+  "title" : "Intersection of FR Core ValueSet Mode validation identity INS And FR Core ValueSet Mode validation identity INS",
+  "status" : "active",
+  "date" : "2026-03-19T12:08:18+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "PA"
+      },
+      {
+        "code" : "CN"
+      },
+      {
+        "code" : "AN"
+      },
+      {
+        "code" : "LE"
+      }]
+    }]
+  }
+}

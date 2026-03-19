@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "9890eee0-f03e-48fe-80bd-90257ef96b1b-294",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/9890eee0-f03e-48fe-80bd-90257ef96b1b-294",
+  "name" : "IntersectionFRCoreValueSetEmailTypeAndFRCoreValueSetEmailType",
+  "title" : "Intersection of FR Core ValueSet Email type And FR Core ValueSet Email type",
+  "status" : "draft",
+  "date" : "2026-03-19T13:12:16+01:00"
+}

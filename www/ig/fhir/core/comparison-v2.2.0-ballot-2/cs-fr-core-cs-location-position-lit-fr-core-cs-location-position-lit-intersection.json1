@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "9890eee0-f03e-48fe-80bd-90257ef96b1b-33",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/9890eee0-f03e-48fe-80bd-90257ef96b1b-33",
+  "name" : "IntersectionFRCoreCodeSystemPositionLitAndFRCoreCodeSystemPositionLit",
+  "title" : "Intersection of FR Core CodeSystem Position du lit And FR Core CodeSystem Position du lit",
+  "status" : "active",
+  "date" : "2026-03-19T13:12:16+01:00",
+  "concept" : [{
+    "code" : "FNTR",
+    "display" : "Fenêtre"
+  },
+  {
+    "code" : "CLR",
+    "display" : "Couloir"
+  },
+  {
+    "code" : "ML",
+    "display" : "Milieu"
+  }]
+}

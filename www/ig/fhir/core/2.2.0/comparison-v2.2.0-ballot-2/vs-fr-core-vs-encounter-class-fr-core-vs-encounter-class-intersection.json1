@@ -1,0 +1,33 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-384",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-384",
+  "name" : "IntersectionFRCoreValueSetEncounterClassAndFRCoreValueSetEncounterClass",
+  "title" : "Intersection of FR Core ValueSet Encounter class And FR Core ValueSet Encounter class",
+  "status" : "active",
+  "date" : "2026-03-19T12:08:18+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "ACUTE",
+        "display" : "Inpatient acute"
+      },
+      {
+        "code" : "NONAC",
+        "display" : "Inpatient non acute"
+      },
+      {
+        "code" : "PRENC",
+        "display" : "Pre-admission"
+      },
+      {
+        "code" : "SS",
+        "display" : "Short stay"
+      },
+      {
+        "code" : "VR",
+        "display" : "Virtual"
+      }]
+    }]
+  }
+}

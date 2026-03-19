@@ -1,0 +1,22 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-141",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-141",
+  "name" : "IntersectionFRCoreValueSetPatientGenderAndFRCoreValueSetPatientGender",
+  "title" : "Intersection of FR Core ValueSet Patient gender And FR Core ValueSet Patient gender",
+  "status" : "active",
+  "date" : "2026-03-19T12:08:18+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "male"
+      },
+      {
+        "code" : "female"
+      },
+      {
+        "code" : "unknown"
+      }]
+    }]
+  }
+}

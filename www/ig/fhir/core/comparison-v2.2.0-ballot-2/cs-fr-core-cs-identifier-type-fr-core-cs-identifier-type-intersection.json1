@@ -1,0 +1,19 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "9890eee0-f03e-48fe-80bd-90257ef96b1b-24",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/9890eee0-f03e-48fe-80bd-90257ef96b1b-24",
+  "name" : "IntersectionFRCoreCodeSystemIdentifierTypeAndFRCoreCodeSystemIdentifierType",
+  "title" : "Intersection of FR Core CodeSystem Identifier Type And FR Core CodeSystem Identifier Type",
+  "status" : "draft",
+  "date" : "2026-03-19T13:12:16+01:00",
+  "concept" : [{
+    "code" : "VN",
+    "display" : "Visit Number",
+    "definition" : "Visit Number"
+  },
+  {
+    "code" : "MN",
+    "display" : "Movement Number",
+    "definition" : "Movement Number"
+  }]
+}
