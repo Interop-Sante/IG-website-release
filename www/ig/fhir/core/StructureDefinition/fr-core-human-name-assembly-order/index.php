@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.json2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.json1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.json');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.xml2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.xml1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.html');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.html');
 else 
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-human-name-assembly-order.xml');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-human-name-assembly-order.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

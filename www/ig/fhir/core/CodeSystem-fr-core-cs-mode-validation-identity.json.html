@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FR Core CodeSystem Mode Validation Identite - JSON Representation - Guide d&#39;implémentation FR Core v2.2.0</title>
+    <title>FR Core CodeSystem Mode Validation Identite - JSON Representation - Guide d&#39;implémentation Fr Core v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,7 +20,6 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
@@ -33,10 +32,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -44,11 +43,10 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15.127"}
-    h3,h4,h5,h6{--heading-prefix:"15.127"}</style>
+    <style type="text/css">h2{--heading-prefix:"5.112"}
+    h3,h4,h5,h6{--heading-prefix:"5.112"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
   <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
@@ -59,13 +57,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation Fr Core</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - trial-use
+            <span style="display:inline-block;">2.1.0 - trial-use
 
 
 
-  <span title="">FR</span>
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -95,31 +93,6 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="structure_intro.html">Introduction</a>
-      </li>
-      <li>
-        <a href="structure_entites.html">Entités</a>
-      </li>
-      <li>
-        <a href="structure_relations.html">Relations</a>
-      </li>
-      <li>
-        <a href="structure_contraintes.html">Contraintes</a>
-      </li>
-      <li>
-        <a href="structure_nomenclatures.html">Nomenclatures</a>
-      </li>
-      <li>
-        <a href="structure_ref_loi.html">Références</a>
-      </li>
-    </ul>
-  </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
   </li>
@@ -128,12 +101,6 @@
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
-  </li>
-  <li>
-    <a href="known_problems.html">Problématiques connues</a>
-  </li>
-  <li>
-    <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -147,13 +114,10 @@
         <a href="a_propos.html">A propos</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/">Catalogue des guides ANS</a>
       </li>
       <li>
         <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
@@ -195,7 +159,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.2.0: final-text) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -250,7 +214,7 @@
         
           Active
           
-            as of 2026-03-19
+            as of 2024-09-04
           
         
       </td>
@@ -266,26 +230,26 @@
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
+{
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">resourceType</a>" : "CodeSystem",
-  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.id">id</a>" : "fr-core-cs-mode-validation-identity",
-  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.meta">meta</a>" : {
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a>" : "fr-core-cs-mode-validation-identity",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
-      <a href="http://hl7.org/fhir/R4/shareablecodesystem.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.1"
+      <a href="http://hl7.org/fhir/R4/shareablecodesystem.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/resource.html#CodeSystem.language">language</a>" : "fr-FR",
-  "<a href="http://hl7.org/fhir/R4/domainresource.html#CodeSystem.text">text</a>" : {
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;fr-FR\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; lang=\&quot;fr-FR\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : CodeSystem fr-core-cs-mode-validation-identity&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fr-core-cs-mode-validation-identity\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfr-core-cs-mode-validation-identity\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Langue : fr-FR&lt;/p&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;http://hl7.org/fhir/R4/shareablecodesystem.html\&quot;&gt;Shareable CodeSystemversion : null4.0.1)&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Affichage&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Définition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AN&lt;a name=\&quot;fr-core-cs-mode-validation-identity-AN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extrait d'acte de naissance&lt;/td&gt;&lt;td&gt;Extrait d'acte de naissance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carnet de circulation&lt;/td&gt;&lt;td&gt;Carnet de circulation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CE&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte Européenne&lt;/td&gt;&lt;td&gt;Carte Européenne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CM&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte militaire&lt;/td&gt;&lt;td&gt;Carte militaire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CN&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte nationale d'identité&lt;/td&gt;&lt;td&gt;Carte nationale d'identité&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CS&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte de séjour&lt;/td&gt;&lt;td&gt;Carte de séjour&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LE&lt;a name=\&quot;fr-core-cs-mode-validation-identity-LE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Livret de famille&lt;/td&gt;&lt;td&gt;Livret de famille&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PA&lt;a name=\&quot;fr-core-cs-mode-validation-identity-PA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Passeport&lt;/td&gt;&lt;td&gt;Passeport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-PC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Permis de conduire&lt;/td&gt;&lt;td&gt;Permis de conduire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-TC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tiers de confiance&lt;/td&gt;&lt;td&gt;Tiers de confiance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;DC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-DC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Document de Circulation pour étranger mineur&lt;/td&gt;&lt;td&gt;Document de Circulation pour étranger mineur&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-AC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Acte de naissance + Carte vitale avec photo&lt;/td&gt;&lt;td&gt;Acte de naissance + Carte vitale avec photo&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;IE&lt;a name=\&quot;fr-core-cs-mode-validation-identity-IE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Identification électronique EIDAS&lt;/td&gt;&lt;td&gt;Identification électronique EIDAS&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem fr-core-cs-mode-validation-identity&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;fr-core-cs-mode-validation-identity\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcfr-core-cs-mode-validation-identity\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;fr-core-cs-mode-validation-identity-fr-FR\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;AN&lt;a name=\&quot;fr-core-cs-mode-validation-identity-AN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Extrait d'acte de naissance&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carnet de circulation&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CE&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte Européenne&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CM&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CM\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte militaire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CN&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CN\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte nationale d'identité&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;CS&lt;a name=\&quot;fr-core-cs-mode-validation-identity-CS\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Carte de séjour&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;LE&lt;a name=\&quot;fr-core-cs-mode-validation-identity-LE\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Livret de famille&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PA&lt;a name=\&quot;fr-core-cs-mode-validation-identity-PA\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Passeport&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;PC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-PC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Permis de conduire&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;TC&lt;a name=\&quot;fr-core-cs-mode-validation-identity-TC\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Tiers de confiance&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-mode-validation-identity",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.2.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "2.1.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "FRCoreCodeSystemModeValidationIdentite",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "FR Core CodeSystem Mode Validation Identite",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-03-19T12:11:47+01:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2024-09-04T10:06:33+02:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Interop'Santé",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -293,7 +257,7 @@
       "<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>" : [
         {
           "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a>" : "url",
-          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://interopsante.org"
+          "<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a>" : "http://interopsante.org/"
         }
       ]
     },
@@ -322,202 +286,47 @@
   ],
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a>" : true,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a>" : "complete",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 13,
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a>" : 10,
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AN",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Extrait d'acte de naissance",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Extrait d'acte de naissance",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Extrait d'acte de naissance"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Extrait d'acte de naissance"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CC",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carnet de circulation",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Carnet de circulation",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Carnet de circulation"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carnet de circulation"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CE",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte Européenne",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Carte Européenne",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Carte Européenne"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte Européenne"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CM",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte militaire",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Carte militaire",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Carte militaire"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte militaire"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CN",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte nationale d'identité",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Carte nationale d'identité",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Carte nationale d'identité"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte nationale d'identité"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "CS",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte de séjour",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Carte de séjour",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Carte de séjour"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Carte de séjour"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "LE",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Livret de famille",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Livret de famille",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Livret de famille"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Livret de famille"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PA",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Passeport",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Passeport",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Passeport"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Passeport"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "PC",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Permis de conduire",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Permis de conduire",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Permis de conduire"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Permis de conduire"
     },
     {
       "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "TC",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tiers de confiance",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Tiers de confiance",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Tiers de confiance"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "DC",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Document de Circulation pour étranger mineur",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Document de Circulation pour étranger mineur",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Document de Circulation pour étranger mineur"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "AC",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Acte de naissance + Carte vitale avec photo",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Acte de naissance + Carte vitale avec photo",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Acte de naissance + Carte vitale avec photo"
-        }
-      ]
-    },
-    {
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a>" : "IE",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Identification électronique EIDAS",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>" : "Identification électronique EIDAS",
-      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation">designation</a>" : [
-        {
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.language">language</a>" : "fr-FR",
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.use">use</a>" : {
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/hl7TermMaintInfra",
-            "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "preferredForLanguage"
-          },
-          "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.designation.value">value</a>" : "Identification électronique EIDAS"
-        }
-      ]
+      "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a>" : "Tiers de confiance"
     }
   ]
 }</code></pre>
@@ -566,7 +375,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 19, 2026 12:11+0100">2026-03-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 4, 2024 10:06+0200">2024-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

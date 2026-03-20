@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.json2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.json1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.json');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.xml2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.xml1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.html');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.html');
 else 
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/StructureDefinition-fr-core-healthcare-service.xml');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/StructureDefinition-fr-core-healthcare-service.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

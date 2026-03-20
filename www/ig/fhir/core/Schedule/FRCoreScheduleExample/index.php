@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.json2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.json1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.json');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.xml2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.xml1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.html');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.html');
 else 
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Schedule-FRCoreScheduleExample.xml');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Schedule-FRCoreScheduleExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

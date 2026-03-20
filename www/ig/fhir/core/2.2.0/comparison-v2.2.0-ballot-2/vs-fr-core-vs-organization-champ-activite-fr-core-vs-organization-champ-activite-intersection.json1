@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-267",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-267",
-  "name" : "IntersectionFRCoreValueSetOrganizationChampActiviteAndFRCoreValueSetOrganizationChampActivite",
-  "title" : "Intersection of FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF And FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF",
-  "status" : "active",
-  "date" : "2026-03-19T12:08:18+01:00"
-}

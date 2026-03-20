@@ -2,26 +2,25 @@
   "resourceType" : "ValueSet",
   "id" : "fr-core-vs-height-body-position",
   "meta" : {
-    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.1"]
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
   },
-  "language" : "fr-FR",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"fr-FR\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"fr-FR\"><p class=\"res-header-id\"><b>Narratif généré : EnsembleValeurs fr-core-vs-height-body-position</b></p><a name=\"fr-core-vs-height-body-position\"> </a><a name=\"hcfr-core-vs-height-body-position\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Langue : fr-FR</p><p style=\"margin-bottom: 0px\">Profil: <a href=\"http://hl7.org/fhir/R4/shareablevalueset.html\">Shareable ValueSetversion : null4.0.1)</a></p></div><p>Ce jeu de valeur (ValueSet) inclut les codes selon les règles suivantes :</p><ul><li>Inclut codes provenant de<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version est explicitement indiquée comme étant http://snomed.info/sct/900000000000207008/version/20260201\"> version &#x1F4CD;http://snomed.info/sct/900000000000207008/version/20260201</span> où concept  est-un 10904000</li><li>Inclut codes provenant de<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><span title=\"La version est explicitement indiquée comme étant http://snomed.info/sct/900000000000207008/version/20260201\"> version &#x1F4CD;http://snomed.info/sct/900000000000207008/version/20260201</span> où concept  est-un 102538003</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet fr-core-vs-height-body-position</b></p><a name=\"fr-core-vs-height-body-position\"> </a><a name=\"hcfr-core-vs-height-body-position\"> </a><a name=\"fr-core-vs-height-body-position-fr-FR\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 10904000 (Orthostatic body position)</li><li>Include codes from<a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a 102538003 (Recumbent body position)</li></ul></div>"
   },
   "url" : "https://hl7.fr/ig/fhir/core/ValueSet/fr-core-vs-height-body-position",
-  "version" : "2.2.0",
+  "version" : "2.1.0",
   "name" : "FRCoreValueSetHeightBodyPosition",
   "title" : "FR Core ValueSet BodyPosition",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-03-19T12:11:47+01:00",
+  "date" : "2024-09-04T10:06:33+02:00",
   "publisher" : "Interop'Santé",
   "contact" : [{
     "name" : "Interop'Santé",
     "telecom" : [{
       "system" : "url",
-      "value" : "http://interopsante.org"
+      "value" : "http://interopsante.org/"
     }]
   },
   {
@@ -43,7 +42,6 @@
   "compose" : {
     "include" : [{
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20260201",
       "filter" : [{
         "property" : "concept",
         "op" : "is-a",
@@ -52,7 +50,6 @@
     },
     {
       "system" : "http://snomed.info/sct",
-      "version" : "http://snomed.info/sct/900000000000207008/version/20260201",
       "filter" : [{
         "property" : "concept",
         "op" : "is-a",

@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "9890eee0-f03e-48fe-80bd-90257ef96b1b-300",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/9890eee0-f03e-48fe-80bd-90257ef96b1b-300",
-  "name" : "IntersectionFRCoreValueSetEncounterDischargeDispositionAndFRCoreValueSetEncounterDischargeDisposition",
-  "title" : "Intersection of FR Core ValueSet Encounter discharge disposition And FR Core ValueSet Encounter discharge disposition",
-  "status" : "active",
-  "date" : "2026-03-19T13:12:16+01:00"
-}

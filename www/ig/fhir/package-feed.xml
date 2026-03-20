@@ -4,24 +4,13 @@
         <description>Packages publiés par InteropSanté</description>
         <link>https://hl7.fr/ig/package-feed.xml</link>
         <generator>HL7, Inc FHIR Publication tooling</generator>
-        <lastBuildDate>Thu, 19 Mar 2026 12:06:34 +0100</lastBuildDate>
+        <lastBuildDate>Thu, 29 Jan 2026 09:40:58 +0100</lastBuildDate>
         <atom:link href="https://hl7.fr/ig/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Thu, 19 Mar 2026 12:06:34 +0100</pubDate>
+        <pubDate>Thu, 29 Jan 2026 09:40:58 +0100</pubDate>
         <language>en&gt;</language>
         <ttl>600</ttl>
           
         <item>
-      <title>hl7.fhir.fr.core#2.2.0</title>
-      <description>Guide d'implémentation Fr Core 2.2.0 - profils génériques à usage national</description>
-      <link>https://hl7.fr/ig/fhir/core/2.2.0/package.tgz</link>
-      <guid isPermaLink="true">https://hl7.fr/ig/fhir/core/2.2.0/package.tgz</guid>
-      <dc:creator>InteropSante</dc:creator>
-      <fhir:version>4.0.1</fhir:version>
-      <fhir:kind>IG</fhir:kind>
-      <pubDate>Thu, 19 Mar 2026 12:06:34 +0100</pubDate>
-      <fhir:details>Publication run at 19/03/2026 by root using Version 2.2.0 (Git# 1ba3945e1e66). Built 2026-03-17T22:39:52.182Z (36 hours old) source id Unknown (todo)</fhir:details>
-    </item>
-    <item>
       <title>hl7.fhir.fr.core#2.2.0-ballot-2</title>
       <description>Guide d'implémentation Fr Core 2.2.0-ballot-2 - profils génériques à usage national</description>
       <link>https://hl7.fr/ig/fhir/core/2.2.0-ballot-2/package.tgz</link>

@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.json2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.json1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.json');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.xml2');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.xml1');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.html');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.html');
 else 
-  Redirect('https://hl7.fr/ig/fhir/core/2.2.0/Observation-FRCoreObservationHeadCircumExample.xml');
+  Redirect('https://hl7.fr/ig/fhir/core/2.1.0/Observation-FRCoreObservationHeadCircumExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts Summary - Guide d&#39;implémentation FR Core v2.2.0</title>
+    <title>Artifacts Summary - Guide d&#39;implémentation Fr Core v2.1.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,7 +18,6 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
-  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
@@ -31,10 +30,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -42,11 +41,10 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"15"}
-    h3,h4,h5,h6{--heading-prefix:"15.0"}</style>
+    <style type="text/css">h2{--heading-prefix:"5"}
+    h3,h4,h5,h6{--heading-prefix:"5.0"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
-
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
   <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
@@ -57,13 +55,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation Fr Core</span>
             <br/>
-            <span style="display:inline-block;">2.2.0 - trial-use
+            <span style="display:inline-block;">2.1.0 - trial-use
 
 
 
-  <span title="">FR</span>
+  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
 
 
             </span>
@@ -93,31 +91,6 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
-  <li class="dropdown">
-    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
-      <b class="caret"></b>
-    </a>
-    <ul class="dropdown-menu">
-      <li>
-        <a href="structure_intro.html">Introduction</a>
-      </li>
-      <li>
-        <a href="structure_entites.html">Entités</a>
-      </li>
-      <li>
-        <a href="structure_relations.html">Relations</a>
-      </li>
-      <li>
-        <a href="structure_contraintes.html">Contraintes</a>
-      </li>
-      <li>
-        <a href="structure_nomenclatures.html">Nomenclatures</a>
-      </li>
-      <li>
-        <a href="structure_ref_loi.html">Références</a>
-      </li>
-    </ul>
-  </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
   </li>
@@ -126,12 +99,6 @@
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
-  </li>
-  <li>
-    <a href="known_problems.html">Problématiques connues</a>
-  </li>
-  <li>
-    <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -145,13 +112,10 @@
         <a href="a_propos.html">A propos</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
       </li>
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
-      </li>
-      <li>
-        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/">Catalogue des guides ANS</a>
       </li>
       <li>
         <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
@@ -174,7 +138,7 @@
 
           <span style="float:right;">
 
-            <a href="structure_ref_loi.html">&lt;prev</a> | 
+            <a href="a_propos.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -200,7 +164,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.2.0: final-text) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts Summary</h2>
   
   
@@ -269,9 +233,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-core-healthcare-service">FR Core Healthcare Service Profile</a>
             </td>
             <td>
-<p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).</p>
+<p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. 
 
-<p>Profil de la ressource HealthcareService pour l’usage en France. Ce profil ajoute l’élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror).</p>
+Profil de la ressource HealthcareService pour l’usage en France. Ce profil ajoute l’élément serviceTypeDuration de façon à associer le service avec la durée du service.</p>
 </td>
          </tr>
          <tr>
@@ -280,9 +244,9 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
                   title="StructureDefinition/fr-core-location">FR Core Location Profile</a>
             </td>
             <td>
-<p>Ressource Location adaptée au contexte français. 
-Cette ressource est utilisée pour représenter un lieu physique, telle qu’une salle d’examen, 
-un lit d’hôpital ou une chambre d’hôpital.</p>
+<p>French profile of Location.</p>
+
+<p>Profil français de la ressource Location</p>
 </td>
          </tr>
          <tr>
@@ -291,9 +255,7 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-medication-administration-inhaled-oxygen">FR Core Medication Administration Inhaled Oxygen Profile</a>
             </td>
             <td>
-<p>Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.</p>
-
-<p>Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d’oxygène via une ventilation mécanique.</p>
+<p>Profil se basant sur la ressource Medication Administration pour indiquer l’oxygène inhalé.</p>
 </td>
          </tr>
          <tr>
@@ -302,9 +264,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-bp">FR Core Observation Blood Pressure Profile</a>
             </td>
             <td>
-<p>French profile for blood pressure.</p>
+<p>French profile for blood pressure.
 
-<p>Profil français de la pression artérielle. Profil basé sur le profil bp d’HL7</p>
+Profil français de la pression artérielle. Profil basé sur le profil bp d’HL7</p>
 </td>
          </tr>
          <tr>
@@ -313,9 +275,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-bmi">FR Core Observation Bmi Profile</a>
             </td>
             <td>
-<p>French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].</p>
+<p>French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio].
 
-<p>Profil français de l’indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>
+Profil français de l’indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>
 </td>
          </tr>
          <tr>
@@ -324,9 +286,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-body-height">FR Core Observation Body Height Profile</a>
             </td>
             <td>
-<p>French profile for body height.</p>
+<p>French profile for body height.
 
-<p>Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d’HL7</p>
+Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d’HL7</p>
 </td>
          </tr>
          <tr>
@@ -335,9 +297,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-body-temperature">FR Core Observation Body Temperature Profile</a>
             </td>
             <td>
-<p>French profile for body temperature.</p>
+<p>French profil body temperature.
 
-<p>Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7</p>
+Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d’HL7</p>
 </td>
          </tr>
          <tr>
@@ -346,9 +308,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-body-weight">FR Core Observation Body Weight Profile</a>
             </td>
             <td>
-<p>French profile of body weight based on the FHIR profil BodyWeightMeas.</p>
+<p>French profil Body weight based on the FHIR profil BodyWeightMeas.
 
-<p>Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>
+Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>
 </td>
          </tr>
          <tr>
@@ -357,9 +319,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-head-circum">FR Core Observation Head Circum Profile</a>
             </td>
             <td>
-<p>French profile for Occipital-frontal circumference.</p>
+<p>HL7 Vital Signs Head Occipital-frontal circumference profil.
 
-<p>Profil HL7 Vital Signs Circonférence de la tête</p>
+Profil HL7 Vital Signs Circonférence de la tête</p>
 </td>
          </tr>
          <tr>
@@ -368,9 +330,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-heartrate">FR Core Observation Heart Rate Profile</a>
             </td>
             <td>
-<p>French profile for the FHIR Vital Sign Heart Rate Profile.</p>
+<p>French profiling of the FHIR Vital Sign Heart Rate Profile.
 
-<p>Profilage français du profil Vital Signs Heart rate</p>
+Profilage français du profil Vital Signs Heart rate</p>
 </td>
          </tr>
          <tr>
@@ -379,9 +341,7 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-saturation-oxygen">FR Core Observation Oxygen Saturation Profile</a>
             </td>
             <td>
-<p>French profile for Oxygen saturation in Arterial blood.</p>
-
-<p>Profil de la saturation en oxygène du sang artériel.</p>
+<p>Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel</p>
 </td>
          </tr>
          <tr>
@@ -390,18 +350,18 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-observation-resp-rate">FR Core Observation Respiratory Rate Profile</a>
             </td>
             <td>
-<p>French profile for the ObservationResprate profile for France.</p>
+<p>Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.
 
-<p>Profil de la fréquence resporatoire pour l’usage en France</p>
+Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l’usage en France</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-etablissement.html"
-                  title="StructureDefinition/fr-core-organization-etablissement">FR Core Organization Etablissement Profile</a>
+               <a href="StructureDefinition-fr-core-organization-pole.html"
+                  title="StructureDefinition/fr-core-organization-pole">FR Core Organization Pole Profile</a>
             </td>
             <td>
-<p>Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.</p>
+<p>FR Core Organization Pole Profile</p>
 </td>
          </tr>
          <tr>
@@ -410,7 +370,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-organization">FR Core Organization Profile</a>
             </td>
             <td>
-<p>Profil de la ressource Organization pour la France. Il s’agit du profil de base pour les organisations en France.</p>
+<p>Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions. 
+
+Profil de la ressource Organization pour la France. Ce profil spécifie les types d’identifiants pour l’organisation en France, et ajoute des extensions françaises.</p>
 </td>
          </tr>
          <tr>
@@ -419,7 +381,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-organization-uac">FR Core Organization UAC Profile</a>
             </td>
             <td>
-<p>Ce profil permet de représenter les unités d’activité (UAC, parfois appelé PAC). L’UAC (Unité d’Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.</p>
+<p>This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.
+
+Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement</p>
 </td>
          </tr>
          <tr>
@@ -428,7 +392,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-organization-uf">FR Core Organization UF Profile</a>
             </td>
             <td>
-<p>Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.</p>
+<p>This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.
+
+Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement</p>
 </td>
          </tr>
          <tr>
@@ -437,9 +403,7 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-patient-ins">FR Core Patient INS Profile</a>
             </td>
             <td>
-<p>FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.</p>
-
-<p>Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d’une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>
+<p>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d’Identité Nationale de Santé (INS).</p>
 </td>
          </tr>
          <tr>
@@ -448,9 +412,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-patient">FR Core Patient Profile</a>
             </td>
             <td>
-<p>Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.</p>
+<p>Profile of the Patient resource for France. This profile specifies the patient’s identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.
 
-<p>Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)</p>
+Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)</p>
 </td>
          </tr>
          <tr>
@@ -468,9 +432,14 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-practitioner-role">FR Core Practitioner Role</a>
             </td>
             <td>
-<p>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</p>
-
-<p>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</td>
+      <td>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d’exercice) du PS dans le contexte d’une organisation.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -490,9 +459,9 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-schedule">FR Core Schedule Profile</a>
             </td>
             <td>
-<p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule</p>
+<p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule
 
-<p>Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l’élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.</p>
+Profil de la ressource Schedule pour l’usage en France. Ce profil redéfinit l’élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.</p>
 </td>
          </tr>
          <tr>
@@ -520,8 +489,14 @@ un lit d’hôpital ou une chambre d’hôpital.</p>
                   title="StructureDefinition/fr-core-address">FR Core Address Profile</a>
             </td>
             <td>
-<p>Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.
-French profile of Address datatype</p>
+<table>
+  <tbody>
+    <tr>
+      <td>French profile of Address datatype</td>
+      <td>Profil du type de données Address pour la France, ce profil ajoute le code insee à l’adresse. Une cohérence entre code commune (COG), code postal et nom de commune doit être assurée.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -530,8 +505,7 @@ French profile of Address datatype</p>
                   title="StructureDefinition/fr-core-contact-point">FR Core Contact Point Profile</a>
             </td>
             <td>
-<p>Profil du type de données ContactPoint pour la France, ce profil ajoute le type d’e-mail tel que la bal mss.
-French profile of ContactPoint datatype</p>
+
 </td>
          </tr>
          <tr>
@@ -540,8 +514,14 @@ French profile of ContactPoint datatype</p>
                   title="StructureDefinition/fr-core-human-name">FR Core Human Name Profile</a>
             </td>
             <td>
-<p>Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix
-.French profile of datatype HumanName with constraints on prefix and suffix</p>
+<table>
+  <tbody>
+    <tr>
+      <td>French profile of datatype HumanName with constraints on prefix and suffix</td>
+      <td>Profilage du type de données HumanName pour prise en compte de la civilté au niveau de l’élément prefix et du titre au niveau de l’élément suffix</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
       </tbody>
@@ -558,8 +538,14 @@ French profile of ContactPoint datatype</p>
                   title="StructureDefinition/fr-core-address-insee-code">FR Core Address Insee Code Extension</a>
             </td>
             <td>
-<p>Extension d’ajout du code insee (5 chiffres) à l’adresse postale.
-This extension adds the insee code (5 digits) to the address</p>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension adds the insee code (5 digits) to the address</td>
+      <td>Ajout du code insee (5 chiffres) à l’adresse postale</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -568,8 +554,14 @@ This extension adds the insee code (5 digits) to the address</p>
                   title="StructureDefinition/fr-core-appointment-operator">FR Core Appointment Operator Extension</a>
             </td>
             <td>
-<p>Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV). 
-This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment</p>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension adds the element appointmentOperator to the Appointment resource (operator of creation/update/cancel of the appointment</td>
+      <td>Cette extension ajoute l’élément appointmentOperator à la ressource Appointment (opérateur de création/modification/annulation du RDV)</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -587,8 +579,14 @@ This extension adds the element appointmentOperator to the Appointment resource 
                   title="StructureDefinition/fr-core-comment">FR Core Comment Extension</a>
             </td>
             <td>
-<p>Ajout d’un commentaire sur un dataElement d’une ressource.
-Add a comment on a dataElement  of a resource</p>
+<table>
+  <tbody>
+    <tr>
+      <td>add a comment on a dataElement  of a resource</td>
+      <td>Ajout d’un commentaire sur un dataElement d’une ressource</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -597,8 +595,16 @@ Add a comment on a dataElement  of a resource</p>
                   title="StructureDefinition/fr-core-contact-point-email-type">FR Core Contact Point Email Type Extension</a>
             </td>
             <td>
-<p>Extension permettant d’indiquer le type d’adresse email d’un ContactPoint.
- This extension allows to specify the type of mail used to contact the person.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Extension on the ContactPoint datatype. This extension allows to specify the type of mail used to contact the person (MSSsanté</td>
+      <td>Apicrypt</td>
+      <td>OSM</td>
+      <td>Autre).</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -612,20 +618,18 @@ Add a comment on a dataElement  of a resource</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-location-position-lit.html"
-                  title="StructureDefinition/fr-core-location-position-lit">FR Core Location Extension - Position du lit</a>
+               <a href="StructureDefinition-fr-core-location-position-room.html"
+                  title="StructureDefinition/fr-core-location-position-room">FR Core Location Part Of Position Room Extension</a>
             </td>
             <td>
-<p>Position du lit dans la chambre</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-location-type-chambre.html"
-                  title="StructureDefinition/fr-core-location-type-chambre">FR Core Location Extension - Type de chambre</a>
-            </td>
-            <td>
-<p>Type de chambre</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Position of the bed in the bedroom</td>
+      <td>Position du lit dans la chambre</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -634,8 +638,14 @@ Add a comment on a dataElement  of a resource</p>
                   title="StructureDefinition/fr-core-lunar-date">FR Core Lunar Date Extension</a>
             </td>
             <td>
-<p>Date de naissance approximative du patient.
-Approximate birthdate of the patient</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Approximate birthdate of the patient</td>
+      <td>Date de naissance approximative du patient.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -653,8 +663,14 @@ Approximate birthdate of the patient</p>
                   title="StructureDefinition/fr-core-observation-body-position-ext">FR Core Observation Body Position Ext Extension</a>
             </td>
             <td>
-<p>Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.
-CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation</p>
+<table>
+  <tbody>
+    <tr>
+      <td>CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profile. This extension is used to specify the body position during the respiratory rate observation</td>
+      <td>Extension CIMI (upgardée en FHIR R4) définie dans le contexte du profil Respiratory rate. Cette extension permet de préciser la position du corps lors de la mesure de la fréquence respiratoire.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -663,8 +679,14 @@ CIMI extension (in FHIR R4) defined in the context of the Respiratory Rate profi
                   title="StructureDefinition/fr-core-observation-height-body-position">FR Core Observation Height Body Position Extension</a>
             </td>
             <td>
-<p>Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing).
-Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Extension on the FrObservationBodyHeight to specify the position of the body during the measure of the height.</td>
+      <td>Extension utilisée par le profil FrObservationBodyHeight permettant de préciser la position du corps durant la mesure de la taille (le jeu de valeur associé est limité aux 2 valeurs lying et standing)</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -673,125 +695,167 @@ Extension on the FrObservationBodyHeight to specify the position of the body dur
                   title="StructureDefinition/fr-core-observation-level-of-exertion">FR Core Observation Level Of Exertion Extension</a>
             </td>
             <td>
-<p>Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort).
-French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure</p>
+<table>
+  <tbody>
+    <tr>
+      <td>French extension defined in the context of the Vital Signs Resprate profile. This extension is used to define the level of exertion ( at rest, during exertion, post exertion) during the respiratory rate measure</td>
+      <td>Extension française définie dans le contexte du profil Vital Signs Resprate. Cette extension permet de préciser le niveau d’exercice du patient durant la mesure de la fréquence respiratoire (au repos, pendant l’effort, après l’effort)</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-sae-categorie.html"
-                  title="StructureDefinition/fr-core-organization-sae-categorie">FR Core Organization Extension - Catetgorie SAE</a>
+               <a href="StructureDefinition-fr-core-organization-activity-field.html"
+                  title="StructureDefinition/fr-core-organization-activity-field">FR Core Organization Activity Field Extension</a>
             </td>
             <td>
-<p>Categorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement)</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Activity field of an organization</td>
+      <td>Champ d’activité d’une UF</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-champ-activite.html"
-                  title="StructureDefinition/fr-core-organization-champ-activite">FR Core Organization Extension - Champ d'activité</a>
+               <a href="StructureDefinition-fr-core-organization-activity-type.html"
+                  title="StructureDefinition/fr-core-organization-activity-type">FR Core Organization Activity Type Extension</a>
             </td>
             <td>
-<p>Champ d’activité d’une UF</p>
+<table>
+  <tbody>
+    <tr>
+      <td>An organization activity type</td>
+      <td>type d’activité d’une UF</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-demandeuse-acte.html"
-                  title="StructureDefinition/fr-core-organization-demandeuse-acte">FR Core Organization Extension - Demandeuse d'acte</a>
+               <a href="StructureDefinition-fr-core-organization-analysis-section.html"
+                  title="StructureDefinition/fr-core-organization-analysis-section">FR Core Organization Analysis Section Extension</a>
             </td>
             <td>
-<p>Indicateur permettant de définir si une UF peut demander des actes</p>
+<table>
+  <tbody>
+    <tr>
+      <td>an oraganization analysis section</td>
+      <td>Section d’analyse d’une UF</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-discipline-prestation.html"
-                  title="StructureDefinition/fr-core-organization-discipline-prestation">FR Core Organization Extension - Discipline Prestation</a>
+               <a href="StructureDefinition-fr-core-organization-applicant-act.html"
+                  title="StructureDefinition/fr-core-organization-applicant-act">FR Core Organization Applicant Act Extension</a>
             </td>
             <td>
-<p>Discipline de prestation d’une UAC</p>
+<table>
+  <tbody>
+    <tr>
+      <td>An organization that asks soma acts</td>
+      <td>UF demandeuse d’actes</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-discipline-equipement.html"
-                  title="StructureDefinition/fr-core-organization-discipline-equipement">FR Core Organization Extension - Discipline d'équipement</a>
+               <a href="StructureDefinition-fr-core-organization-budget-letter.html"
+                  title="StructureDefinition/fr-core-organization-budget-letter">FR Core Organization Budget Letter Extension</a>
             </td>
             <td>
-<p>Discipline d’équipement</p>
+<table>
+  <tbody>
+    <tr>
+      <td>An organization budget letter</td>
+      <td>Lettre budgétaire de l’UF</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-executante-acte.html"
-                  title="StructureDefinition/fr-core-organization-executante-acte">FR Core Organization Extension - Exécutante d'acte</a>
+               <a href="StructureDefinition-fr-core-organization-description.html"
+                  title="StructureDefinition/fr-core-organization-description">FR Core Organization Description Extension</a>
             </td>
             <td>
-<p>Indicateur permettant de définir si une UF peut exécuter des actes</p>
+
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-uf-indicateur.html"
-                  title="StructureDefinition/fr-core-organization-uf-indicateur">FR Core Organization Extension - Indicateur d'une unité fonctionnelle</a>
+               <a href="StructureDefinition-fr-core-organization-executant.html"
+                  title="StructureDefinition/fr-core-organization-executant">FR Core Organization Executant Extension</a>
             </td>
             <td>
-<p>Indicateur permettant de définir si une UF est d’hébergement, médicale, administrative ou de magasin.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>An executant act organization</td>
+      <td>Une UF exécutante d’actes</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-place-hebergement-theorique.html"
-                  title="StructureDefinition/fr-core-organization-place-hebergement-theorique">FR Core Organization Extension - Nombre total de places d'hébergement théoriques</a>
+               <a href="StructureDefinition-fr-core-organization-external.html"
+                  title="StructureDefinition/fr-core-organization-external">FR Core Organization External Extension</a>
             </td>
             <td>
-<p>Nombre total de places d’hébergement théoriques</p>
+<table>
+  <tbody>
+    <tr>
+      <td>External ward of the facility</td>
+      <td>UF externe à l’établissement</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-tarif.html"
-                  title="StructureDefinition/fr-core-organization-tarif">FR Core Organization Extension - Tarif Soin</a>
+               <a href="StructureDefinition-fr-core-organization-field.html"
+                  title="StructureDefinition/fr-core-organization-field">FR Core Organization Field Extension</a>
             </td>
             <td>
-<p>Tarif de soin associé à l’unité d’activité (UAC, parfois appelé PAC). Le PAC ou l’UAC est le niveau élémentaire de recueil des activités en vue de la facturation. Il est lié à une discipline de prestation et à un tarif (lié à la discipline de prestation). Le PAC ne sert qu’à la facturation du séjour. Il permet d’associer des tarifs de soins différents pour la prise en charge d’un patient.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Equipment field</td>
+      <td>Discipline d’équipement</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-type-activite.html"
-                  title="StructureDefinition/fr-core-organization-type-activite">FR Core Organization Extension - Type d'activité</a>
+               <a href="StructureDefinition-fr-core-organization-prestation-discipline.html"
+                  title="StructureDefinition/fr-core-organization-prestation-discipline">FR Core Organization Prestation Discipline Extension</a>
             </td>
             <td>
-<p>Type d’activité d’une UF</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-uf-externe.html"
-                  title="StructureDefinition/fr-core-organization-uf-externe">FR Core Organization Extension - UF Externe</a>
-            </td>
-            <td>
-<p>Indicateur permettant de définir si une UF est externe à l’établissement</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-member.html"
-                  title="StructureDefinition/fr-core-organization-member">FR Core Organization Extension - quelles sont les entités qui font partie de l'organisation</a>
-            </td>
-            <td>
-<p>Extension permettant de définir des membres d’une organisation. Les membres sont des organisations filles de la ressources. C’est la relation inverse de partOf.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="StructureDefinition-fr-core-organization-raison-sociale.html"
-                  title="StructureDefinition/fr-core-organization-raison-sociale">FR Core Organization Raison Sociale Extension</a>
-            </td>
-            <td>
-<p>Raison Sociale l’organisation</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Discipline prestation of the organization</td>
+      <td>Prestation de discipline UAC for France</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -800,7 +864,23 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-organization-short-name">FR Core Organization Short Name Extension</a>
             </td>
             <td>
-<p>Libellé court de l’organisation</p>
+
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.html"
+                  title="StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space">FR Core Organization Total Number Of Theorical Accomodation Space Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Total number of theorical accomodation space</td>
+      <td>Nombre total de places d’hébergement théoriques</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -818,7 +898,7 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-patient-birthdate-update-indicator">FR Core Patient Birthdate Update Indicator Extension</a>
             </td>
             <td>
-<p>Indicateur booléen de mise à jour de la date de naissance</p>
+
 </td>
          </tr>
          <tr>
@@ -827,8 +907,14 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-patient-contact-identifier">FR Core Patient Contact Identifier Extension</a>
             </td>
             <td>
-<p>Identifiant de contact dans la ressource Patient
-This extension carries the contact identifier in the patient resource</p>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension carries the contact identifier in the patient resource</td>
+      <td>Ajout d’un identifiant de contact dans la ressource Patient</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -837,8 +923,14 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-patient-death-place">FR Core Patient Death Place Extension</a>
             </td>
             <td>
-<p>Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).
-Carries the death place of the patient</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Carries the death place of the patient</td>
+      <td>Précise le lieu de décès du patient (hôpital, sur la voie publique, au domicile, etc.).</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -847,8 +939,24 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-identity-reliability">FR Core Patient Ident Reliability Extension</a>
             </td>
             <td>
-<p>Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) accompagné de la méthode de collection.
-Reliabilility of the patient’s identity</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Reliabilility of the patient’s identity</td>
+      <td>Précision sur le degré de fiabilité de l’identité du patient (si provisoire, validé… avec la justification : quelle type de pièce d’identité ?) avec la méthode de collection</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-practitioner-profession.html"
+                  title="StructureDefinition/fr-core-practitioner-profession">FR Core Practitioner Profession Extension</a>
+            </td>
+            <td>
+<p>This extension adds the element “profession” to the FHIR Practitioner resource.
+ASIP valueSet http://esante.gouv.fr/sites/NOS/TABS/TRE_G15-ProfessionSante.tabs</p>
 </td>
          </tr>
          <tr>
@@ -857,7 +965,8 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-practitioner-specialty">FR Core Practitioner Specialty Extension</a>
             </td>
             <td>
-<p>This extension adds the element “specialty” to the FHIR Practitioner resource.</p>
+<p>This extension adds the element “specialty” to the FHIR Practitioner resource.
+http://esante.gouv.fr/sites/NOS/TABS/TRE_R38-SpecialiteOrdinale.tabs</p>
 </td>
          </tr>
          <tr>
@@ -866,8 +975,16 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-schedule-availability-time">FR Core Schedule availability time Extension</a>
             </td>
             <td>
-<p>Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule, l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.
-This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule, the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period</p>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension specifies a list of periods of time (recurrent or not). It specifies the type of Schedule (busy-unavailable</td>
+      <td>free), the identifier of the period, the period with a possibly recurrence rule, the date of creation of the period and the priority of this period</td>
+      <td>Cette extension permet de préciser une liste de période de temps (récurrentes ou non). Elle spécifie le type de Schedule (busy-unavailable</td>
+      <td>free), l’identifiant de la période, la période (récurrente ou non avec une règle de récurrence dans le cas d’une période récurrente, la date de création de la période et une priorité.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -876,8 +993,39 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
                   title="StructureDefinition/fr-core-service-type-duration">FR Core Service Type Duration Extension</a>
             </td>
             <td>
-<p>Cette extension française permet d’associer le type de service avec la durée de ce service.
-This French extension allows to associate the type of service with the duration of this service</p>
+<table>
+  <tbody>
+    <tr>
+      <td>This French extension allows to associate the type of service with the duration of this service</td>
+      <td>Cette extension française permet d’associer le type de service avec la durée de ce service.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-slot-date.html"
+                  title="StructureDefinition/fr-core-slot-date">FR Core Slot Date Extension</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>This extension adds a slotDate element to the Slot resource specifying the date that the Slot has been created/updated/canceled.</td>
+      <td>Cette extension ajoute un élément SlotDate à la ressource Slot précisant la date à laquelle ce créneau a été crée/modifié/annulé.</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="StructureDefinition-fr-core-use-period.html"
+                  title="StructureDefinition/fr-core-use-period">FR Core Use Period Extension</a>
+            </td>
+            <td>
+
 </td>
          </tr>
       </tbody>
@@ -888,52 +1036,6 @@ French extension defined in the context of the Vital Signs Resprate profile. Thi
 <table class="grid">
       <col style="width:20%"/>
       <tbody>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-bp-meas-body-location.html"
-                  title="ValueSet/fr-core-vs-bp-meas-body-location">Blood Pressure Measurement Body Location Precoordinated value set</a>
-            </td>
-            <td>
-<p>SELECT SNOMED CT code system values that describe the location on the body where the blood pressure was measured.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-bp-meas-method.html"
-                  title="ValueSet/fr-core-vs-bp-meas-method">Blood Pressure Measurement Method value set</a>
-            </td>
-            <td>
-<p>SELECT SNOMED CT code system values that describe how a blood pressure was measured.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-body-position.html"
-                  title="ValueSet/fr-core-vs-body-position">Body Position value set</a>
-            </td>
-            <td>
-<p>SELECT SNOMED CT code system values the position in which the individual was in during a measurement.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vsbody-temp-meas-body-location.html"
-                  title="ValueSet/fr-core-vsbody-temp-meas-body-location">Body Temperature Measurement Body Location value set</a>
-            </td>
-            <td>
-<p>SELECT SNOMED CT code system values that describe where on the body the temperature was measured.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-availability-time-rule.html"
-                  title="ValueSet/fr-core-vs-availability-time-rule">FR Core ValueSet Availability Schedule</a>
-            </td>
-            <td>
-<p>Spécifications des périodes récurrentes.
-Specification of the recurrent periods</p>
-</td>
-         </tr>
          <tr>
             <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-bp-method.html"
@@ -963,20 +1065,29 @@ Specification of the recurrent periods</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-categorie-sae-etablissement.html"
-                  title="ValueSet/fr-core-vs-categorie-sae-etablissement">FR Core ValueSet Categorie SAE Etablissement</a>
+               <a href="ValueSet-fr-core-vs-civility.html"
+                  title="ValueSet/fr-core-vs-civility">FR Core ValueSet Civility</a>
             </td>
             <td>
-<p>Catérorie d’établissement de santé, suivant les valeurs de la SAE (Structure d’Activité d’Etablissement) 2024</p>
+<p>The Patient or person civility</p>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.html"
-                  title="ValueSet/fr-core-vs-oragnization-code-tarif-tnjp">FR Core ValueSet Codes Tarifs - nomenclature TNJP</a>
+               <a href="ValueSet-fr-core-vs-civility-rass.html"
+                  title="ValueSet/fr-core-vs-civility-rass">FR Core ValueSet Civility RASS</a>
             </td>
             <td>
-<p>Valeurs permettant de coder les codes TNJP (Tarification nationale journalière des prestations).</p>
+<p>Civilités des personnes physiques du RASS</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-civility-exercice-rass.html"
+                  title="ValueSet/fr-core-vs-civility-exercice-rass">FR Core ValueSet Civility exercice RASS</a>
+            </td>
+            <td>
+<p>Civilités d’exercice d’un professionnel du RASS</p>
 </td>
          </tr>
          <tr>
@@ -1012,8 +1123,14 @@ Specification of the recurrent periods</p>
                   title="ValueSet/fr-core-vs-encounter-discharge-disposition">FR Core ValueSet Encounter discharge disposition</a>
             </td>
             <td>
-<p>Circonstances de sortie de l’hôpital.
-This value set defines a set of codes that can be used to where the patient left the hospital</p>
+<table>
+  <tbody>
+    <tr>
+      <td>This value set defines a set of codes that can be used to where the patient left the hospital</td>
+      <td>Circonstances de sortie de l’hôpital.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1031,8 +1148,14 @@ This value set defines a set of codes that can be used to where the patient left
                   title="ValueSet/fr-core-vs-encounter-type">FR Core ValueSet Encounter type</a>
             </td>
             <td>
-<p>Jeu de valeurs des types de rencontre.
-A coded type for an encounter</p>
+<table>
+  <tbody>
+    <tr>
+      <td>A coded type for an encounter</td>
+      <td>Jeu de valeurs des types de rencontre.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1064,20 +1187,50 @@ A coded type for an encounter</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-location-position-lit.html"
-                  title="ValueSet/fr-core-vs-location-position-lit">FR Core ValueSet Location Position Lit</a>
+               <a href="ValueSet-fr-core-vs-location-identifier-type.html"
+                  title="ValueSet/fr-core-vs-location-identifier-type">FR Core ValueSet Location identifier type</a>
             </td>
             <td>
-<p>Position du lit dans la chambre</p>
+<table>
+  <tbody>
+    <tr>
+      <td>A coded type for a location</td>
+      <td>Jeu de valeurs des types d’identifiant de lieu.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-location-type-chambre.html"
-                  title="ValueSet/fr-core-vs-location-type-chambre">FR Core ValueSet Location Type Chambre</a>
+               <a href="ValueSet-fr-core-vs-location-physical-type.html"
+                  title="ValueSet/fr-core-vs-location-physical-type">FR Core ValueSet Location physical type</a>
             </td>
             <td>
-<p>Type de chambre</p>
+<table>
+  <tbody>
+    <tr>
+      <td>French location physical type</td>
+      <td>Types de lieux physiques pour la France</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-location-position-room.html"
+                  title="ValueSet/fr-core-vs-location-position-room">FR Core ValueSet Location position room</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>position room</td>
+      <td>position physique de l’emplacement du lit</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1086,17 +1239,14 @@ A coded type for an encounter</p>
                   title="ValueSet/fr-core-vs-location-type">FR Core ValueSet Location type</a>
             </td>
             <td>
-<p>Jeu de valeurs du rôle joué par un lieu.
-A role for a location</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-marital-status.html"
-                  title="ValueSet/fr-core-vs-marital-status">FR Core ValueSet Marital Status ValueSet</a>
-            </td>
-            <td>
-<p>Patient Marital Status</p>
+<table>
+  <tbody>
+    <tr>
+      <td>A role for a location</td>
+      <td>Jeu de valeurs du rôle joué par un lieu</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1110,65 +1260,34 @@ A coded type for an encounter</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-mode-validation-identity-ins.html"
-                  title="ValueSet/fr-core-vs-mode-validation-identity-ins">FR Core ValueSet Mode validation identity INS</a>
+               <a href="ValueSet-fr-core-vs-organization-uf-activity-field.html"
+                  title="ValueSet/fr-core-vs-organization-uf-activity-field">FR Core ValueSet Organization UF activity field</a>
             </td>
             <td>
-<p>The validation mode of the identity authorized for INS</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Organization UF activity field</td>
+      <td>Champ d’activité des structures UF</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-champ-activite.html"
-                  title="ValueSet/fr-core-vs-organization-champ-activite">FR Core ValueSet Organization Champ Activite - Champ d'activité clinique de l'organisation type UF</a>
+               <a href="ValueSet-fr-core-vs-organization-activity-field.html"
+                  title="ValueSet/fr-core-vs-organization-activity-field">FR Core ValueSet Organization activity field</a>
             </td>
             <td>
-<p>Champ d’activité d’une organisation type UF.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-discipline-equipement.html"
-                  title="ValueSet/fr-core-vs-organization-discipline-equipement">FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE</a>
-            </td>
-            <td>
-<p>Valeurs permettant de coder les disciplines d’équipement.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-discipline-prestation.html"
-                  title="ValueSet/fr-core-vs-discipline-prestation">FR Core ValueSet Organization Discipline de prestation - nomenclature SAE</a>
-            </td>
-            <td>
-<p>Valeurs permettant de coder les disciplines de prestation.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-etablissement-type.html"
-                  title="ValueSet/fr-core-vs-organization-etablissement-type">FR Core ValueSet Organization Etablisement type</a>
-            </td>
-            <td>
-<p>Types d’organisation représentant des établissements.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-oragnization-type-activite.html"
-                  title="ValueSet/fr-core-vs-oragnization-type-activite">FR Core ValueSet Organization Type Activité - nomenclature SAE</a>
-            </td>
-            <td>
-<p>Valeurs permettant de coder les types d’activité.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-organization-uf-indicateur.html"
-                  title="ValueSet/fr-core-vs-organization-uf-indicateur">FR Core ValueSet Organization UF Indicateur</a>
-            </td>
-            <td>
-<p>Indicateur d’une unité fonctionnelle.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>The activity field of the organization</td>
+      <td>Secteur d’activité de l’organisation.</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1186,7 +1305,14 @@ A coded type for an encounter</p>
                   title="ValueSet/fr-core-vs-organization-type">FR Core ValueSet Organization type</a>
             </td>
             <td>
-<p>Types de structures</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Organization types</td>
+      <td>Types de structures</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1200,12 +1326,36 @@ A coded type for an encounter</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-patient-gender.html"
-                  title="ValueSet/fr-core-vs-patient-gender">FR Core ValueSet Patient gender</a>
+               <a href="ValueSet-fr-core-vs-marital-status.html"
+                  title="ValueSet/fr-core-vs-marital-status">FR Core ValueSet Patient gender INS ValueSet</a>
             </td>
             <td>
-<p>Genres autorisés dans le cadre du genre administratif du Patient en France. Pour partager des genres suplémentaires (ex. biologique), cf gender harmony implementation guide.
-Permitted genders for French Patient gender.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Patient Gender for INS : male</td>
+      <td>female</td>
+      <td>unknown</td>
+    </tr>
+  </tbody>
+</table>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-patient-gender-INS.html"
+                  title="ValueSet/fr-core-vs-patient-gender-INS">FR Core ValueSet Patient gender INS ValueSet</a>
+            </td>
+            <td>
+<table>
+  <tbody>
+    <tr>
+      <td>Patient Gender for INS : male</td>
+      <td>female</td>
+      <td>unknown</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1219,31 +1369,20 @@ Permitted genders for French Patient gender.</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-patient-identifier-use-ins.html"
-                  title="ValueSet/fr-core-vs-patient-identifier-use-ins">FR Core ValueSet Patient identifier use INS</a>
-            </td>
-            <td>
-<p>Use autorisés pour l’identifiant national de santé.
-Authorized use for INS identifier.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-patient-identifier-use-pi.html"
-                  title="ValueSet/fr-core-vs-patient-identifier-use-pi">FR Core ValueSet Patient identifier use PI</a>
-            </td>
-            <td>
-<p>Use autorisés pour les identifiants patients attribués par les hôpitaux (IPP).
-Authorized use for PI identifier.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="ValueSet-fr-core-vs-practitioner-identifier-type.html"
                   title="ValueSet/fr-core-vs-practitioner-identifier-type">FR Core ValueSet Practitioner identifier type</a>
             </td>
             <td>
 <p>A coded type for an identifier that can be used to determine which identifier to use for a specific purpose (providers identification)</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
+               <a href="ValueSet-fr-core-vs-practitioner-qualification.html"
+                  title="ValueSet/fr-core-vs-practitioner-qualification">FR Core ValueSet Practitioner qualification</a>
+            </td>
+            <td>
+<p>A code classifying the qualification of the provider</p>
 </td>
          </tr>
          <tr>
@@ -1270,8 +1409,14 @@ Authorized use for PI identifier.</p>
                   title="ValueSet/fr-core-vs-schedule-type">FR Core ValueSet Schedule type</a>
             </td>
             <td>
-<p>Jeu de valeurs des types de Schedule.
-A Schedule type</p>
+<table>
+  <tbody>
+    <tr>
+      <td>A Schedule type</td>
+      <td>Jeu de valeurs des types de Schedule</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
@@ -1302,47 +1447,34 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-heartrate-body-location.html"
-                  title="ValueSet/fr-core-vs-heartrate-body-location">Heart Rate Measurement Body Location Precoordinated value set</a>
+               <a href="ValueSet-fr-core-vs-availability-time-day.html"
+                  title="ValueSet/fr-core-vs-availability-time-day">First day of the workweek | Premier jour de la semaine de travail</a>
             </td>
             <td>
-<p>SELECT SNOMED CT code system values that describe where on the body the heart rate was measured.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Specifies the day on which the workweek starts. Valid values are MO, TU, WE, TH, FR, SA and SU.</td>
+      <td>Spécifie les jours à partir desquels la semaine de travail commence</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-heartrate-measurement-method.html"
-                  title="ValueSet/fr-core-vs-heartrate-measurement-method">Heart Rate Measurement Method value set</a>
+               <a href="ValueSet-fr-core-vs-availability-time-rule.html"
+                  title="ValueSet/fr-core-vs-availability-time-rule">Recurrent caracteristic of the Schedule | Caractère récurrent du Schedule</a>
             </td>
             <td>
-<p>SELECT SNOMED CT code system values that describe how the heart rate was measured.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-height-meas-method.html"
-                  title="ValueSet/fr-core-vs-height-meas-method">Height Length Measurement Method value set</a>
-            </td>
-            <td>
-<p>SELECT SNOMED CT code system values that describe how the height/length was measured.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-spo2-body-location.html"
-                  title="ValueSet/fr-core-vs-spo2-body-location">Oxygen Saturation Body Location value set</a>
-            </td>
-            <td>
-<p>Select SNOMED CT codes. An set of codes for the location at which oxygen saturation was assessed.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="ValueSet-fr-core-vs-respiratory-rate-meas-method.html"
-                  title="ValueSet/fr-core-vs-respiratory-rate-meas-method">Respiratory Rate Measurement Method value set</a>
-            </td>
-            <td>
-<p>SELECT SNOMED CT code system values that describe how the respiratory rate was measured.</p>
+<table>
+  <tbody>
+    <tr>
+      <td>Specification of the recurrent periods</td>
+      <td>Spécifications des périodes récurrentes</td>
+    </tr>
+  </tbody>
+</table>
 </td>
          </tr>
       </tbody>
@@ -1355,15 +1487,6 @@ A Schedule type</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-champ-activite.html"
-                  title="CodeSystem/fr-core-cs-champ-activite">FR Core CodeSystem Champ Activite - Codes du champ d'activité</a>
-            </td>
-            <td>
-<p>Champ d’activité clinique de l’organisation type UF, tel que cité dans les fiches pratiques de comptabilité analytique hospitalière, de la DGOS.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-circonstances-sortie.html"
                   title="CodeSystem/fr-core-cs-circonstances-sortie">FR Core CodeSystem Circonstances Sortie</a>
             </td>
@@ -1373,38 +1496,11 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-code-tarif-tnjp.html"
-                  title="CodeSystem/fr-core-cs-code-tarif-tnjp">FR Core CodeSystem Codes Tarifs - nomenclature TNJP</a>
-            </td>
-            <td>
-<p>La nomenclature des codes Tarif - Tarifs Nationaux Journaliers des Prestations</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-contact-relationship.html"
                   title="CodeSystem/fr-core-cs-contact-relationship">FR Core CodeSystem Contact Relationship</a>
             </td>
             <td>
-<p>Relationship type</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-discipline-equipement.html"
-                  title="CodeSystem/fr-core-cs-discipline-equipement">FR Core CodeSystem Discipline d'Equipement - nomenclature SAE</a>
-            </td>
-            <td>
-<p>La nomenclature de disciplines d’équipement est utilisée pour ventiler l’activité et le personnel entre les différentes disciplines de la section hôpital (MCO, PSY, HAD, SMR et SLD) et la discipline ‘administration, services hôteliers et techniques’. La nomenclature des disciplines d’équipement s’applique aux unités fonctionnelles et aux sections issues du fichier de structure des établissements. Les disciplines sociales, médico-sociales et de formation n’apparaissent pas, car elles ne font pas partie du champ de la SAE.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-discipline-prestation.html"
-                  title="CodeSystem/fr-core-cs-discipline-prestation">FR Core CodeSystem Discipline de prestation - nomenclature SAE</a>
-            </td>
-            <td>
-<p>La nomenclature des discipline de prestation.</p>
+<p>Relationship</p>
 </td>
          </tr>
          <tr>
@@ -1413,7 +1509,7 @@ A Schedule type</p>
                   title="CodeSystem/fr-core-cs-fiabilite-identite">FR Core CodeSystem Fiabilité Identité</a>
             </td>
             <td>
-<p>French Identity reliabilty codes</p>
+<p>This code system includes all the French Identity reliabilty codes (InteropSanté).</p>
 </td>
          </tr>
          <tr>
@@ -1445,6 +1541,15 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
+               <a href="CodeSystem-fr-core-cs-location-position-room.html"
+                  title="CodeSystem/fr-core-cs-location-position-room">FR Core CodeSystem Location Position Room</a>
+            </td>
+            <td>
+<p>Location position room</p>
+</td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-location-type.html"
                   title="CodeSystem/fr-core-cs-location-type">FR Core CodeSystem Location Type</a>
             </td>
@@ -1458,7 +1563,7 @@ A Schedule type</p>
                   title="CodeSystem/fr-core-cs-marital-status">FR Core CodeSystem Marital Status</a>
             </td>
             <td>
-<p>Marital status</p>
+<p>Identifier type</p>
 </td>
          </tr>
          <tr>
@@ -1481,24 +1586,6 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-type-organisation.html"
-                  title="CodeSystem/fr-core-cs-type-organisation">FR Core CodeSystem Organization Type</a>
-            </td>
-            <td>
-<p>Organization type</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-location-position-lit.html"
-                  title="CodeSystem/fr-core-cs-location-position-lit">FR Core CodeSystem Position du lit</a>
-            </td>
-            <td>
-<p>Position du lit dans la chambre</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
                <a href="CodeSystem-fr-core-cs-schedule-type.html"
                   title="CodeSystem/fr-core-cs-schedule-type">FR Core CodeSystem Schedule Type</a>
             </td>
@@ -1517,29 +1604,11 @@ A Schedule type</p>
          </tr>
          <tr>
             <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-location-type-chambre.html"
-                  title="CodeSystem/fr-core-cs-location-type-chambre">FR Core CodeSystem Type Chambre</a>
+               <a href="CodeSystem-fr-core-cs-type-organisation.html"
+                  title="CodeSystem/fr-core-cs-type-organisation">FR Core CodeSystem Types d'Organisations</a>
             </td>
             <td>
-<p>Type de chambre</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-type-activite.html"
-                  title="CodeSystem/fr-core-cs-type-activite">FR Core CodeSystem Type d'activité - nomenclature SAE</a>
-            </td>
-            <td>
-<p>La nomenclature des types d’activité de la terminologie SAE (Statistique Annuelle des Etablissements de santé) maintenue par la DREES.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="CodeSystem-fr-core-cs-uf-indicateur.html"
-                  title="CodeSystem/fr-core-cs-uf-indicateur">FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle</a>
-            </td>
-            <td>
-<p>Système de codage permettant de définir les indicateurs d’une unité fonctionnelle.</p>
+<p>This is an example code system that includes all the InteropSanté Organizations types codes.</p>
 </td>
          </tr>
          <tr>
@@ -1588,280 +1657,74 @@ A Schedule type</p>
       <tbody>
          <tr>
             <td style="column-width:30%">
+               <a href="Patient-ExampleFRCorePatient001.html"
+                  title="Patient/ExampleFRCorePatient001">ExampleFRCorePatient001</a>
+            </td>
+         </tr>
+         <tr>
+            <td style="column-width:30%">
                <a href="Appointment-FRCoreAppointmentExample.html"
                   title="Appointment/FRCoreAppointmentExample">FRCoreAppointmentExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Appointment pour décrire un état de rendez-vous médical</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Encounter-FRCoreEncounterExample.html"
                   title="Encounter/FRCoreEncounterExample">FRCoreEncounterExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Appointment pour décrire une rencontre dans un cadre médical</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="HealthcareService-svc-cardiologie-1.html"
-                  title="HealthcareService/svc-cardiologie-1">FRCoreHealthcareServiceExample</a>
-            </td>
-            <td>
-<p>Exemple de ressource HealthcareService pour décrire le service de cardiologie de l’hôpital X</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-loc-radiologie-z.html" title="Location/loc-radiologie-z">FRCoreLocationExample</a>
-            </td>
-            <td>
-<p>Exemple de ressource Location pour décrire la localisation du centre de radiologie de l’hôpital Z</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBMIExample.html"
                   title="Observation/FRCoreObservationBMIExample">FRCoreObservationBMIExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation pour décrire un indice de masse corporelle (IMC)</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBPExample.html"
                   title="Observation/FRCoreObservationBPExample">FRCoreObservationBPExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation Pression artérielle</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBodyHeightExample.html"
                   title="Observation/FRCoreObservationBodyHeightExample">FRCoreObservationBodyHeightExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation pour décrire la taille du patient</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBodyTemperatureExample.html"
                   title="Observation/FRCoreObservationBodyTemperatureExample">FRCoreObservationBodyTemperatureExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation pour décrire la température du patient</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationBodyWeightExample.html"
                   title="Observation/FRCoreObservationBodyWeightExample">FRCoreObservationBodyWeightExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation pour décrire le poids du patient</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationHeadCircumExample.html"
                   title="Observation/FRCoreObservationHeadCircumExample">FRCoreObservationHeadCircumExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation pour décrire le périmètre cranien d’un patient</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Observation-FRCoreObservationHeartRateExample.html"
                   title="Observation/FRCoreObservationHeartRateExample">FRCoreObservationHeartRateExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Observation pour décrire la fréquence cardiaque d’un patient</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-FRCoreOrganizationExample.html"
-                  title="Organization/FRCoreOrganizationExample">FRCoreOrganizationExample</a>
-            </td>
-            <td>
-<p>Exemple de ressource Organization pour décrire un hôpital</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Patient-FRCorePatientExample.html"
-                  title="Patient/FRCorePatientExample">FRCorePatientExample</a>
-            </td>
-            <td>
-<p>Exemple de ressource Patient (cas d’usage INS)</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Practitioner-FRCorePractitionerExample.html"
-                  title="Practitioner/FRCorePractitionerExample">FRCorePractitionerExample</a>
-            </td>
-            <td>
-<p>Exemple de ressource Practitioner pour décrire un practicien, ses diplômes et son inscription à l’ordre.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="PractitionerRole-FRCorePractitionerRoleExample.html"
-                  title="PractitionerRole/FRCorePractitionerRoleExample">FRCorePractitionerRoleExample</a>
-            </td>
-            <td>
-<p>Exemple de ressource PractitionerRole pour décrire le rôle d’un practitien (situation d’exercice)</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Schedule-FRCoreScheduleExample.html"
                   title="Schedule/FRCoreScheduleExample">FRCoreScheduleExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Schedule pour décrire un agenda.</p>
-</td>
          </tr>
          <tr>
             <td style="column-width:30%">
                <a href="Slot-FRCoreSlotExample.html" title="Slot/FRCoreSlotExample">FRCoreSlotExample</a>
             </td>
-            <td>
-<p>Exemple de ressource Slot.</p>
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-dept-11003-endocrino.html"
-                  title="Organization/hopitaltest-dept-11003-endocrino">hopitaltest-dept-11003-endocrino</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-eg-4-members.html"
-                  title="Organization/hopitaltest-eg-4-members">hopitaltest-eg-4-members</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-ej-350005179.html"
-                  title="Organization/hopitaltest-ej-350005179">hopitaltest-ej-350005179</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-hopitaltest-endocrino-ch04.html"
-                  title="Location/hopitaltest-endocrino-ch04">hopitaltest-endocrino-ch04</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-hopitaltest-endocrino-ch04-litF.html"
-                  title="Location/hopitaltest-endocrino-ch04-litF">hopitaltest-endocrino-ch04-litF</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-pole-1150-med-spe.html"
-                  title="Organization/hopitaltest-pole-1150-med-spe">hopitaltest-pole-1150-med-spe</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Location-hopitaltest-salle-examen-01.html"
-                  title="Location/hopitaltest-salle-examen-01">hopitaltest-salle-examen-01</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-service-11006-endocrino-diabo.html"
-                  title="Organization/hopitaltest-service-11006-endocrino-diabo">hopitaltest-service-11006-endocrino-diabo</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-service-11007-dietetique.html"
-                  title="Organization/hopitaltest-service-11007-dietetique">hopitaltest-service-11007-dietetique</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-uac-4420-uac-01.html"
-                  title="Organization/hopitaltest-uac-4420-uac-01">hopitaltest-uac-4420-uac-01</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-uac-4420-uac-02.html"
-                  title="Organization/hopitaltest-uac-4420-uac-02">hopitaltest-uac-4420-uac-02</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-uf-4420-dialyse.html"
-                  title="Organization/hopitaltest-uf-4420-dialyse">hopitaltest-uf-4420-dialyse</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-uf-4701-endocrino-diab.html"
-                  title="Organization/hopitaltest-uf-4701-endocrino-diab">hopitaltest-uf-4701-endocrino-diab</a>
-            </td>
-            <td>
-
-</td>
-         </tr>
-         <tr>
-            <td style="column-width:30%">
-               <a href="Organization-hopitaltest-uf-4705-nutrition.html"
-                  title="Organization/hopitaltest-uf-4705-nutrition">hopitaltest-uf-4705-nutrition</a>
-            </td>
-            <td>
-
-</td>
          </tr>
       </tbody>
    </table>
@@ -1887,7 +1750,7 @@ A Schedule type</p>
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="structure_ref_loi.html">&lt;prev</a>
+                <a href="a_propos.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -1905,7 +1768,7 @@ A Schedule type</p>
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Mar 19, 2026 12:11+0100">2026-03-19</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 4, 2024 10:06+0200">2024-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

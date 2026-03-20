@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-155",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-155",
-  "name" : "UnionHl7VSBedStatusAndHl7VSBedStatus",
-  "title" : "Union of hl7VS-bedStatus And hl7VS-bedStatus",
-  "status" : "active",
-  "date" : "2026-03-19T12:08:18+01:00"
-}

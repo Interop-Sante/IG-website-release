@@ -1,9 +1,0 @@
-{
-  "resourceType" : "ValueSet",
-  "id" : "2e38a4d6-da4d-49b4-b450-2f46684be551-156",
-  "url" : "http://hl7.org/fhir/comparison/ValueSet/2e38a4d6-da4d-49b4-b450-2f46684be551-156",
-  "name" : "IntersectionHl7VSBedStatusAndHl7VSBedStatus",
-  "title" : "Intersection of hl7VS-bedStatus And hl7VS-bedStatus",
-  "status" : "active",
-  "date" : "2026-03-19T12:08:18+01:00"
-}

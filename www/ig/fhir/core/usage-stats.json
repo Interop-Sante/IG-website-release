@@ -1,6 +1,6 @@
 {
   "package": "hl7.fhir.fr.core",
-  "version": "2.2.0",
+  "version": "2.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "FR",
   "extensions": [
@@ -158,15 +158,8 @@
       ]
     },
     {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit",
-      "title": "FR Core Location Extension - Position du lit",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre",
-      "title": "FR Core Location Extension - Type de chambre",
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room",
+      "title": "FR Core Location Part Of Position Room Extension",
       "types": [
         "Coding"
       ]
@@ -200,166 +193,80 @@
       ]
     },
     {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite",
-      "title": "FR Core Organization Extension - Champ d\u0027activité",
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field",
+      "title": "FR Core Organization Activity Field Extension",
       "types": [
         "Coding"
       ]
     },
     {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte",
-      "title": "FR Core Organization Extension - Demandeuse d\u0027acte",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement",
-      "title": "FR Core Organization Extension - Discipline d\u0027équipement",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation",
-      "title": "FR Core Organization Extension - Discipline Prestation",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte",
-      "title": "FR Core Organization Extension - Exécutante d\u0027acte",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member",
-      "title": "FR Core Organization Extension - quelles sont les entités qui font partie de l\u0027organisation",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "Reference"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique",
-      "title": "FR Core Organization Extension - Nombre total de places d\u0027hébergement théoriques",
-      "types": [
-        "integer"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale",
-      "title": "FR Core Organization Raison Sociale Extension",
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type",
+      "title": "FR Core Organization Activity Type Extension",
       "types": [
         "string"
       ]
     },
     {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie",
-      "title": "FR Core Organization Extension - Catetgorie SAE",
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-analysis-section",
+      "title": "FR Core Organization Analysis Section Extension",
       "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "CodeableConcept"
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act",
+      "title": "FR Core Organization Applicant Act Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter",
+      "title": "FR Core Organization Budget Letter Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description",
+      "title": "FR Core Organization Description Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executant",
+      "title": "FR Core Organization Executant Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-external",
+      "title": "FR Core Organization External Extension",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-field",
+      "title": "FR Core Organization Field Extension",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space",
+      "title": "FR Core Organization Total Number Of Theorical Accomodation Space Extension",
+      "types": [
+        "integer"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-prestation-discipline",
+      "title": "FR Core Organization Prestation Discipline Extension",
+      "types": [
+        "string"
       ]
     },
     {
@@ -367,84 +274,6 @@
       "title": "FR Core Organization Short Name Extension",
       "types": [
         "string"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif",
-      "title": "FR Core Organization Extension - Tarif Soin",
-      "types": [
-        "Coding"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite",
-      "title": "FR Core Organization Extension - Type d\u0027activité",
-      "types": [
-        "CodeableConcept"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe",
-      "title": "FR Core Organization Extension - UF Externe",
-      "types": [
-        "boolean"
-      ]
-    },
-    {
-      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur",
-      "title": "FR Core Organization Extension - Indicateur d\u0027une unité fonctionnelle",
-      "types": [
-        "base64Binary",
-        "boolean",
-        "canonical",
-        "code",
-        "date",
-        "dateTime",
-        "decimal",
-        "id",
-        "instant",
-        "integer",
-        "markdown",
-        "oid",
-        "positiveInt",
-        "string",
-        "time",
-        "unsignedInt",
-        "uri",
-        "url",
-        "uuid",
-        "Address",
-        "Age",
-        "Annotation",
-        "Attachment",
-        "CodeableConcept",
-        "Coding",
-        "ContactPoint",
-        "Count",
-        "Distance",
-        "Duration",
-        "HumanName",
-        "Identifier",
-        "Money",
-        "Period",
-        "Quantity",
-        "Range",
-        "Ratio",
-        "Reference",
-        "SampledData",
-        "Signature",
-        "Timing",
-        "ContactDetail",
-        "Contributor",
-        "DataRequirement",
-        "Expression",
-        "ParameterDefinition",
-        "RelatedArtifact",
-        "TriggerDefinition",
-        "UsageContext",
-        "Dosage",
-        "Meta",
-        "CodeableConcept"
       ]
     },
     {
@@ -472,7 +301,7 @@
       "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place",
       "title": "FR Core Patient Death Place Extension",
       "types": [
-        "Address"
+        "string"
       ]
     },
     {
@@ -531,6 +360,13 @@
         "UsageContext",
         "Dosage",
         "Meta"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-profession",
+      "title": "FR Core Practitioner Profession Extension",
+      "types": [
+        "Coding"
       ]
     },
     {
@@ -730,6 +566,20 @@
         "Dosage",
         "Meta"
       ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-slot-date",
+      "title": "FR Core Slot Date Extension",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period",
+      "title": "FR Core Use Period Extension",
+      "types": [
+        "Period"
+      ]
     }
   ],
   "profiles": {
@@ -807,8 +657,8 @@
         "title": "FR Core Organization Profile"
       },
       {
-        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-etablissement",
-        "title": "FR Core Organization Etablissement Profile"
+        "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-pole",
+        "title": "FR Core Organization Pole Profile"
       },
       {
         "url": "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uac",
@@ -861,9 +711,6 @@
     ]
   },
   "usage": {
-    "http://hl7.org/fhir/5.0/StructureDefinition/extension-Organization.description": [
-      "Organization"
-    ],
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
       "StructureDefinition.snapshot.element.constraint"
     ],
@@ -884,23 +731,13 @@
     "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
       "StructureDefinition.snapshot.element"
     ],
-    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order|5.2.0": [
-      "HumanName",
-      "Practitioner.name"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/note|5.2.0": [
-      "Organization"
+    "http://hl7.org/fhir/StructureDefinition/humanname-assembly-order": [
+      "HumanName"
     ],
     "http://hl7.org/fhir/StructureDefinition/organization-period": [
       "Organization"
     ],
-    "http://hl7.org/fhir/StructureDefinition/organization-period|5.2.0": [
-      "Organization"
-    ],
     "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
-      "Patient"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace|5.2.0": [
       "Patient"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
@@ -927,18 +764,16 @@
     "http://hl7.org/fhir/StructureDefinition/valueset-warning": [
       "ValueSet"
     ],
-    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo|5.2.0": [
+    "http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo": [
       "Observation"
-    ],
-    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
-      "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
       "ImplementationGuide.definition"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
-      "ImplementationGuide.definition.page.page"
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
       "ImplementationGuide.definition"
@@ -949,168 +784,98 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
-    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
-      "StructureDefinition.snapshot"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-address-insee-code": [
       "Address",
       "Patient.extension.value[x]"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator": [
       "Appointment"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-appointment-operator|2.2.0": [
-      "Appointment"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-comment": [
       "Patient.contact"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type": [
-      "Practitioner.telecom"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-contact-point-email-type|2.2.0": [
       "ContactPoint"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date": [
       "Encounter"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-estimated-discharge-date|2.2.0": [
-      "Encounter"
-    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-identity-reliability|2.2.0": [
-      "Patient"
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-room": [
+      "Location.partOf"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit": [
-      "Location"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-position-lit|2.2.0": [
-      "Location"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-location-type-chambre|2.2.0": [
-      "Location"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-position-ext": [
       "Observation"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-height-body-position": [
       "Observation"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-level-of-exertion": [
       "Observation"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-field": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-champ-activite|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-activity-type": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-analysis-section": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-demandeuse-acte|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-applicant-act": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-budget-letter": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-equipement|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-description": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executant": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-discipline-prestation|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-external": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-field": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-executante-acte|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-member|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-place-hebergement-theorique|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-raison-sociale|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-sae-categorie|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-number-of-theorical-accomadation-space": [
       "Organization"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name": [
       "Organization"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-short-name|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-tarif|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-type-activite|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-externe|2.2.0": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur": [
-      "Organization"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-organization-uf-indicateur|2.2.0": [
-      "Organization"
-    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name": [
       "Patient.name"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birth-list-given-name|2.2.0": [
-      "Patient.name"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-birthdate-update-indicator": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-contact-identifier": [
       "Patient.contact"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-death-place": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-patient-nationality": [
       "Patient"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty|2.2.0": [
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-practitioner-specialty": [
       "Practitioner"
     ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time": [
       "Schedule"
     ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-schedule-availability-time|2.2.0": [
-      "Schedule"
-    ],
     "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration": [
-      "HealthcareService",
-      "Schedule"
-    ],
-    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-service-type-duration|2.2.0": [
       "HealthcareService",
       "PractitionerRole",
       "Schedule"
+    ],
+    "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-use-period": [
+      "Location"
     ]
   }
 }
