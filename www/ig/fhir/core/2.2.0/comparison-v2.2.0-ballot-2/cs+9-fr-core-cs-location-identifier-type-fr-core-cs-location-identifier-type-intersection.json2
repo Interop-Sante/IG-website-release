@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "64639099-3308-479d-b93c-5f7f817c4842-27",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/64639099-3308-479d-b93c-5f7f817c4842-27",
+  "name" : "IntersectionFRCoreCodeSystemLocationIdentifierTypeAndFRCoreCodeSystemLocationIdentifierType",
+  "title" : "Intersection of FR Core CodeSystem Location Identifier Type And FR Core CodeSystem Location Identifier Type",
+  "status" : "draft",
+  "date" : "2026-03-25T18:04:48+01:00",
+  "concept" : [{
+    "code" : "INTRN",
+    "display" : "Identifiant interne",
+    "definition" : "Identifiant interne"
+  },
+  {
+    "code" : "EXTRN",
+    "display" : "Identifiant externe",
+    "definition" : "Identifiant externe"
+  },
+  {
+    "code" : "GLBL",
+    "display" : "Identifiant global",
+    "definition" : "Identifiant global"
+  },
+  {
+    "code" : "IDNST",
+    "display" : "Identification nationale de structure définie par l'ANS dans le CI-SIS",
+    "definition" : "Identification nationale de structure définie par l'ANS dans le CI-SIS"
+  }]
+}

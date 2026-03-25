@@ -1,0 +1,37 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "0a6eb046-0550-4612-9ec7-cc3171c2bf73-63",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/0a6eb046-0550-4612-9ec7-cc3171c2bf73-63",
+  "name" : "IntersectionFRCoreCodeSystemUFIndicateurAndFRCoreCodeSystemUFIndicateur",
+  "title" : "Intersection of FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle And FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
+  "status" : "draft",
+  "date" : "2026-03-25T18:10:05+01:00",
+  "concept" : [{
+    "code" : "HEB",
+    "display" : "Hébergement"
+  },
+  {
+    "code" : "SOIN",
+    "display" : "Soin"
+  },
+  {
+    "code" : "ADMIN",
+    "display" : "Administrative"
+  },
+  {
+    "code" : "MED",
+    "display" : "Médicale"
+  },
+  {
+    "code" : "TECH",
+    "display" : "Technique"
+  },
+  {
+    "code" : "MEDICOTECH",
+    "display" : "medico technique (radio, scanner, ...)"
+  },
+  {
+    "code" : "MAG",
+    "display" : "Magasin"
+  }]
+}

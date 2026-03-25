@@ -1,0 +1,29 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "64639099-3308-479d-b93c-5f7f817c4842-36",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/64639099-3308-479d-b93c-5f7f817c4842-36",
+  "name" : "IntersectionFRCoreCodeSystemTypeChambreAndFRCoreCodeSystemTypeChambre",
+  "title" : "Intersection of FR Core CodeSystem Type Chambre And FR Core CodeSystem Type Chambre",
+  "status" : "active",
+  "date" : "2026-03-25T18:04:48+01:00",
+  "concept" : [{
+    "code" : "STD",
+    "display" : "Standard"
+  },
+  {
+    "code" : "PRSN_NGTV",
+    "display" : "Pression négative"
+  },
+  {
+    "code" : "PRSN_PSTV",
+    "display" : "Pression positive"
+  },
+  {
+    "code" : "CRCRL",
+    "display" : "Carcéral"
+  },
+  {
+    "code" : "CPTN",
+    "display" : "Capitonné"
+  }]
+}

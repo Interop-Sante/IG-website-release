@@ -1,0 +1,21 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a6eb046-0550-4612-9ec7-cc3171c2bf73-417",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a6eb046-0550-4612-9ec7-cc3171c2bf73-417",
+  "name" : "IntersectionFRCoreValueSetScheduleTypeAndFRCoreValueSetScheduleType",
+  "title" : "Intersection of FR Core ValueSet Schedule type And FR Core ValueSet Schedule type",
+  "status" : "active",
+  "date" : "2026-03-25T18:10:06+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "busy-unavailable",
+        "display" : "Indisponibilité"
+      },
+      {
+        "code" : "free",
+        "display" : "Disponibilité"
+      }]
+    }]
+  }
+}

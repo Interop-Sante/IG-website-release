@@ -1,0 +1,25 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a6eb046-0550-4612-9ec7-cc3171c2bf73-405",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a6eb046-0550-4612-9ec7-cc3171c2bf73-405",
+  "name" : "IntersectionFRCoreValueSetPatientContactRoleAndFRCoreValueSetPatientContactRole",
+  "title" : "Intersection of FR Core ValueSet Patient contact role And FR Core ValueSet Patient contact role",
+  "status" : "active",
+  "date" : "2026-03-25T18:10:06+01:00",
+  "compose" : {
+    "include" : [{
+      
+    },
+    {
+      
+    },
+    {
+      "concept" : [{
+        "code" : "O"
+      },
+      {
+        "code" : "U"
+      }]
+    }]
+  }
+}

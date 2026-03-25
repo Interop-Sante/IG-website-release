@@ -1,0 +1,14 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "64639099-3308-479d-b93c-5f7f817c4842-42",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/64639099-3308-479d-b93c-5f7f817c4842-42",
+  "name" : "IntersectionFRCoreCodeSystemMaritalStatusAndFRCoreCodeSystemMaritalStatus",
+  "title" : "Intersection of FR Core CodeSystem Marital Status And FR Core CodeSystem Marital Status",
+  "status" : "draft",
+  "date" : "2026-03-25T18:04:48+01:00",
+  "concept" : [{
+    "code" : "PACS",
+    "display" : "PACS",
+    "definition" : "PACS"
+  }]
+}

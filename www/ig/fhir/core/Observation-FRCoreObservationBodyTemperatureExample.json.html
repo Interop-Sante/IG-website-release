@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FRCoreObservationBodyTemperatureExample - JSON Representation - Guide d&#39;implémentation Fr Core v2.1.0</title>
+    <title>FRCoreObservationBodyTemperatureExample - JSON Representation - Guide d&#39;implémentation FR Core v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -20,6 +20,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
@@ -32,10 +33,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -43,10 +44,11 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.125"}
-    h3,h4,h5,h6{--heading-prefix:"5.125"}</style>
+    <style type="text/css">h2{--heading-prefix:"15.148"}
+    h3,h4,h5,h6{--heading-prefix:"15.148"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
   <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
@@ -57,13 +59,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation Fr Core</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - trial-use
+            <span style="display:inline-block;">2.2.0 - trial-use
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  France
 
 
             </span>
@@ -93,6 +95,31 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
   </li>
@@ -101,6 +128,12 @@
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
+  </li>
+  <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
+    <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -114,10 +147,13 @@
         <a href="a_propos.html">A propos</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
       </li>
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/">Catalogue des guides ANS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
       </li>
       <li>
         <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
@@ -159,7 +195,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.2.0: final-text) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -215,18 +251,17 @@
 
 
 
-  <pre class="json" style="white-space: pre; text-wrap: nowrap;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">
-{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resourceType</a>" : "Observation",
-  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.id">id</a>" : "FRCoreObservationBodyTemperatureExample",
-  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.meta">meta</a>" : {
+  "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "FRCoreObservationBodyTemperatureExample",
+  "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
       <a href="StructureDefinition-fr-core-observation-body-temperature.html" style="color: Maroon">&#x1F517;</a> "https://hl7.fr/ig/fhir/core/StructureDefinition/fr-core-observation-body-temperature"
     ]
   },
-  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.text">text</a>" : {
+  "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: Observation FRCoreObservationBodyTemperatureExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;FRCoreObservationBodyTemperatureExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcFRCoreObservationBodyTemperatureExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;FRCoreObservationBodyTemperatureExample-fr-FR\&quot;&gt; &lt;/a&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes:{http://loinc.org 8310-5}\&quot;&gt;Body temperature&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-ExampleFRCorePatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2022-11-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Patient-ExampleFRCorePatient001.html\&quot;&gt;Pierre Durand&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 36.5 C&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Details: UCUM  codeCel = 'Cel')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Narratif généré : Observation FRCoreObservationBodyTemperatureExample&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;FRCoreObservationBodyTemperatureExample\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcFRCoreObservationBodyTemperatureExample\&quot;&gt; &lt;/a&gt;&lt;div style=\&quot;display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\&quot;&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;/&gt;&lt;p style=\&quot;margin-bottom: 0px\&quot;&gt;Profil: &lt;a href=\&quot;StructureDefinition-fr-core-observation-body-temperature.html\&quot;&gt;FR Core Observation Body Temperature Profile&lt;/a&gt;&lt;/p&gt;&lt;/div&gt;&lt;p&gt;&lt;b&gt;status&lt;/b&gt;: Final&lt;/p&gt;&lt;p&gt;&lt;b&gt;category&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\&quot;&gt;Vital Signs&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;code&lt;/b&gt;: &lt;span title=\&quot;Codes :{http://loinc.org 8310-5}\&quot;&gt;Température corporelle [Température] Patient ; Numérique&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;subject&lt;/b&gt;: &lt;a href=\&quot;Patient-FRCorePatientExample.html\&quot;&gt;Pierre Durand (official) Male, Date de Naissance :1974-12-25 ( NIR définitif\u00a0(use:\u00a0official,\u00a0))&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;effective&lt;/b&gt;: 2022-11-06&lt;/p&gt;&lt;p&gt;&lt;b&gt;performer&lt;/b&gt;: &lt;a href=\&quot;Practitioner-FRCorePractitionerExample.html\&quot;&gt;Practitioner Leclerc Sophie&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;value&lt;/b&gt;: 36.5 C&lt;span style=\&quot;background: LightGoldenRodYellow\&quot;&gt; (Détails : code UCUMCel = 'Cel')&lt;/span&gt;&lt;/p&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
@@ -248,18 +283,15 @@
     ]
   },
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
-    <a href="Patient-ExampleFRCorePatient001.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/ExampleFRCorePatient001",
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.type">type</a>" : "Patient",
-    "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
+    <a href="Patient-FRCorePatientExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/FRCorePatientExample"
   },
-  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective[x]">effectiveDateTime</a>" : "2022-11-06",
+  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2022-11-06",
   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.performer">performer</a>" : [
     {
-      <a href="Patient-ExampleFRCorePatient001.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/ExampleFRCorePatient001",
-      "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.display">display</a>" : "Pierre Durand"
+      <a href="Practitioner-FRCorePractitionerExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Practitioner/FRCorePractitionerExample"
     }
   ],
-  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value[x]">valueQuantity</a>" : {
+  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.value_x_">valueQuantity</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 36.5,
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "C",
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
@@ -311,7 +343,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 4, 2024 10:06+0200">2024-09-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 18:08+0100">2026-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

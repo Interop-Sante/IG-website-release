@@ -1,0 +1,29 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a6eb046-0550-4612-9ec7-cc3171c2bf73-228",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a6eb046-0550-4612-9ec7-cc3171c2bf73-228",
+  "name" : "IntersectionFRCoreValueSetSPO2BodyLocationAndFRCoreValueSetSPO2BodyLocation",
+  "title" : "Intersection of Oxygen Saturation Body Location value set And Oxygen Saturation Body Location value set",
+  "status" : "active",
+  "date" : "2026-03-25T18:10:06+01:00",
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "48800003",
+        "display" : "Ear lobule structure (body structure)"
+      },
+      {
+        "code" : "7569003",
+        "display" : "Finger structure (body structure)"
+      },
+      {
+        "code" : "52795006",
+        "display" : "Forehead structure (body structure)"
+      },
+      {
+        "code" : "29707007",
+        "display" : "Toe structure (body structure)"
+      }]
+    }]
+  }
+}

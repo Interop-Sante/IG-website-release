@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "64639099-3308-479d-b93c-5f7f817c4842-377",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/64639099-3308-479d-b93c-5f7f817c4842-377",
+  "name" : "UnionFRCoreValueSetCOGCommunePaysAndFRCoreValueSetCOGCommunePays",
+  "title" : "Union of FR Core ValueSet COG commune pays And FR Core ValueSet COG commune pays",
+  "status" : "active",
+  "date" : "2026-03-25T18:04:49+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}

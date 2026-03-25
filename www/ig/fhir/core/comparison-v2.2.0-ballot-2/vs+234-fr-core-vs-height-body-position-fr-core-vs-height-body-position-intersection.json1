@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0a6eb046-0550-4612-9ec7-cc3171c2bf73-249",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0a6eb046-0550-4612-9ec7-cc3171c2bf73-249",
+  "name" : "IntersectionFRCoreValueSetHeightBodyPositionAndFRCoreValueSetHeightBodyPosition",
+  "title" : "Intersection of FR Core ValueSet BodyPosition And FR Core ValueSet BodyPosition",
+  "status" : "active",
+  "date" : "2026-03-25T18:10:06+01:00"
+}

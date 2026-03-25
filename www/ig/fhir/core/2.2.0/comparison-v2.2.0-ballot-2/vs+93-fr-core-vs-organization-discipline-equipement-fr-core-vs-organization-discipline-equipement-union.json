@@ -1,0 +1,23 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "64639099-3308-479d-b93c-5f7f817c4842-275",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/64639099-3308-479d-b93c-5f7f817c4842-275",
+  "name" : "UnionFRCoreValueSetOrganizationDisciplineEquipementAndFRCoreValueSetOrganizationDisciplineEquipement",
+  "title" : "Union of FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE And FR Core ValueSet Organization Discipline d'Equipement - nomenclature SAE",
+  "status" : "active",
+  "date" : "2026-03-25T18:04:49+01:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FRA",
+      "display" : "France"
+    }]
+  },
+  {
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France"
+    }]
+  }]
+}

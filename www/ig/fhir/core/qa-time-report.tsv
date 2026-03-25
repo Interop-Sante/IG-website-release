@@ -1,133 +1,231 @@
-Source File	Size	loadResources	load-configure	scan	loadDepInfo	loadInfo	load	generateSnapshots	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core.json	46806	-	0	0	1	0	0	0	9	71	0	0	0	0	0	0	0	3	0	0	233	418	0	0	0	39	1	6
-fsh-generated/resources/Appointment-FRCoreAppointmentExample.json	1941	12	0	0	0	0	0	0	0	456	0	0	0	0	0	0	0	0	0	0	19	45	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie.json	1549	5	2	0	0	0	0	0	0	14	0	0	4	0	0	0	0	0	0	0	21	2455	0	0	0	2	2	0
-fsh-generated/resources/CodeSystem-fr-core-cs-contact-relationship.json	6081	6	0	0	0	0	0	0	0	13	0	0	0	0	0	0	0	0	0	0	47	183	0	0	0	3	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-fiabilite-identite.json	2428	3	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	23	116	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-identifier-type.json	650	2	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	13	86	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-location-identifier-type.json	920	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	17	86	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-location-physical-type.json	1296	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	22	102	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-location-position-room.json	761	4	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	13	88	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-location-type.json	1376	4	1	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	18	101	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-marital-status.json	572	4	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	11	92	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-method-collection.json	891	2	0	0	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	14	89	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-mode-validation-identity.json	1287	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	91	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-schedule-type.json	659	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	12	84	0	0	1	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-type-admission.json	678	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	12	87	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-type-organisation.json	1902	3	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	20	90	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-v2-0203.json	2008	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	20	89	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-v2-0445.json	2148	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	1	0	0	21	89	0	0	0	1	0	1
-fsh-generated/resources/CodeSystem-fr-core-cs-v2-3307.json	1784	3	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	19	101	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-fr-core-cs-v2-3311.json	984	2	1	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	15	92	0	0	0	0	0	0
-fsh-generated/resources/Encounter-FRCoreEncounterExample.json	865	3	0	0	0	0	0	0	0	231	0	0	0	0	0	0	0	0	0	0	9	21	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationBMIExample.json	1165	3	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	15	23	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationBPExample.json	2641	3	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	18	25	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationBodyHeightExample.json	925	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	10	18	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationBodyTemperatureExample.json	959	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	11	16	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationBodyWeightExample.json	1124	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	11	16	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationHeadCircumExample.json	947	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	10	17	0	0	0	0	0	0
-fsh-generated/resources/Observation-FRCoreObservationHeartRateExample.json	961	3	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	12	15	0	0	0	0	0	0
-fsh-generated/resources/Patient-ExampleFRCorePatient001.json	2383	3	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	16	27	0	0	0	0	0	0
-fsh-generated/resources/Schedule-FRCoreScheduleExample.json	2365	3	0	0	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	16	33	0	0	0	0	0	0
-fsh-generated/resources/Slot-FRCoreSlotExample.json	965	4	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	10	24	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-fr-core-address-insee-code.json	1741	3	0	0	0	0	0	80	5	38	0	0	2	0	0	1	0	0	0	0	68	494	0	1	0	6	3	1
-fsh-generated/resources/StructureDefinition-fr-core-address.json	1557	2	0	0	0	0	0	62	0	20	0	0	2	0	0	0	0	0	0	0	93	545	0	0	0	9	0	0
-fsh-generated/resources/StructureDefinition-fr-core-appointment-operator.json	2597	3	1	0	0	0	0	16	0	30	0	0	0	0	0	0	0	0	0	0	87	659	0	0	0	13	0	1
-fsh-generated/resources/StructureDefinition-fr-core-appointment.json	3604	3	0	0	0	0	0	647	1	39	0	0	0	0	0	0	0	1	0	0	250	1488	0	0	0	11	0	2
-fsh-generated/resources/StructureDefinition-fr-core-comment.json	1701	3	0	0	0	0	0	6	0	24	0	0	0	0	0	0	0	0	0	0	50	291	0	0	0	3	1	0
-fsh-generated/resources/StructureDefinition-fr-core-contact-point-email-type.json	1771	2	0	0	0	0	0	6	0	8	0	0	0	0	0	0	0	0	0	0	55	292	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-fr-core-contact-point.json	1136	3	0	0	0	0	0	10	0	15	0	0	0	0	0	0	0	0	0	0	70	410	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-encounter.json	11950	6	0	0	0	0	0	141	0	82	0	0	0	0	0	0	0	1	0	0	583	2456	0	0	0	33	0	5
-fsh-generated/resources/StructureDefinition-fr-core-estimated-discharge-date.json	1475	3	0	0	0	0	0	37	0	9	0	0	0	0	0	0	0	0	0	0	51	327	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-fr-core-healthcare-service.json	3949	3	0	0	0	0	0	52	0	49	0	0	0	0	0	0	0	1	0	0	323	1449	0	0	0	12	0	3
-fsh-generated/resources/StructureDefinition-fr-core-human-name-assembly-order.json	1982	3	1	0	0	0	0	92	0	21	0	0	0	0	0	0	0	0	0	0	55	304	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-fr-core-human-name.json	2118	3	0	0	0	0	0	11	0	18	0	0	0	0	0	0	0	0	0	0	88	449	0	1	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-identity-reliability.json	6580	5	0	0	0	0	0	23	0	37	0	0	0	0	0	0	0	0	0	0	231	789	0	0	0	22	0	2
-fsh-generated/resources/StructureDefinition-fr-core-location-position-room.json	1612	2	0	0	0	0	0	7	0	9	0	0	0	0	0	0	0	0	0	0	55	283	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-location.json	5024	5	0	0	0	0	0	39	0	45	0	0	0	0	0	0	0	1	0	0	387	1791	0	0	0	13	0	3
-fsh-generated/resources/StructureDefinition-fr-core-lunar-date.json	1524	3	0	0	0	0	0	12	0	9	0	0	0	0	0	0	0	0	0	0	53	281	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-fr-core-medication-administration-inhaled-oxygen.json	3378	3	1	0	0	0	0	80	0	45	0	0	0	0	0	0	0	1	0	0	320	1418	0	0	0	18	0	3
-fsh-generated/resources/StructureDefinition-fr-core-observation-bmi.json	3487	3	0	0	0	0	0	120	1	70	0	0	0	0	0	0	0	1	0	0	475	2427	0	0	0	28	0	5
-fsh-generated/resources/StructureDefinition-fr-core-observation-body-height.json	4316	4	0	0	0	0	0	120	0	71	0	0	1	0	0	0	0	1	0	0	488	2758	0	0	0	12	0	5
-fsh-generated/resources/StructureDefinition-fr-core-observation-body-position-ext.json	2224	4	0	0	0	0	0	11	0	10	0	0	0	0	0	0	0	0	0	0	56	372	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-fr-core-observation-body-temperature.json	4190	4	0	0	0	0	0	111	0	94	0	0	0	0	0	0	0	1	0	0	480	2637	0	0	0	12	0	5
-fsh-generated/resources/StructureDefinition-fr-core-observation-body-weight.json	3731	3	0	0	0	0	0	115	0	76	0	0	0	0	0	0	0	1	0	0	463	2405	0	0	0	11	1	4
-fsh-generated/resources/StructureDefinition-fr-core-observation-bp.json	7256	6	0	0	0	0	0	181	0	124	0	0	0	0	0	0	0	2	0	0	843	4469	0	1	0	21	0	8
-fsh-generated/resources/StructureDefinition-fr-core-observation-head-circum.json	3467	4	1	0	0	0	0	102	2	67	0	0	0	0	0	0	0	2	0	0	459	2679	0	0	0	11	0	4
-fsh-generated/resources/StructureDefinition-fr-core-observation-heartrate.json	5386	4	0	0	0	0	0	110	1	76	0	0	0	0	0	0	0	1	0	0	534	2626	0	0	0	12	0	5
-fsh-generated/resources/StructureDefinition-fr-core-observation-height-body-position.json	2146	3	0	0	0	0	0	7	0	9	0	0	0	0	0	0	0	0	0	0	54	312	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-observation-level-of-exertion.json	2240	3	0	0	0	0	0	6	0	9	0	0	0	0	0	0	0	0	0	0	52	283	0	0	0	1	0	1
-fsh-generated/resources/StructureDefinition-fr-core-observation-resp-rate.json	4634	4	0	0	0	0	0	139	0	70	0	0	1	0	0	0	0	2	0	0	465	2385	0	0	0	10	0	5
-fsh-generated/resources/StructureDefinition-fr-core-observation-saturation-oxygen.json	5776	3	0	0	0	0	0	107	1	73	0	0	0	0	0	0	0	1	0	0	488	2583	0	0	0	16	0	4
-fsh-generated/resources/StructureDefinition-fr-core-organization-activity-field.json	1609	3	0	0	0	0	0	9	0	8	0	0	0	0	0	0	0	0	0	0	54	302	0	0	0	3	1	1
-fsh-generated/resources/StructureDefinition-fr-core-organization-activity-type.json	1425	3	1	0	0	0	0	8	0	12	0	0	0	0	0	0	0	0	0	0	49	272	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-analysis-section.json	1453	2	0	0	0	0	0	8	0	9	0	0	0	0	0	0	0	0	0	0	49	293	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-applicant-act.json	1430	3	0	0	0	0	0	7	0	8	0	0	0	0	0	0	0	0	0	0	51	275	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-budget-letter.json	1427	2	0	0	0	0	0	6	0	8	0	0	0	0	0	0	0	0	0	0	50	268	0	0	0	1	0	1
-fsh-generated/resources/StructureDefinition-fr-core-organization-description.json	1253	3	0	0	0	0	0	6	0	8	0	0	0	0	0	0	0	0	0	0	49	272	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-executant.json	1405	2	0	0	0	0	0	11	0	7	0	0	0	0	0	0	0	0	0	0	49	272	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-external.json	1407	3	0	0	0	0	0	8	0	9	0	0	0	0	0	0	0	0	0	0	50	306	0	0	1	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-field.json	1348	2	0	0	0	0	0	10	0	10	0	0	0	0	0	0	0	0	0	0	48	274	0	0	0	1	0	1
-fsh-generated/resources/StructureDefinition-fr-core-organization-number-of-theorical-accomadation-space.json	1668	3	1	0	0	0	0	7	0	8	0	0	0	0	0	0	0	0	0	0	52	282	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-pole.json	4878	4	0	0	0	0	0	106	0	38	0	0	0	0	0	0	0	1	0	0	291	1619	0	0	0	7	0	2
-fsh-generated/resources/StructureDefinition-fr-core-organization-prestation-discipline.json	1525	4	0	0	0	0	0	8	0	9	0	0	0	0	0	0	0	0	0	0	50	282	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-fr-core-organization-short-name.json	1325	3	0	0	0	0	0	5	0	8	0	0	0	0	0	0	0	0	0	0	49	314	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-organization-uac.json	4675	3	0	0	0	0	0	51	0	36	0	0	0	0	0	0	0	1	0	0	277	1483	0	1	0	7	0	2
-fsh-generated/resources/StructureDefinition-fr-core-organization-uf.json	8090	6	0	0	0	0	0	62	0	42	0	0	0	0	0	0	0	0	0	0	323	1630	0	0	0	17	0	3
-fsh-generated/resources/StructureDefinition-fr-core-organization.json	13802	9	0	0	0	0	0	88	0	151	0	0	1	0	0	0	0	1	0	0	880	4794	0	0	0	37	0	7
-fsh-generated/resources/StructureDefinition-fr-core-patient-birth-list-given-name.json	1860	3	0	0	0	0	0	6	0	10	0	0	0	0	0	0	0	1	0	0	53	240	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-patient-birthdate-update-indicator.json	1307	3	1	0	0	0	0	5	0	8	0	0	0	0	0	0	0	4	0	0	49	269	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-fr-core-patient-contact-identifier.json	1630	3	0	0	0	0	0	5	0	9	0	0	0	0	0	0	0	1	0	0	52	298	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-patient-death-place.json	1575	3	0	0	0	0	0	6	0	8	0	0	0	0	0	0	0	0	0	0	50	295	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json	9073	7	0	0	0	0	0	260	0	139	0	0	0	0	0	0	0	4	0	0	905	3951	0	0	0	21	1	9
-fsh-generated/resources/StructureDefinition-fr-core-patient-nationality.json	3031	4	0	0	0	0	0	13	0	20	0	0	0	0	0	0	0	0	0	0	115	628	0	0	0	5	0	0
-fsh-generated/resources/StructureDefinition-fr-core-patient.json	17692	12	0	0	0	0	0	0	0	135	0	0	1	0	0	0	0	2	0	0	903	3545	0	0	0	26	0	7
-fsh-generated/resources/StructureDefinition-fr-core-practitioner-profession.json	1780	3	0	0	0	0	0	11	0	9	0	0	0	0	0	0	0	0	0	0	52	320	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-fr-core-practitioner-role.json	4537	4	1	0	0	0	0	27	1	30	0	0	0	0	0	0	0	0	0	0	235	1283	0	0	0	5	0	2
-fsh-generated/resources/StructureDefinition-fr-core-practitioner-specialty.json	1749	3	0	0	0	0	0	7	0	8	0	0	0	0	0	0	0	0	0	0	51	291	0	0	0	1	0	0
-fsh-generated/resources/StructureDefinition-fr-core-practitioner.json	14314	8	0	0	0	0	0	79	0	139	0	0	0	0	0	0	0	1	0	0	762	3040	0	1	0	17	0	6
-fsh-generated/resources/StructureDefinition-fr-core-related-person.json	4404	5	0	0	0	0	0	37	0	41	0	0	0	0	0	0	0	1	0	0	306	1709	0	0	0	7	0	3
-fsh-generated/resources/StructureDefinition-fr-core-schedule-availability-time.json	22550	14	0	0	0	0	0	68	0	98	0	0	0	0	0	0	0	1	0	0	828	3884	0	0	0	18	0	5
-fsh-generated/resources/StructureDefinition-fr-core-schedule.json	3778	3	0	0	0	0	0	19	0	23	0	0	0	0	0	0	0	1	0	0	170	945	0	0	0	4	0	1
-fsh-generated/resources/StructureDefinition-fr-core-service-type-duration.json	3680	5	0	0	0	0	0	14	0	19	0	0	0	0	0	0	0	0	0	0	121	594	0	0	0	3	0	1
-fsh-generated/resources/StructureDefinition-fr-core-slot-date.json	1746	2	1	0	0	0	0	9	0	8	0	0	0	0	0	0	0	0	0	0	53	296	0	0	0	2	0	1
-fsh-generated/resources/StructureDefinition-fr-core-slot.json	2262	3	0	0	0	0	0	21	0	24	0	0	0	0	0	0	0	0	0	0	185	1011	0	0	0	4	0	1
-fsh-generated/resources/StructureDefinition-fr-core-use-period.json	1165	3	0	0	0	0	0	5	0	10	0	0	0	0	0	0	0	0	0	0	48	268	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-availability-time-day.json	1887	3	0	0	0	0	0	0	2	159	0	0	0	0	0	0	0	0	0	0	18	5584	0	0	0	2	0	1
-fsh-generated/resources/ValueSet-fr-core-vs-availability-time-rule.json	1862	3	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	158	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-bp-method.json	1426	2	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	1	0	0	14	138	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-civility-exercice-rass.json	1055	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	12	119	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-civility-rass.json	998	3	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	11	112	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-civility.json	957	2	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	12	115	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-cog-commune-pays.json	970	2	1	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	12	113	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-contact-relationship.json	9217	6	0	0	0	0	0	0	1	28	0	0	0	0	0	0	0	0	0	0	55	235	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-email-type.json	964	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	12	116	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-encounter-class.json	1498	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	13	130	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-encounter-discharge-disposition.json	1531	4	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	15	163	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-encounter-identifier-type.json	1387	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	1	0	0	14	128	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-encounter-type.json	2229	3	0	0	0	0	0	0	1	7	0	0	0	0	0	0	0	0	0	0	21	131	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-height-body-position.json	902	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	13	157	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-identity-method-collection.json	803	2	1	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	11	118	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-identity-reliability.json	605	2	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	11	118	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-insee-code.json	716	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	11	109	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-location-identifier-type.json	1813	3	0	0	0	0	0	0	0	15	0	0	0	0	0	0	0	0	0	0	16	122	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-location-physical-type.json	2374	4	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	20	130	0	0	0	0	0	1
-fsh-generated/resources/ValueSet-fr-core-vs-location-position-room.json	1297	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	12	119	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-location-type.json	1261	3	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	13	124	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-marital-status.json	908	2	0	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	16	163	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity.json	635	3	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	10	122	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-organization-activity-field.json	1113	2	1	0	0	0	0	0	0	14	0	0	0	0	0	0	0	0	0	0	13	168	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-organization-identifier-type.json	1872	3	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	16	156	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-organization-type.json	2330	3	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	20	139	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-organization-uf-activity-field.json	2045	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	21	136	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-patient-contact-role.json	1237	3	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	23	127	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-patient-gender-INS.json	791	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	16	118	0	1	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-patient-identifier-type.json	1960	2	0	0	0	0	0	0	0	22	0	0	0	0	0	0	0	0	0	0	19	130	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-practitioner-identifier-type.json	2332	6	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	37	147	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-practitioner-qualification.json	2645	6	1	0	0	0	0	0	0	45	0	0	0	0	0	0	0	0	0	0	26	142	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-practitioner-role-exercice.json	1795	4	0	0	0	0	0	0	0	24	0	0	0	0	0	0	0	0	0	0	20	267	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-practitioner-specialty.json	1299	2	0	0	0	0	0	0	0	11	0	0	0	0	0	0	0	0	0	0	13	214	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-relation-type.json	865	14	0	0	0	0	0	0	0	20	0	0	0	0	0	0	0	0	0	0	14	175	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-schedule-type.json	1350	4	0	0	0	0	0	0	1	21	0	0	0	0	0	0	0	0	0	0	14	125	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-schedule-unavailability-reason.json	1286	2	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	13	114	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-fr-core-vs-title.json	981	2	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	12	121	0	0	0	0	0	0
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-hl7.fhir.fr.core.json	65345	-	0	0	0	0	0	0	3	7	0	0	0	0	0	0	0	1	0	0	28	195	157	0	0	0	7	0	2
+fsh-generated/resources/Appointment-FRCoreAppointmentExample.json	1771	2	0	0	1	0	0	0	0	493	0	0	0	0	0	0	0	0	0	0	6	13	13	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-champ-activite.json	1587	1	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	6	14	40	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-circonstances-sortie.json	2181	4	0	0	0	0	0	0	1	2	0	0	2	0	0	0	0	0	0	0	4	16	29	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-code-tarif-tnjp.json	6271	4	0	0	0	0	0	0	0	3	0	0	2	0	0	0	0	0	0	0	4	36	27	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-contact-relationship.json	9030	4	0	0	0	0	0	0	1	4	0	0	2	0	0	0	0	0	0	0	6	45	38	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-discipline-equipement.json	21019	5	0	0	0	0	0	0	1	8	0	0	2	0	0	0	0	0	0	0	13	87	39	0	0	0	3	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-discipline-prestation.json	43990	10	0	0	1	0	0	0	2	17	0	0	1	0	0	0	0	1	0	0	13	181	65	0	0	0	6	0	1
+fsh-generated/resources/CodeSystem-fr-core-cs-fiabilite-identite.json	3421	2	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	3	19	23	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-identifier-type.json	748	2	0	0	0	0	0	0	0	1	0	0	2	0	0	0	0	0	0	0	2	8	19	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-location-identifier-type.json	1157	1	0	0	0	0	0	0	0	2	0	0	2	0	0	0	0	0	0	0	1	11	21	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-location-physical-type.json	1711	2	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	2	14	23	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-location-position-lit.json	811	1	0	0	0	0	0	0	1	1	0	0	1	0	0	0	0	0	0	0	2	9	21	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-location-type-chambre.json	894	2	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	1	10	21	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-location-type.json	1747	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	2	14	23	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-marital-status.json	622	2	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	2	7	19	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-method-collection.json	1101	1	0	0	0	0	1	0	0	2	0	0	1	0	0	0	0	0	0	0	1	11	21	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-mode-validation-identity.json	2210	2	0	0	0	0	0	0	0	5	0	0	2	0	0	0	0	0	0	0	2	19	24	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-patient-contact-relationship-category.json	1005	1	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	2	11	19	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-schedule-type.json	760	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	2	8	18	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-type-activite.json	6607	2	0	0	0	0	0	0	1	3	0	0	1	0	0	0	0	0	0	0	3	30	28	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-type-admission.json	809	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	1	9	21	0	0	0	6	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-type-organisation.json	2543	3	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	2	16	35	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-uf-indicateur.json	1386	1	0	0	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	2	11	31	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-v2-0203.json	3158	2	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	2	19	19	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-v2-0445.json	3176	1	0	0	0	0	0	0	0	1	0	0	1	0	0	0	0	0	0	0	3	19	24	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-v2-3307.json	1585	1	0	0	0	0	0	0	1	2	0	0	1	0	0	0	0	0	0	0	1	13	33	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-fr-core-cs-v2-3311.json	1435	2	0	0	0	0	0	1	0	2	0	0	1	0	0	0	0	0	0	0	2	12	18	0	0	0	0	0	0
+fsh-generated/resources/Encounter-FRCoreEncounterExample.json	853	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	7	6	0	0	0	0	0	0
+fsh-generated/resources/HealthcareService-svc-cardiologie-1.json	2466	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	2	12	13	0	0	0	0	0	0
+fsh-generated/resources/Location-hopitaltest-endocrino-ch04-litF.json	1044	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	8	8	0	0	0	0	0	0
+fsh-generated/resources/Location-hopitaltest-endocrino-ch04.json	575	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	5	11	0	0	0	0	0	0
+fsh-generated/resources/Location-hopitaltest-salle-examen-01.json	678	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	6	6	0	0	0	0	0	1
+fsh-generated/resources/Location-loc-radiologie-z.json	1016	1	0	0	1	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	7	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationBMIExample.json	1103	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	8	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationBPExample.json	2545	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	13	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationBodyHeightExample.json	863	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	7	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationBodyTemperatureExample.json	874	1	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	2	8	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationBodyWeightExample.json	886	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	7	7	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationHeadCircumExample.json	875	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	9	7	0	0	0	0	0	0
+fsh-generated/resources/Observation-FRCoreObservationHeartRateExample.json	889	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	1	7	7	0	0	0	0	0	0
+fsh-generated/resources/Organization-FRCoreOrganizationExample.json	1396	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	2	8	9	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-dept-11003-endocrino.json	1015	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	1	0	0	2	8	10	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-eg-4-members.json	2443	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	11	12	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-ej-350005179.json	1407	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	8	6	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-pole-1150-med-spe.json	792	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	7	7	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-service-11006-endocrino-diabo.json	637	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	8	7	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-service-11007-dietetique.json	625	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	6	5	0	0	1	0	0	0
+fsh-generated/resources/Organization-hopitaltest-uac-4420-uac-01.json	1231	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	9	8	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-uac-4420-uac-02.json	1231	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	9	7	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-uf-4420-dialyse.json	3150	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	15	18	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-uf-4701-endocrino-diab.json	1385	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	1	10	6	0	0	0	0	0	0
+fsh-generated/resources/Organization-hopitaltest-uf-4705-nutrition.json	1579	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	9	6	0	0	0	0	0	0
+fsh-generated/resources/Patient-FRCorePatientExample.json	3527	4	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	15	8	0	0	0	0	0	0
+fsh-generated/resources/Practitioner-FRCorePractitionerExample.json	2460	2	0	0	0	0	0	0	1	4	0	0	0	0	0	0	0	0	0	0	2	10	6	0	0	0	0	0	0
+fsh-generated/resources/PractitionerRole-FRCorePractitionerRoleExample.json	1226	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	9	8	0	0	0	0	0	0
+fsh-generated/resources/Schedule-FRCoreScheduleExample.json	2287	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	11	8	0	0	0	0	0	0
+fsh-generated/resources/Slot-FRCoreSlotExample.json	945	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	7	6	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-address-insee-code.json	1769	2	0	6	0	0	0	0	0	9	0	0	1	0	0	0	0	0	0	0	1	39	416	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-address.json	1558	1	0	6	0	0	0	0	0	6	0	0	1	0	0	0	0	0	0	0	0	64	85	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-fr-core-appointment-operator.json	2603	2	0	4	0	0	0	0	0	6	0	0	1	0	0	0	0	0	0	0	0	67	107	0	0	0	2	0	2
+fsh-generated/resources/StructureDefinition-fr-core-appointment.json	3887	1	0	11	0	0	0	0	0	11	0	0	1	0	0	0	0	1	0	0	1	173	150	0	0	0	3	1	0
+fsh-generated/resources/StructureDefinition-fr-core-comment.json	1727	3	0	4	0	0	0	0	0	4	0	0	1	0	0	0	0	0	0	0	0	38	75	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-fr-core-contact-point-email-type.json	1787	1	0	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	40	61	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-contact-point.json	1494	2	0	4	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	1	52	65	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-encounter.json	12259	3	0	20	0	0	0	0	0	20	0	0	1	0	0	0	0	2	0	0	0	413	224	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-fr-core-estimated-discharge-date.json	1475	2	0	3	0	0	0	0	0	5	0	0	1	0	0	0	0	0	0	0	1	39	61	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-healthcare-service.json	4519	2	0	20	1	0	0	0	0	10	0	0	1	0	0	0	0	1	0	0	0	220	169	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-fr-core-human-name-assembly-order.json	1982	1	0	6	0	0	0	0	0	5	0	0	1	0	0	0	0	0	0	0	1	39	62	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-human-name.json	1482	2	0	5	0	0	0	0	0	6	0	0	1	0	0	0	0	0	0	0	0	55	99	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-identity-reliability.json	6604	3	0	9	0	0	0	0	0	15	0	0	1	0	0	0	0	0	0	0	1	174	95	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-fr-core-location-position-lit.json	1511	1	0	4	0	0	0	0	0	4	0	0	0	0	0	0	0	1	0	0	0	39	55	0	0	0	1	1	0
+fsh-generated/resources/StructureDefinition-fr-core-location-type-chambre.json	1479	2	0	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	1	39	64	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-location.json	3570	2	0	12	0	0	0	0	0	9	0	0	1	0	0	0	0	0	0	0	0	160	220	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-fr-core-lunar-date.json	1526	1	0	4	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	40	205	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-medication-administration-inhaled-oxygen.json	3794	2	0	13	0	0	0	0	0	12	0	0	1	0	0	0	0	1	0	0	1	215	152	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-bmi.json	3799	2	0	19	0	0	0	0	0	14	0	0	1	0	0	0	0	1	0	0	0	303	188	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-body-height.json	4604	2	0	21	0	0	0	0	0	15	0	0	1	0	0	0	0	2	0	0	0	321	1844	0	0	0	7	1	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-body-position-ext.json	2239	1	0	4	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	1	42	54	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-observation-body-temperature.json	4513	2	0	16	0	0	0	0	1	15	0	0	1	0	0	0	0	1	0	0	0	327	1813	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-body-weight.json	3793	2	0	17	0	0	0	0	0	12	0	0	1	0	0	0	0	1	0	0	1	316	227	0	0	0	8	0	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-bp.json	6716	5	0	28	0	0	0	0	0	26	1	0	2	0	0	0	0	3	0	0	0	544	3977	0	0	0	10	1	3
+fsh-generated/resources/StructureDefinition-fr-core-observation-head-circum.json	3769	2	0	24	0	0	0	0	0	11	0	0	0	0	0	0	0	3	0	0	1	297	295	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-heartrate.json	5190	3	0	19	0	0	0	0	0	13	0	0	1	0	0	0	0	2	0	0	0	373	3177	0	0	0	39	0	2
+fsh-generated/resources/StructureDefinition-fr-core-observation-height-body-position.json	2150	1	0	2	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	41	61	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-observation-level-of-exertion.json	2244	2	0	2	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	1	39	66	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-observation-resp-rate.json	4886	2	0	15	0	0	0	0	0	11	0	0	1	0	0	0	0	2	0	0	0	318	2095	0	0	0	6	0	1
+fsh-generated/resources/StructureDefinition-fr-core-observation-saturation-oxygen.json	5939	3	0	15	0	0	0	0	0	11	0	0	0	0	0	0	0	3	0	0	1	354	257	0	1	0	6	2	1
+fsh-generated/resources/StructureDefinition-fr-core-organization-champ-activite.json	1547	1	0	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	52	92	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-demandeuse-acte.json	1466	2	0	3	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	1	48	87	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-discipline-equipement.json	1592	1	0	4	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	54	57	0	0	0	0	0	1
+fsh-generated/resources/StructureDefinition-fr-core-organization-discipline-prestation.json	1593	2	0	4	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	38	62	0	0	0	1	1	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-etablissement.json	8328	3	0	35	0	0	0	0	0	26	0	0	1	0	0	0	0	2	0	0	1	439	485	0	0	0	7	1	1
+fsh-generated/resources/StructureDefinition-fr-core-organization-executante-acte.json	1470	2	0	4	0	0	0	0	0	4	0	0	1	0	0	0	0	0	0	0	1	37	60	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-member.json	2234	1	0	2	0	0	0	0	0	3	1	0	1	0	0	0	0	0	0	0	1	66	81	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-place-hebergement-theorique.json	1541	2	0	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	38	55	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-raison-sociale.json	1375	1	0	1	0	0	0	0	0	2	0	0	1	0	0	0	0	0	0	0	0	36	70	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-sae-categorie.json	2311	2	0	2	1	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	1	64	66	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-fr-core-organization-short-name.json	1357	1	0	2	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	39	54	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-tarif.json	2277	1	0	2	0	0	0	0	0	3	0	0	1	0	0	0	0	1	0	0	1	41	54	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-type-activite.json	1632	5	0	5	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	38	67	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-uac.json	2400	2	0	8	0	0	0	0	0	6	0	0	1	0	0	0	0	2	0	0	0	168	145	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-uf-externe.json	1448	2	0	2	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	1	38	57	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-fr-core-organization-uf-indicateur.json	2276	2	0	3	0	0	0	0	0	10	0	0	1	0	0	0	0	0	0	0	0	63	63	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization-uf.json	4294	2	0	8	0	0	0	0	0	29	0	0	1	0	0	0	0	1	0	0	0	202	166	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-fr-core-organization.json	6287	3	0	1	0	0	0	0	0	24	0	0	1	0	0	0	0	1	0	0	1	203	113	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-fr-core-patient-birth-list-given-name.json	1859	2	0	3	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	41	53	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-patient-birthdate-update-indicator.json	1472	1	0	3	0	0	0	0	0	5	0	0	1	0	0	0	0	0	0	0	1	37	83	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-patient-contact-identifier.json	1560	2	0	3	0	0	0	0	0	4	0	0	1	0	0	0	0	0	0	0	0	39	51	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-fr-core-patient-contact-relationship-category.json	1890	1	0	2	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	41	62	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-patient-death-place.json	1781	2	0	4	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	1	40	77	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-patient-ins.json	12530	4	0	51	0	0	0	0	0	48	0	0	2	0	0	0	0	4	0	0	1	772	412	0	0	0	11	1	9
+fsh-generated/resources/StructureDefinition-fr-core-patient-nationality.json	3190	2	0	3	0	0	0	0	0	7	0	0	2	0	0	0	0	0	0	0	0	85	138	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-fr-core-patient.json	22160	7	0	2	0	0	0	0	0	51	0	0	1	0	0	0	0	4	0	0	1	775	642	0	1	0	12	0	4
+fsh-generated/resources/StructureDefinition-fr-core-practitioner-role.json	5708	2	0	8	0	0	0	0	0	11	0	0	0	0	0	0	0	1	0	0	0	199	280	0	0	0	3	0	0
+fsh-generated/resources/StructureDefinition-fr-core-practitioner-specialty.json	1609	1	0	3	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	40	90	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-fr-core-practitioner.json	13016	4	0	26	0	0	0	0	0	25	0	0	1	0	0	0	0	3	0	0	1	466	516	0	0	0	7	0	1
+fsh-generated/resources/StructureDefinition-fr-core-related-person.json	4404	4	0	10	0	0	0	0	0	11	0	0	1	0	0	0	0	1	0	0	1	217	263	0	0	0	4	0	2
+fsh-generated/resources/StructureDefinition-fr-core-schedule-availability-time.json	22494	7	0	14	0	0	0	0	1	29	0	0	1	0	0	0	0	1	0	0	0	624	396	0	0	0	8	1	4
+fsh-generated/resources/StructureDefinition-fr-core-schedule.json	4055	2	0	6	0	0	0	0	0	6	1	0	0	0	0	0	0	0	0	0	1	125	147	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-fr-core-service-type-duration.json	3651	2	0	3	0	0	0	0	0	50	0	0	1	0	0	0	0	1	0	0	0	91	120	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-fr-core-slot.json	2262	2	0	75	0	0	0	0	0	5	0	0	1	0	0	0	0	0	0	0	0	132	149	0	0	0	3	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-availability-time-rule.json	1851	2	0	0	0	0	0	0	0	2208	0	0	0	0	0	0	0	0	0	0	4	11	1606	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-body-position.json	2146	1	0	0	0	0	0	0	0	1926	0	0	0	0	0	0	0	0	0	0	1	13	1453	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-bp-meas-body-location.json	3106	1	0	0	0	0	0	0	0	1584	0	0	0	0	0	0	0	0	0	0	2	17	1483	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-bp-meas-method.json	1503	1	0	0	0	0	0	0	0	1440	0	0	0	0	0	0	0	0	0	0	1	11	25	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-bp-method.json	1449	2	0	0	1	0	0	0	0	1928	0	0	0	0	0	0	0	0	0	0	2	10	1509	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-categorie-sae-etablissement.json	4811	1	0	0	0	0	0	0	1	15	0	0	0	0	0	0	0	1	0	0	1	26	32	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-cog-commune-pays.json	993	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	11	395	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-contact-relationship.json	9240	2	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	3	43	32	0	0	0	0	0	1
+fsh-generated/resources/ValueSet-fr-core-vs-discipline-prestation.json	701	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	7	32	0	0	0	2	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-email-type.json	987	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	9	17	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-encounter-class.json	1514	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	13	20	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-encounter-discharge-disposition.json	1555	2	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	2	10	19	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-encounter-identifier-type.json	1410	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	10	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-encounter-type.json	2253	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	14	18	0	1	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-heartrate-body-location.json	4722	2	0	0	0	0	0	0	0	1530	0	0	0	0	0	0	0	0	0	0	2	21	18	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-heartrate-measurement-method.json	1585	1	0	0	0	0	0	0	0	1450	0	0	0	0	0	0	0	0	0	0	2	12	18	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-height-body-position.json	925	1	0	0	0	0	0	0	0	1346	0	0	0	0	0	0	0	0	0	0	1	9	1950	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-height-meas-method.json	984	2	0	0	0	0	0	0	0	2015	0	0	0	0	0	0	0	0	0	0	2	9	30	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-identity-method-collection.json	680	1	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	2	11	31	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-identity-reliability.json	628	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	8	16	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-insee-code.json	594	1	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	0	0	0	2	8	115	0	0	0	4	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-location-position-lit.json	638	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	8	22	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-location-type-chambre.json	622	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	7	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-location-type.json	635	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	12	15	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-marital-status.json	901	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	11	18	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity-ins.json	922	1	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	2	11	14	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-mode-validation-identity.json	658	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	7	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-oragnization-code-tarif-tnjp.json	729	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	9	18	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-oragnization-type-activite.json	689	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	8	15	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-organization-champ-activite.json	745	2	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	2	10	16	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-organization-discipline-equipement.json	738	1	0	0	0	0	0	0	0	2	0	0	0	0	1	0	0	0	0	0	2	9	18	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-organization-etablissement-type.json	935	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	1	9	13	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-organization-identifier-type.json	1997	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	2	15	18	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-organization-type.json	1626	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	14	17	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-organization-uf-indicateur.json	657	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	8	15	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-patient-contact-relationship-category.json	758	2	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	9	39	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-patient-contact-role.json	1260	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	1	13	17	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-patient-gender.json	965	1	0	0	1	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	2	10	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-patient-identifier-type.json	1983	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	18	19	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-patient-identifier-use-ins.json	818	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	12	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-patient-identifier-use-pi.json	918	1	0	0	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	2	11	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-practitioner-identifier-type.json	2355	1	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	1	17	17	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-practitioner-role-exercice.json	1818	1	0	0	0	0	0	0	1	3	0	0	0	0	0	0	0	1	0	0	1	19	35	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-practitioner-specialty.json	1152	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	10	20	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-relation-type.json	888	2	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	1	9	19	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-respiratory-rate-meas-method.json	1021	1	0	0	0	0	0	0	0	2031	0	0	0	0	0	0	0	0	0	0	1	15	14	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-schedule-type.json	1375	1	0	0	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	2	11	16	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-schedule-unavailability-reason.json	1309	2	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	1	11	15	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-spo2-body-location.json	1123	1	0	0	0	0	0	0	0	2191	0	0	0	0	0	0	0	0	0	0	1	11	14	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vs-title.json	1004	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	2	11	15	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-fr-core-vsbody-temp-meas-body-location.json	2032	2	0	0	0	0	0	0	0	1346	0	0	0	0	0	0	0	0	0	0	1	13	15	0	0	0	1	0	0
+/fsh-generated/includes/fsh-link-references.md	14823	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	2853	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/data/features.yml	164	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/intro-notes/StructureDefinition-fr-core-practitioner-intro.md	730	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/intro-notes/StructureDefinition-fr-core-patient-ins-intro.md	1312	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_relations.md	1863	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/bonnes_pratiques.md	3549	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-etablissement-intro.md	1595	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-intro.md	799	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/autres_ressources.md	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_intro.md	1146	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	9635	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_nomenclatures.md	3325	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/change_notes.md	23721	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/known_problems.md	730	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/profile_list.md	2994	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	0	0	0	0	0	0
+/input/pagecontent/structure_entites.md	9886	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/downloads.md	927	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/a_propos.md	2580	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-uac-intro.md	486	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_ref_loi.md	16922	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-uf-intro.md	4215	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_contraintes.md	4106	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-location-intro.md	647	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_relations.md	1863	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/bonnes_pratiques.md	3549	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-etablissement-intro.md	1595	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-intro.md	799	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/autres_ressources.md	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_intro.md	1146	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	9635	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_nomenclatures.md	3325	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/change_notes.md	23721	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/known_problems.md	730	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/profile_list.md	2994	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0
+/input/pagecontent/structure_entites.md	9886	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/downloads.md	927	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/a_propos.md	2580	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-uac-intro.md	486	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/structure_ref_loi.md	16922	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-organization-uf-intro.md	4215	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/structure_contraintes.md	4106	-	-	-	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-fr-core-location-intro.md	647	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/intro-notes	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/intro-notes/StructureDefinition-fr-core-practitioner-intro.md	730	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/intro-notes/StructureDefinition-fr-core-patient-ins-intro.md	1312	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	31	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/anImage.png	36288	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/liens_entite.svg	3077	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/images/profiles_uml.svg	8175	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/p_uml.svg	118938	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/profiles.svg	10934	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/images/relations_personnes.svg	3928	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	82554	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	1	0	0	0	0	0	0

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Liste des profils - Guide d&#39;implémentation Fr Core v2.1.0</title>
+    <title>Liste des profils - Guide d&#39;implémentation FR Core v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
@@ -30,10 +31,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -45,6 +46,7 @@
     h3,h4,h5,h6{--heading-prefix:"2"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
   <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
@@ -55,13 +57,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation Fr Core</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - trial-use
+            <span style="display:inline-block;">2.2.0 - trial-use
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  France
 
 
             </span>
@@ -91,6 +93,31 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
   </li>
@@ -99,6 +126,12 @@
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
+  </li>
+  <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
+    <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -112,10 +145,13 @@
         <a href="a_propos.html">A propos</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
       </li>
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/">Catalogue des guides ANS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
       </li>
       <li>
         <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
@@ -164,7 +200,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.2.0: final-text) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Liste des profils</h2>
   
 
@@ -182,6 +218,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#les-profils-structures-des-établissements" id="markdown-toc-les-profils-structures-des-établissements">Les profils structures des établissements</a></li>
   <li><a href="#les-profils-administratifs" id="markdown-toc-les-profils-administratifs">Les profils administratifs</a></li>
   <li><a href="#les-profils-mesures-de-santé-vital-signs" id="markdown-toc-les-profils-mesures-de-santé-vital-signs">Les profils mesures de santé (vital signs)</a></li>
   <li><a href="#les-profils-agenda" id="markdown-toc-les-profils-agenda">Les profils agenda</a></li>
@@ -189,90 +226,80 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 </ul>
 
 </div>
-<p>Cette page contient la liste des profils définis dans le cadre du guide d’implémentation FrCore, ordonnés par catégories</p>
+<p>Cette page contient la liste des profils définis dans le cadre du guide d’implémentation FrCore, ordonnés par catégories.</p>
+
+<h3 id="les-profils-structures-des-établissements">Les profils structures des établissements</h3>
+
+<!-- Rajout du style pour que le tableau prenne toute la taille et se place en-dessous du menu -->
+<div style="width: 100%; display: flex"> 
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-core-location.html">FRCoreLocationProfile</a></td><td><div><p>Ressource Location adaptée au contexte français.
+Cette ressource est utilisée pour représenter un lieu physique, telle qu'une salle d'examen,
+un lit d'hôpital ou une chambre d'hôpital.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-etablissement.html">FRCoreOrganizationEtablissementProfile</a></td><td><div><p>Profil de la ressource Organization permettant de représenter des établissements sanitaires et sociaux.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-uac.html">FRCoreOrganizationUACProfile</a></td><td><div><p>Ce profil permet de représenter les unités d'activité (UAC, parfois appelé PAC). L'UAC (Unité d'Activité) est le niveau élémentaire de recueil des activités en vue de la facturation.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization-uf.html">FRCoreOrganizationUFProfile</a></td><td><div><p>Profil de la ressource Organization permettant de représenter les unités fonctionnelles en établissement.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-organization.html">FRCoreOrganizationProfile</a></td><td><div><p>Profil de la ressource Organization pour la France. Il s'agit du profil de base pour les organisations en France.</p>
+</div></td></tr></table>
+</div>
 
 <h3 id="les-profils-administratifs">Les profils administratifs</h3>
 
 <!-- Rajout du style pour que le tableau prenne toute la taille et se place en-dessous du menu -->
 <div style="width: 100%; display: flex"> 
-<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-encounter.html">FR Core Encounter Profile</a></p>
-</div></td><td><div><p>This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.</p>
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-core-encounter.html">FRCoreEncounterProfile</a></td><td><div><p>This profil constrains the Encounter resource to represent either the patient visit or admission or the various movements that compose the patient stay.</p>
 <p>Ce profil de la ressource Encounter sert à la fois à définir la venue dans l'établissement et à représenter les mouvements du patient qui découpent cette venue.</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-healthcare-service.html">FR Core Healthcare Service Profile</a></p>
-</div></td><td><div><p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service.</p>
-<p>Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service.</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-location.html">FR Core Location Profile</a></p>
-</div></td><td><div><p>French profile of Location.</p>
-<p>Profil français de la ressource Location</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-organization-pole.html">FR Core Organization Pole Profile</a></p>
-</div></td><td>FR Core Organization Pole Profile</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-organization-uac.html">FR Core Organization UAC Profile</a></p>
-</div></td><td><div><p>This profile specializes the fr-core-organization profile to represent administrative units inside healthcare institutions.</p>
-<p>Ce profil spécialise le profil fr-core-organization pour représenter les unités administratives et comptables (UAC) en établissement</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-organization-uf.html">FR Core Organization UF Profile</a></p>
-</div></td><td><div><p>This profile specializes the fr-core-organization profile to represent wards inside healthcare institutions.</p>
-<p>Ce profil spécialise le profil fr-core-organization pour représenter les unités fonctionnelles en établissement</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-organization.html">FR Core Organization Profile</a></p>
-</div></td><td><div><p>Profile of the Organization resource for France. This profile specifies the types of identifiers for organizations in France, and adds a number of French extensions.</p>
-<p>Profil de la ressource Organization pour la France. Ce profil spécifie les types d'identifiants pour l'organisation en France, et ajoute des extensions françaises.</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-patient-ins.html">FR Core Patient INS Profile</a></p>
-</div></td><td>Profil Fr Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS).</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-patient.html">FR Core Patient Profile</a></p>
-</div></td><td><div><p>Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-healthcare-service.html">FRCoreHealthcareServiceProfile</a></td><td><div><p>Profile of the HealthcareService resource for France. This profile adds the element serviceTypeDuration to associate the service with the duration of this service. This profile needs to be revised, in particular to ensure consistency with the ROR project (https://interop.esante.gouv.fr/ig/fhir/ror).</p>
+<p>Profil de la ressource HealthcareService pour l'usage en France. Ce profil ajoute l'élément serviceTypeDuration de façon à associer le service avec la durée du service. Ce profil doit être retravaillé, pour être notamment mis en cohérence avec le projet ROR (https://interop.esante.gouv.fr/ig/fhir/ror).</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-patient-ins.html">FRCorePatientINSProfile</a></td><td><div><p>FR Core Patient profile overspecified to comply with the requirements of the National Health Identity (INS) framework. The INS identifier can only be conveyed in the case of a qualified identity, which is why the identifier slices are defined in the FRCorePatientINS profile and not in the FRCorePatient profile.</p>
+<p>Profil FR Core Patient surspécifié pour être conforme aux exigences du référentiel d'Identité Nationale de Santé (INS). Le matricule INS ne peut être véhiculé que dans le cas d'une identité qualifiée, raison pour laquelle les slices identifier sont définies au niveau du FRCorePatientINS et non au niveau du FRCorePatient.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-patient.html">FRCorePatientProfile</a></td><td><div><p>Profile of the Patient resource for France. This profile specifies the patient's identifiers for France. It uses international extensions (birtplace and nationality) and adds specific French extensions.</p>
 <p>Ce profil spécifie les identifiants de patient utilisés en France. Il utilise des extensions internationales (birthplace et nationalité) et ajoute des extensions propres à la France.)</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-practitioner-role.html">FR Core Practitioner Role</a></p>
-</div></td><td>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization | Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation.</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-practitioner.html">FR Core Practitioner Profile</a></p>
-</div></td><td>Profil de la ressource Practitionner pour la France.</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-related-person.html">FR Core Related Person Profile</a></p>
-</div></td><td><div><p>Profile of the RelatedPerson resource for France.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-practitioner-role.html">FRCorePractitionerRoleProfile</a></td><td><div><p>Profile of the PractitionerRole resource for France. This profil specifies the role of the practitioner for the organization</p>
+<p>Spécification du profil de la ressource PractitionerRole pour un usage en France. Ce profil permet de spécifier le rôle (la situation d'exercice) du PS dans le contexte d'une organisation.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-practitioner.html">FRCorePractitionerProfile</a></td><td><div><p>Profil de la ressource Practitionner pour la France.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-related-person.html">FRCoreRelatedPersonProfile</a></td><td><div><p>Profile of the RelatedPerson resource for France.</p>
 <p>Profil de la ressource RelatedPerson pour l'usage en France</p>
 </div></td></tr></table>
 </div>
 
 <h3 id="les-profils-mesures-de-santé-vital-signs">Les profils mesures de santé (vital signs)</h3>
 
-<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-bmi.html">FR Core Observation Bmi Profile</a></p>
-</div></td><td><div><p>French profil based on HL7 Vital Sign Body mass index (BMI) [Ratio].</p>
-<p>Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-body-height.html">FR Core Observation Body Height Profile</a></p>
-</div></td><td><div><p>French profile for body height.</p>
-<p>Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-body-temperature.html">FR Core Observation Body Temperature Profile</a></p>
-</div></td><td><div><p>French profil body temperature.</p>
-<p>Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-body-weight.html">FR Core Observation Body Weight Profile</a></p>
-</div></td><td><div><p>French profil Body weight based on the FHIR profil BodyWeightMeas.</p>
-<p>Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-bp.html">FR Core Observation Blood Pressure Profile</a></p>
-</div></td><td><div><p>French profile for blood pressure.</p>
-<p>Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-head-circum.html">FR Core Observation Head Circum Profile</a></p>
-</div></td><td><div><p>HL7 Vital Signs Head Occipital-frontal circumference profil.</p>
-<p>Profil HL7 Vital Signs Circonférence de la tête</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-heartrate.html">FR Core Observation Heart Rate Profile</a></p>
-</div></td><td><div><p>French profiling of the FHIR Vital Sign Heart Rate Profile.</p>
-<p>Profilage français du profil Vital Signs Heart rate</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-resp-rate.html">FR Core Observation Respiratory Rate Profile</a></p>
-</div></td><td><div><p>Profile of the ObservationResprate profil (described in the HL7 VitalSigns profil) for France.</p>
-<p>Profilage du profil ObservationResprate (décrit dans le profil HL7 VitaSigns) pour l'usage en France</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-observation-saturation-oxygen.html">FR Core Observation Oxygen Saturation Profile</a></p>
-</div></td><td>Oxygen saturation in Arterial blood. Saturation en oxygène du sang artériel</td></tr></table>
 <!-- like "%Profil%" rajouté car induit une erreur si vide -->
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-core-observation-bmi.html">FRCoreObservationBmiProfile</a></td><td><div><p>French profile based on HL7 Vital Sign Body mass index (BMI) [Ratio].</p>
+<p>Profil français de l'indice de masse corporelle basé sur le profil HL7 Vital Sign BMI</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-body-height.html">FRCoreObservationBodyHeightProfile</a></td><td><div><p>French profile for body height.</p>
+<p>Profil français de la mesure de la taille. Profil basé sur le profil bodyheight d'HL7</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-body-temperature.html">FRCoreObservationBodyTemperatureProfile</a></td><td><div><p>French profile for body temperature.</p>
+<p>Profil français de la mesure de la température. Profil basé sur le profil Vital Sign BodyTemperature d'HL7</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-body-weight.html">FRCoreObservationBodyWeightProfile</a></td><td><div><p>French profile of body weight based on the FHIR profil BodyWeightMeas.</p>
+<p>Profil français Body weight basé sur le profil HL7 BodyWeightMeas de Vital Signs.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-bp.html">FRCoreObservationBpProfile</a></td><td><div><p>French profile for blood pressure.</p>
+<p>Profil français de la pression artérielle. Profil basé sur le profil bp d'HL7</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-head-circum.html">FRCoreObservationHeadCircumProfile</a></td><td><div><p>French profile for Occipital-frontal circumference.</p>
+<p>Profil HL7 Vital Signs Circonférence de la tête</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-heartrate.html">FRCoreObservationHeartRateProfile</a></td><td><div><p>French profile for the FHIR Vital Sign Heart Rate Profile.</p>
+<p>Profilage français du profil Vital Signs Heart rate</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-resp-rate.html">FRCoreObservationRespRateProfile</a></td><td><div><p>French profile for the ObservationResprate profile for France.</p>
+<p>Profil de la fréquence resporatoire pour l'usage en France</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-observation-saturation-oxygen.html">FRCoreObservationOxygenSaturationProfile</a></td><td><div><p>French profile for Oxygen saturation in Arterial blood.</p>
+<p>Profil de la saturation en oxygène du sang artériel.</p>
+</div></td></tr></table>
 
 <h3 id="les-profils-agenda">Les profils agenda</h3>
 
-<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-appointment.html">FR Core Appointment Profile</a></p>
-</div></td><td><div><p>Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.</p>
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-core-appointment.html">FRCoreAppointmentProfile</a></td><td><div><p>Profile of the Appointment resource for France. This profile adds the operator who created/updated/canceled the appointment. It also allows to possibly reference an appointment canceled and a document associated with the appointment.</p>
 <p>Profil de la ressource Appointment pour la France. Ce profil ajoute l'opérateur qui a créé/modifié/annulé le RDV. Il permet également de référencer éventuellement un RDV annulé et/ou un document lié au RDV.</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-schedule.html">FR Core Schedule Profile</a></p>
-</div></td><td><div><p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-schedule.html">FRCoreScheduleProfile</a></td><td><div><p>Profile of the Schedule resource for France. This profile redefines the element serviceType to associate the service with the duration of this service. It also adds an extension sepcifying the periods of avalability/non-availabilty times of the Schedule</p>
 <p>Profil de la ressource Schedule pour l'usage en France. Ce profil redéfinit l'élément serviceType de façon à associer le service avec la durée du service. Il ajoute également une extension qui précise les périodes de disponibilités/non disponibilités de la vacation.</p>
-</div></td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-slot.html">FR Core Slot Profile</a></p>
-</div></td><td><div><p>Profil of the Slot resource for France.</p>
+</div></td></tr><tr><td><a href="StructureDefinition-fr-core-slot.html">FRCoreSlotProfile</a></td><td><div><p>Profil of the Slot resource for France.</p>
 <p>Profil de la ressource Slot pour la France</p>
 </div></td></tr></table>
 
 <h3 id="les-autres-profils">Les autres profils</h3>
 
-<table class="grid"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><div><p><a href="StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html">FR Core Medication Administration Inhaled Oxygen Profile</a></p>
-</div></td><td>Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé.</td></tr></table>
+<table class="lines"><tr><td style="background-color: #eeeeee">Titre du profil</td><td style="background-color: #eeeeee">Description</td></tr><tr><td><a href="StructureDefinition-fr-core-medication-administration-inhaled-oxygen.html">FRCoreMedicationAdministrationInhaledOxygenProfile</a></td><td><div><p>Profile based on the MedicationAdministration resource to indicate inhaled oxygen. This profile makes it possible to complement the information from the Oxygen Saturation Observation resource with oxygen intake provided through mechanical ventilation.</p>
+<p>Profil se basant sur la ressource Medication Administration pour indiquer l'oxygène inhalé. Ce profil permet de compléter les informations de la ressource Observation saturation en oxygène avec les apports d'oxygène via une ventilation mécanique.</p>
+</div></td></tr></table>
 
 
 
@@ -315,7 +342,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 4, 2024 10:06+0200">2024-09-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 18:08+0100">2026-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

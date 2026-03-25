@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>FR Core CodeSystem Contact Relationship - Guide d&#39;implémentation Fr Core v2.1.0</title>
+    <title>FR Core CodeSystem Contact Relationship - Guide d&#39;implémentation FR Core v2.2.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -18,6 +18,7 @@
     <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
     <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
   	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
     <!-- Placeholder for child template CSS declarations -->
 <link href="assets/css/hl7fr.css" rel="stylesheet"/>
 
@@ -30,10 +31,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
-    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
-    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
-    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -41,10 +42,11 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"5.103"}
-    h3,h4,h5,h6{--heading-prefix:"5.103"}</style>
+    <style type="text/css">h2{--heading-prefix:"15.119"}
+    h3,h4,h5,h6{--heading-prefix:"15.119"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
+
         <!-- Placeholder for child template header declarations -->
 <div id="project-nav">
   <a id="hl7-logo" no-external="true" href="http://interopsante.org/"><img height="50" alt="Interop'Santé Logo" src="assets/images/IS_LOGO.png"/></a>
@@ -55,13 +57,13 @@
 </div>
 
         <div id="ig-status">
-          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation Fr Core</span>
+          <p><span style="font-size:12pt;font-weight:bold">Guide d&#39;implémentation FR Core</span>
             <br/>
-            <span style="display:inline-block;">2.1.0 - trial-use
+            <span style="display:inline-block;">2.2.0 - trial-use
 
 
 
-  <img alt="France flag" src="assets/images/fra.svg" height="16" title="France"/>
+  France
 
 
             </span>
@@ -91,6 +93,31 @@
   <li>
     <a href="index.html">Accueil</a>
   </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Structures des établissements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="structure_intro.html">Introduction</a>
+      </li>
+      <li>
+        <a href="structure_entites.html">Entités</a>
+      </li>
+      <li>
+        <a href="structure_relations.html">Relations</a>
+      </li>
+      <li>
+        <a href="structure_contraintes.html">Contraintes</a>
+      </li>
+      <li>
+        <a href="structure_nomenclatures.html">Nomenclatures</a>
+      </li>
+      <li>
+        <a href="structure_ref_loi.html">Références</a>
+      </li>
+    </ul>
+  </li>
   <li>
     <a href="profile_list.html">Liste des profils</a>
   </li>
@@ -99,6 +126,12 @@
   </li>
   <li>
     <a href="bonnes_pratiques.html">Bonnes pratiques</a>
+  </li>
+  <li>
+    <a href="known_problems.html">Problématiques connues</a>
+  </li>
+  <li>
+    <a href="change_notes.html">Historique</a>
   </li>
   <li class="dropdown">
     <a data-toggle="dropdown" href="#" class="dropdown-toggle">Autres ressources
@@ -112,10 +145,13 @@
         <a href="a_propos.html">A propos</a>
       </li>
       <li>
-        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR </a>
+        <a target="_blank" href="http://hl7.org/fhir/R4/index.html">Spécifications FHIR</a>
       </li>
       <li>
-        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir/">Catalogue des guides ANS</a>
+        <a target="_blank" href="https://interop.esante.gouv.fr/ig/fhir">Catalogue des guides ANS</a>
+      </li>
+      <li>
+        <a target="_blank" href="https://smt.esante.gouv.fr">Serveur de terminologies ANS</a>
       </li>
       <li>
         <a target="_blank" href="http://www.interopsante.org">Site Interop&apos;Santé</a>
@@ -138,7 +174,7 @@
 
           <span style="float:right;">
 
-            <a href="CodeSystem-fr-core-cs-circonstances-sortie.ttl.html">&lt;prev</a> | 
+            <a href="CodeSystem-fr-core-cs-code-tarif-tnjp.ttl.html">&lt;prev</a> | 
 
             <a href="#bottom">bottom</a>
 
@@ -157,7 +193,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.1.0: Release) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the Guide d'implémentation Fr Core (v2.2.0: final-text) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/core/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -210,7 +246,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">2.1.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship|2.1.0"/></span>
+      <span class="copy-text">2.2.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship|2.2.0"/></span>
       </td>
     </tr>
 
@@ -226,7 +262,7 @@
         
           Draft
           
-            as of 2024-09-04
+            as of 2026-03-25
           
         
       </td>
@@ -242,7 +278,7 @@
   </table>
 
 <p>
-<p>Relationship</p>
+<p>Relationship type</p>
 
 </p>
 
@@ -261,169 +297,251 @@
 </ul>
 
 
-  <div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem fr-core-cs-contact-relationship</b></p><a name="fr-core-cs-contact-relationship"> </a><a name="hcfr-core-cs-contact-relationship"> </a><a name="fr-core-cs-contact-relationship-und"> </a><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship</code> defines the following codes:</p>
-<table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr>
+  <div xmlns="http://www.w3.org/1999/xhtml" xml:lang="fr-FR" lang="fr-FR" data-fhir="generated"><p class="res-header-id"></p><a name="fr-core-cs-contact-relationship"> </a><a name="hcfr-core-cs-contact-relationship"> </a>
+<div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Langue : fr-FR</p><p style="margin-bottom: 0px">Profil: <a href="http://hl7.org/fhir/R4/shareablecodesystem.html">Shareable CodeSystemversion : null4.0.1)</a></p></div><p>This case-sensitive code system <code>https://hl7.fr/ig/fhir/core/CodeSystem/fr-core-cs-contact-relationship</code> defines the following codes:</p>
+<table class="codes" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Affichage</b></td><td><b>Définition</b></td></tr>
 <tr><td style="white-space:nowrap">WRD<a name="fr-core-cs-contact-relationship-WRD"> </a></td>
+<td>Dépositaire de la tutelle judiciare</td>
 <td>Dépositaire de la tutelle judiciare</td></tr>
 <tr><td style="white-space:nowrap">GRD<a name="fr-core-cs-contact-relationship-GRD"> </a></td>
+<td>Tuteur</td>
 <td>Tuteur</td></tr>
 <tr><td style="white-space:nowrap">CUR<a name="fr-core-cs-contact-relationship-CUR"> </a></td>
+<td>Représentant légal</td>
 <td>Représentant légal</td></tr>
 <tr><td style="white-space:nowrap">CURTL<a name="fr-core-cs-contact-relationship-CURTL"> </a></td>
+<td>Curatelle</td>
 <td>Curatelle</td></tr>
 <tr><td style="white-space:nowrap">EDUREF<a name="fr-core-cs-contact-relationship-EDUREF"> </a></td>
+<td>Educateur référent</td>
 <td>Educateur référent</td></tr>
 <tr><td style="white-space:nowrap">SVG<a name="fr-core-cs-contact-relationship-SVG"> </a></td>
+<td>Sauvegarde juridique</td>
 <td>Sauvegarde juridique</td></tr>
 <tr><td style="white-space:nowrap">K<a name="fr-core-cs-contact-relationship-K"> </a></td>
+<td>Personne de confiance</td>
 <td>Personne de confiance</td></tr>
 <tr><td style="white-space:nowrap">P<a name="fr-core-cs-contact-relationship-P"> </a></td>
+<td>Personne à ne pas prévenir</td>
 <td>Personne à ne pas prévenir</td></tr>
 <tr><td style="white-space:nowrap">FAMMEMB<a name="fr-core-cs-contact-relationship-FAMMEMB"> </a></td>
+<td>family member</td>
 <td>family member</td></tr>
 <tr><td style="white-space:nowrap">CHILD<a name="fr-core-cs-contact-relationship-CHILD"> </a></td>
+<td>child</td>
 <td>child</td></tr>
 <tr><td style="white-space:nowrap">CHLDADOPT<a name="fr-core-cs-contact-relationship-CHLDADOPT"> </a></td>
+<td>adopted child</td>
 <td>adopted child</td></tr>
 <tr><td style="white-space:nowrap">DAUADOPT<a name="fr-core-cs-contact-relationship-DAUADOPT"> </a></td>
+<td>adopted daughter</td>
 <td>adopted daughter</td></tr>
 <tr><td style="white-space:nowrap">SONADOPT<a name="fr-core-cs-contact-relationship-SONADOPT"> </a></td>
+<td>adopted son</td>
 <td>adopted son</td></tr>
 <tr><td style="white-space:nowrap">CHLDFOST<a name="fr-core-cs-contact-relationship-CHLDFOST"> </a></td>
+<td>foster child</td>
 <td>foster child</td></tr>
 <tr><td style="white-space:nowrap">SONFOST<a name="fr-core-cs-contact-relationship-SONFOST"> </a></td>
+<td>foster son</td>
 <td>foster son</td></tr>
 <tr><td style="white-space:nowrap">DAUC<a name="fr-core-cs-contact-relationship-DAUC"> </a></td>
+<td>daughter</td>
 <td>daughter</td></tr>
 <tr><td style="white-space:nowrap">STPDAU<a name="fr-core-cs-contact-relationship-STPDAU"> </a></td>
+<td>stepdaughter</td>
 <td>stepdaughter</td></tr>
 <tr><td style="white-space:nowrap">SONC<a name="fr-core-cs-contact-relationship-SONC"> </a></td>
+<td>son</td>
 <td>son</td></tr>
 <tr><td style="white-space:nowrap">STPSON<a name="fr-core-cs-contact-relationship-STPSON"> </a></td>
+<td>stepson</td>
 <td>stepson</td></tr>
 <tr><td style="white-space:nowrap">STPCHLD<a name="fr-core-cs-contact-relationship-STPCHLD"> </a></td>
+<td>step child</td>
 <td>step child</td></tr>
 <tr><td style="white-space:nowrap">EXT<a name="fr-core-cs-contact-relationship-EXT"> </a></td>
+<td>extended family member</td>
 <td>extended family member</td></tr>
 <tr><td style="white-space:nowrap">AUNT<a name="fr-core-cs-contact-relationship-AUNT"> </a></td>
+<td>aunt</td>
 <td>aunt</td></tr>
 <tr><td style="white-space:nowrap">COUSN<a name="fr-core-cs-contact-relationship-COUSN"> </a></td>
+<td>cousin</td>
 <td>cousin</td></tr>
 <tr><td style="white-space:nowrap">GGRPRN<a name="fr-core-cs-contact-relationship-GGRPRN"> </a></td>
+<td>great grandparent</td>
 <td>great grandparent</td></tr>
 <tr><td style="white-space:nowrap">GGRFTH<a name="fr-core-cs-contact-relationship-GGRFTH"> </a></td>
+<td>great grandfather</td>
 <td>great grandfather</td></tr>
 <tr><td style="white-space:nowrap">GGRMTH<a name="fr-core-cs-contact-relationship-GGRMTH"> </a></td>
+<td>great grandmather</td>
 <td>great grandmather</td></tr>
 <tr><td style="white-space:nowrap">GRNDCHILD<a name="fr-core-cs-contact-relationship-GRNDCHILD"> </a></td>
+<td>grandchild</td>
 <td>grandchild</td></tr>
 <tr><td style="white-space:nowrap">GRNDDAU<a name="fr-core-cs-contact-relationship-GRNDDAU"> </a></td>
+<td>granddaughter</td>
 <td>granddaughter</td></tr>
 <tr><td style="white-space:nowrap">GRNDSON<a name="fr-core-cs-contact-relationship-GRNDSON"> </a></td>
+<td>grandson</td>
 <td>grandson</td></tr>
 <tr><td style="white-space:nowrap">GRPRN<a name="fr-core-cs-contact-relationship-GRPRN"> </a></td>
+<td>grandparent</td>
 <td>grandparent</td></tr>
 <tr><td style="white-space:nowrap">GRFTH<a name="fr-core-cs-contact-relationship-GRFTH"> </a></td>
+<td>grandfather</td>
 <td>grandfather</td></tr>
 <tr><td style="white-space:nowrap">GRMTH<a name="fr-core-cs-contact-relationship-GRMTH"> </a></td>
+<td>grandmather</td>
 <td>grandmather</td></tr>
 <tr><td style="white-space:nowrap">CHLDINLAW<a name="fr-core-cs-contact-relationship-CHLDINLAW"> </a></td>
+<td>child in-law</td>
 <td>child in-law</td></tr>
 <tr><td style="white-space:nowrap">DAUINLAW<a name="fr-core-cs-contact-relationship-DAUINLAW"> </a></td>
+<td>daughter in-law</td>
 <td>daughter in-law</td></tr>
 <tr><td style="white-space:nowrap">PRNINLAW<a name="fr-core-cs-contact-relationship-PRNINLAW"> </a></td>
+<td>parent in-law</td>
 <td>parent in-law</td></tr>
 <tr><td style="white-space:nowrap">FTHINLAW<a name="fr-core-cs-contact-relationship-FTHINLAW"> </a></td>
+<td>father in-law</td>
 <td>father in-law</td></tr>
 <tr><td style="white-space:nowrap">MTHINLAW<a name="fr-core-cs-contact-relationship-MTHINLAW"> </a></td>
+<td>mother in-law</td>
 <td>mother in-law</td></tr>
 <tr><td style="white-space:nowrap">SIBINLAW<a name="fr-core-cs-contact-relationship-SIBINLAW"> </a></td>
+<td>sibbling in-law</td>
 <td>sibbling in-law</td></tr>
 <tr><td style="white-space:nowrap">BROINLAW<a name="fr-core-cs-contact-relationship-BROINLAW"> </a></td>
+<td>brother in-law</td>
 <td>brother in-law</td></tr>
 <tr><td style="white-space:nowrap">SISINLAW<a name="fr-core-cs-contact-relationship-SISINLAW"> </a></td>
+<td>sister in-law</td>
 <td>sister in-law</td></tr>
 <tr><td style="white-space:nowrap">NIENEPH<a name="fr-core-cs-contact-relationship-NIENEPH"> </a></td>
+<td>niece/nephew</td>
 <td>niece/nephew</td></tr>
 <tr><td style="white-space:nowrap">NEPHEW<a name="fr-core-cs-contact-relationship-NEPHEW"> </a></td>
+<td>nephew</td>
 <td>nephew</td></tr>
 <tr><td style="white-space:nowrap">NIECE<a name="fr-core-cs-contact-relationship-NIECE"> </a></td>
+<td>niece</td>
 <td>niece</td></tr>
 <tr><td style="white-space:nowrap">UNCLE<a name="fr-core-cs-contact-relationship-UNCLE"> </a></td>
+<td>uncle</td>
 <td>uncle</td></tr>
 <tr><td style="white-space:nowrap">PRN<a name="fr-core-cs-contact-relationship-PRN"> </a></td>
+<td>parent</td>
 <td>parent</td></tr>
 <tr><td style="white-space:nowrap">ADOPTP<a name="fr-core-cs-contact-relationship-ADOPTP"> </a></td>
+<td>adoptive parent</td>
 <td>adoptive parent</td></tr>
 <tr><td style="white-space:nowrap">ADOPTF<a name="fr-core-cs-contact-relationship-ADOPTF"> </a></td>
+<td>adoptive father</td>
 <td>adoptive father</td></tr>
 <tr><td style="white-space:nowrap">ADOPTM<a name="fr-core-cs-contact-relationship-ADOPTM"> </a></td>
+<td>adoptive mother</td>
 <td>adoptive mother</td></tr>
 <tr><td style="white-space:nowrap">FTH<a name="fr-core-cs-contact-relationship-FTH"> </a></td>
+<td>father</td>
 <td>father</td></tr>
 <tr><td style="white-space:nowrap">FTHFOST<a name="fr-core-cs-contact-relationship-FTHFOST"> </a></td>
+<td>foster father</td>
 <td>foster father</td></tr>
 <tr><td style="white-space:nowrap">NFTH<a name="fr-core-cs-contact-relationship-NFTH"> </a></td>
+<td>natural father</td>
 <td>natural father</td></tr>
 <tr><td style="white-space:nowrap">STPFTH<a name="fr-core-cs-contact-relationship-STPFTH"> </a></td>
+<td>step father</td>
 <td>step father</td></tr>
 <tr><td style="white-space:nowrap">MTH<a name="fr-core-cs-contact-relationship-MTH"> </a></td>
+<td>mother</td>
 <td>mother</td></tr>
 <tr><td style="white-space:nowrap">MTHFOST<a name="fr-core-cs-contact-relationship-MTHFOST"> </a></td>
+<td>foster mother</td>
 <td>foster mother</td></tr>
 <tr><td style="white-space:nowrap">GESTM<a name="fr-core-cs-contact-relationship-GESTM"> </a></td>
+<td>gestational mother</td>
 <td>gestational mother</td></tr>
 <tr><td style="white-space:nowrap">NMTH<a name="fr-core-cs-contact-relationship-NMTH"> </a></td>
+<td>natural mother</td>
 <td>natural mother</td></tr>
 <tr><td style="white-space:nowrap">STPMTH<a name="fr-core-cs-contact-relationship-STPMTH"> </a></td>
+<td>stepmother</td>
 <td>stepmother</td></tr>
 <tr><td style="white-space:nowrap">NPRN<a name="fr-core-cs-contact-relationship-NPRN"> </a></td>
+<td>natural parent</td>
 <td>natural parent</td></tr>
 <tr><td style="white-space:nowrap">STPPRN<a name="fr-core-cs-contact-relationship-STPPRN"> </a></td>
+<td>step parent</td>
 <td>step parent</td></tr>
 <tr><td style="white-space:nowrap">SIB<a name="fr-core-cs-contact-relationship-SIB"> </a></td>
+<td>sibling</td>
 <td>sibling</td></tr>
 <tr><td style="white-space:nowrap">BRO<a name="fr-core-cs-contact-relationship-BRO"> </a></td>
+<td>brother</td>
 <td>brother</td></tr>
 <tr><td style="white-space:nowrap">HBRO<a name="fr-core-cs-contact-relationship-HBRO"> </a></td>
+<td>half-brother</td>
 <td>half-brother</td></tr>
 <tr><td style="white-space:nowrap">NBRO<a name="fr-core-cs-contact-relationship-NBRO"> </a></td>
+<td>natural brother</td>
 <td>natural brother</td></tr>
 <tr><td style="white-space:nowrap">TWINBRO<a name="fr-core-cs-contact-relationship-TWINBRO"> </a></td>
+<td>twin brother</td>
 <td>twin brother</td></tr>
 <tr><td style="white-space:nowrap">STPBRO<a name="fr-core-cs-contact-relationship-STPBRO"> </a></td>
+<td>stepbrother</td>
 <td>stepbrother</td></tr>
 <tr><td style="white-space:nowrap">HSIB<a name="fr-core-cs-contact-relationship-HSIB"> </a></td>
+<td>half-sibling</td>
 <td>half-sibling</td></tr>
 <tr><td style="white-space:nowrap">HSIS<a name="fr-core-cs-contact-relationship-HSIS"> </a></td>
+<td>half-sister</td>
 <td>half-sister</td></tr>
 <tr><td style="white-space:nowrap">NSIB<a name="fr-core-cs-contact-relationship-NSIB"> </a></td>
+<td>natural sibling</td>
 <td>natural sibling</td></tr>
 <tr><td style="white-space:nowrap">NSIS<a name="fr-core-cs-contact-relationship-NSIS"> </a></td>
+<td>natural sister</td>
 <td>natural sister</td></tr>
 <tr><td style="white-space:nowrap">TWINSIS<a name="fr-core-cs-contact-relationship-TWINSIS"> </a></td>
+<td>twin sister</td>
 <td>twin sister</td></tr>
 <tr><td style="white-space:nowrap">TWIN<a name="fr-core-cs-contact-relationship-TWIN"> </a></td>
+<td>twin</td>
 <td>twin</td></tr>
 <tr><td style="white-space:nowrap">SIS<a name="fr-core-cs-contact-relationship-SIS"> </a></td>
+<td>sister</td>
 <td>sister</td></tr>
 <tr><td style="white-space:nowrap">STPSIS<a name="fr-core-cs-contact-relationship-STPSIS"> </a></td>
+<td>stepsister</td>
 <td>stepsister</td></tr>
 <tr><td style="white-space:nowrap">STPSIB<a name="fr-core-cs-contact-relationship-STPSIB"> </a></td>
+<td>step sibling</td>
 <td>step sibling</td></tr>
 <tr><td style="white-space:nowrap">SIGOTHR<a name="fr-core-cs-contact-relationship-SIGOTHR"> </a></td>
+<td>significant other</td>
 <td>significant other</td></tr>
 <tr><td style="white-space:nowrap">DOMPART<a name="fr-core-cs-contact-relationship-DOMPART"> </a></td>
+<td>domestic partner</td>
 <td>domestic partner</td></tr>
 <tr><td style="white-space:nowrap">SPS<a name="fr-core-cs-contact-relationship-SPS"> </a></td>
+<td>spouse</td>
 <td>spouse</td></tr>
 <tr><td style="white-space:nowrap">HUSB<a name="fr-core-cs-contact-relationship-HUSB"> </a></td>
+<td>husband</td>
 <td>husband</td></tr>
 <tr><td style="white-space:nowrap">WIFE<a name="fr-core-cs-contact-relationship-WIFE"> </a></td>
+<td>wife</td>
 <td>wife</td></tr>
 <tr><td style="white-space:nowrap">FRND<a name="fr-core-cs-contact-relationship-FRND"> </a></td>
+<td>unrelated friend</td>
 <td>unrelated friend</td></tr>
 <tr><td style="white-space:nowrap">NBOR<a name="fr-core-cs-contact-relationship-NBOR"> </a></td>
+<td>neighbor</td>
 <td>neighbor</td></tr></table></div>
 
   
@@ -455,7 +573,7 @@
             <tr>
               <td style="text-align:left">&#xA0;
 
-                <a href="CodeSystem-fr-core-cs-circonstances-sortie.ttl.html">&lt;prev</a>
+                <a href="CodeSystem-fr-core-cs-code-tarif-tnjp.ttl.html">&lt;prev</a>
 
               </td>
               <td style="text-align:center">
@@ -473,7 +591,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org/">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Sep 4, 2024 10:06+0200">2024-09-04</span>
+          IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://interopsante.org">Interop&#39;Santé</a>.  Package hl7.fhir.fr.core#2.2.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Mar 25, 2026 18:08+0100">2026-03-25</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

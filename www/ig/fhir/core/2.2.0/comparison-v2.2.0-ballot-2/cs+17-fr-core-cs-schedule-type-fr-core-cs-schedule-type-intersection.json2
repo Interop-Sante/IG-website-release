@@ -1,0 +1,19 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "64639099-3308-479d-b93c-5f7f817c4842-51",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/64639099-3308-479d-b93c-5f7f817c4842-51",
+  "name" : "IntersectionFRCoreCodeSystemScheduleTypeAndFRCoreCodeSystemScheduleType",
+  "title" : "Intersection of FR Core CodeSystem Schedule Type And FR Core CodeSystem Schedule Type",
+  "status" : "draft",
+  "date" : "2026-03-25T18:04:48+01:00",
+  "concept" : [{
+    "code" : "busy-unavailable",
+    "display" : "Indisponibilité",
+    "definition" : "Indisponibilité"
+  },
+  {
+    "code" : "free",
+    "display" : "Disponibilité",
+    "definition" : "Disponibilité"
+  }]
+}
