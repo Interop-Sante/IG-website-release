@@ -4,13 +4,24 @@
         <description>Packages publiés par InteropSanté</description>
         <link>https://hl7.fr/ig/fhir/package-feed.xml</link>
         <generator>HL7, Inc FHIR Publication tooling</generator>
-        <lastBuildDate>Wed, 25 Mar 2026 06:02:37 +0100</lastBuildDate>
+        <lastBuildDate>Fri, 29 May 2026 01:27:06 +0200</lastBuildDate>
         <atom:link href="https://hl7.fr/ig/fhir/package-feed.xml" rel="self" type="application/rss+xml"/>
-        <pubDate>Wed, 25 Mar 2026 06:02:37 +0100</pubDate>
+        <pubDate>Fri, 29 May 2026 01:27:06 +0200</pubDate>
         <language>en&gt;</language>
         <ttl>600</ttl>
           
         <item>
+      <title>hl7.fhir.fr.analyse-pharma#0.1.0-ballot</title>
+      <description>Première publication en concertation publique de ce guide d'implémentation sur l'analyse pharmaceutique dans un contexte hospitalier</description>
+      <link>https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot/package.tgz</link>
+      <guid isPermaLink="true">https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot/package.tgz</guid>
+      <dc:creator>InteropSante</dc:creator>
+      <fhir:version>4.0.1</fhir:version>
+      <fhir:kind>IG</fhir:kind>
+      <pubDate>Fri, 29 May 2026 01:27:06 +0200</pubDate>
+      <fhir:details>Publication run at 29/05/2026 by root using Version 2.2.8 (Git# e39e13a432d0). Built 2026-05-23T19:17:05.32Z (5 days old) source id Unknown (todo)</fhir:details>
+    </item>
+    <item>
       <title>hl7.fhir.fr.core#2.2.0</title>
       <description>Guide d'implémentation Fr Core 2.2.0 - profils génériques à usage national</description>
       <link>https://hl7.fr/ig/fhir/core/2.2.0/package.tgz</link>
