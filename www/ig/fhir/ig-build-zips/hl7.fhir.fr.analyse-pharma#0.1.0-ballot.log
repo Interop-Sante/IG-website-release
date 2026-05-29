@@ -1,0 +1,500 @@
+FHIR IG Publisher Version 2.2.8 (Git# e39e13a432d0). Built 2026-05-23T19:17:05.32Z (5 days old)
+Detected Java version: 21.0.8 from /opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home on aarch64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma, path = /Users/nicolasriss/.gem/ruby/3.3.3/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/lib/ruby/gems/3.3.0/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/bin:/Users/nicolasriss/.local/bin:/opt/homebrew/opt/openjdk@21/bin:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v25.2.1/bin:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:~/.dotnet/tools:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli
+Parameters: -go-publish -source /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma -web /Library/WebServer/Documents/InteropSante/IG-website-release/www/ig/fhir -registry /Library/WebServer/Documents/InteropSante/IG-website-release/ig-registry/fhir-ig-list.json -history /Library/WebServer/Documents/InteropSante/IG-website-release/ig-history -templates /Library/WebServer/Documents/InteropSante/IG-website-release/templates -temp /Library/WebServer/Documents/tmp
+---------------
+Publication Run: publish /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma to /Library/WebServer/Documents/InteropSante/IG-website-release/www/ig/fhir
+Relative directory for IG is '/analyse-pharma'
+===== Web Publication Run Details ===============================
+ Source IG: hl7.fhir.fr.analyse-pharma#0.1.0-ballot : https://hl7.fr/ig/fhir/analyse-pharma (R4) from /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma
+All checks passed. Do the publication build from /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma and publish to /Library/WebServer/Documents/tmp/web-root/run-20260529/analyse-pharma
+Prepare Build space in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot
+Build IG at /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma: final copy suitable for publication (in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot)
+FHIR IG Publisher Version 2.2.8 (Git# e39e13a432d0). Built 2026-05-23T19:17:05.32Z (5 days old)     
+Detected Java version: 21.0.8 from /opt/homebrew/Cellar/openjdk@21/21.0.8/libexec/openjdk.jdk/Contents/Home on Mac OS X/aarch64 (64bit). 4096MB available
+dir = /Users/nicolasriss/Desktop/ig-is/hl7.fhir.fr.analyse-pharma, path = /Users/nicolasriss/.gem/ruby/3.3.3/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/lib/ruby/gems/3.3.0/bin:/Users/nicolasriss/.rubies/ruby-3.3.3/bin:/Users/nicolasriss/.local/bin:/opt/homebrew/opt/openjdk@21/bin:/Users/nicolasriss/Desktop/apache-maven-3.9.6/bin:/Users/nicolasriss/.nvm/versions/node/v25.2.1/bin:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli:/Library/Frameworks/Python.framework/Versions/3.10/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:~/.dotnet/tools:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/debugCommand:/Users/nicolasriss/Library/Application Support/Code/User/globalStorage/github.copilot-chat/copilotCli
+Parameters: -publish https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot -no-exit -ig /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot -resetTx
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ vendredi 29 mai 2026, 13:27:06 heure d’été d’Europe centrale (2026-05-29T13:27:06+02:00)
+                                                                                                    
+Build FHIR IG from /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot (00:00.670 / 00:00.670, 49Mb)
+Build Formal Publication package, intended for https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot    (00:00.001 / 00:00.672, 49Mb)
+API keys loaded from /var/root/.fhir/fhir-settings.json                                              (00:00.000 / 00:00.673, 49Mb)
+Package Cache: /var/root/.fhir/packages                                                              (00:00.002 / 00:00.675, 49Mb)
+Found dependency on hl7.fhir.fr.core#2.1.0 in Sushi config. Pre-installing                           (00:00.002 / 00:00.678, 49Mb)
+[39mInstalling hl7.fhir.fr.core#2.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.fr.core#2.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.fr.core#2.1.0
+[0;39mFound dependency on hl7.fhir.extensions.r5#4.0.1 in Sushi config. Pre-installing                     (00:02.338 / 00:03.016, 86Mb)
+[39mInstalling hl7.fhir.extensions.r5#4.0.1 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[33mError fetching https://packages2.fhir.org/packages/hl7.fhir.extensions.r5: Not Found
+[0;39m[33mError fetching https://packages.fhir.org/hl7.fhir.extensions.r5: Not Found
+[0;39mUnable to install hl7.fhir.extensions.r5#4.0.1: Unable to resolve package id hl7.fhir.extensions.r5#4.0.1 (00:01.967 / 00:04.984, 139Mb)
+Trying to go on                                                                                      (00:00.000 / 00:04.985, 139Mb)
+Found dependency on ans.fhir.fr.eprescription#1.1.0-ballot in Sushi config. Pre-installing           (00:00.000 / 00:04.986, 139Mb)
+[39mInstalling ans.fhir.fr.eprescription#1.1.0-ballot to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling ans.fhir.fr.eprescription#1.1.0-ballot
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/ans.fhir.fr.eprescription#1.1.0-ballot
+[0;39mRun Sushi on /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot      (00:00.451 / 00:05.438, 161Mb)
+Sushi: info  Running SUSHI v3.19.0 (implements FHIR Shorthand specification v3.0.0)                  (00:00.726 / 00:06.164, 35Mb)
+Sushi: info  Arguments:                                                                              (00:00.001 / 00:06.165, 35Mb)
+Sushi: info    --require-latest                                                                      (00:00.000 / 00:06.166, 35Mb)
+Sushi: info    --out /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot (00:00.000 / 00:06.167, 35Mb)
+Sushi: info    /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot    (00:00.000 / 00:06.168, 35Mb)
+Sushi: info  Using configuration file: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/sushi-config.yaml (00:00.746 / 00:06.915, 35Mb)
+Sushi: info  Importing FSH text...                                                                   (00:00.058 / 00:06.973, 35Mb)
+Sushi: info  Preprocessed 92 documents with 36 aliases.                                              (00:00.174 / 00:07.148, 35Mb)
+Sushi: info  Imported 12 definitions and 88 instances.                                               (00:00.020 / 00:07.168, 35Mb)
+Sushi: info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources                             (00:00.075 / 00:07.244, 35Mb)
+Sushi: info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2                          (00:00.134 / 00:07.379, 36Mb)
+Sushi: info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources                                    (00:00.045 / 00:07.424, 36Mb)
+Sushi: info  Resolved hl7.terminology.r4#latest to concrete version 7.1.0                            (00:00.034 / 00:07.458, 36Mb)
+Sushi: info  Loaded hl7.terminology.r4#7.1.0 with 4103 resources                                     (00:01.063 / 00:08.521, 36Mb)
+Sushi: warn  Found old-style cross-version extensions package in dependencies: hl7.fhir.extensions.r5. (00:00.003 / 00:08.525, 36Mb)
+Sushi:   SUSHI will use the official xver package instead: hl7.fhir.uv.xver-r5.r4.                   (00:00.000 / 00:08.526, 36Mb)
+Sushi:   Please update your sushi-config.yaml file to reference the new xver package.                (00:00.000 / 00:08.526, 36Mb)
+Sushi:   See: https://confluence.hl7.org/spaces/FHIRI/pages/413256623/FAQs                           (00:00.000 / 00:08.527, 36Mb)
+Sushi: info  Loaded hl7.fhir.fr.core#2.1.0 with 120 resources                                        (00:00.061 / 00:08.589, 36Mb)
+Sushi: info  Resolved hl7.fhir.uv.xver-r5.r4#latest to concrete version 0.1.0                        (00:00.042 / 00:08.632, 36Mb)
+Sushi: info  Loaded hl7.fhir.uv.xver-r5.r4#0.1.0 with 4707 resources                                 (00:02.928 / 00:11.561, 36Mb)
+Sushi: info  Loaded ans.fhir.fr.eprescription#1.1.0-ballot with 53 resources                         (00:00.031 / 00:11.592, 36Mb)
+Sushi: info  Loaded hl7.fhir.r4.core#4.0.1 with 4581 resources                                       (00:01.348 / 00:12.940, 36Mb)
+Sushi: info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.3.0                     (00:00.043 / 00:12.983, 36Mb)
+Sushi: info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources                               (00:00.263 / 00:13.246, 36Mb)
+Sushi: info  Loaded virtual package sushi-local#LOCAL with 0 resources                               (00:00.008 / 00:13.255, 36Mb)
+Sushi: info  Converting FSH to FHIR resources...                                                     (00:00.020 / 00:13.275, 36Mb)
+Sushi: info  Converted 3 FHIR StructureDefinitions.                                                  (00:00.367 / 00:13.643, 36Mb)
+Sushi: info  Converted 4 FHIR CodeSystems.                                                           (00:00.065 / 00:13.708, 36Mb)
+Sushi: info  Converted 5 FHIR ValueSets.                                                             (00:00.097 / 00:13.806, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.272 / 00:14.078, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Acceptee.fsh (00:00.001 / 00:14.079, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.001 / 00:14.080, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.081, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Acceptee.fsh (00:00.000 / 00:14.082, 36Mb)
+Sushi:   Line: 15                                                                                    (00:00.001 / 00:14.083, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.099 / 00:14.183, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Commentaire-Trad-PN13-FHIR.fsh (00:00.001 / 00:14.184, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.001 / 00:14.185, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.186, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Commentaire-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.187, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.188, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.052 / 00:14.240, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Liee-Validation-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.241, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.242, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.243, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Liee-Validation-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.243, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.001 / 00:14.245, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.070 / 00:14.315, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-NonAcceptee.fsh (00:00.001 / 00:14.316, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.317, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.317, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-NonAcceptee.fsh (00:00.000 / 00:14.318, 36Mb)
+Sushi:   Line: 15                                                                                    (00:00.000 / 00:14.319, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.067 / 00:14.387, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Proposition-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.388, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.388, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.389, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Proposition-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.390, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.391, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.065 / 00:14.456, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Substitution-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.457, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.458, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.459, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Substitution-Trad-PN13-FHIR.fsh (00:00.000 / 00:14.459, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.001 / 00:14.460, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.077 / 00:14.538, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type1-DOSTINEX.fsh (00:00.000 / 00:14.539, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.540, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.541, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type1-DOSTINEX.fsh (00:00.000 / 00:14.541, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.542, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.068 / 00:14.610, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type1-MACROGOL.fsh (00:00.000 / 00:14.611, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.612, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.613, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type1-MACROGOL.fsh (00:00.000 / 00:14.614, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.615, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.083 / 00:14.698, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type1-METFORMINE.fsh (00:00.000 / 00:14.699, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.700, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.701, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type1-METFORMINE.fsh (00:00.000 / 00:14.701, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.702, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.066 / 00:14.769, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type2-Arret-Paracetamol.fsh (00:00.000 / 00:14.770, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.771, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.771, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type2-Arret-Paracetamol.fsh (00:00.000 / 00:14.772, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.773, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.082 / 00:14.855, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-Demande-Substitution-NEFOPAM.fsh (00:00.000 / 00:14.856, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.001 / 00:14.857, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.858, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-Demande-Substitution-NEFOPAM.fsh (00:00.000 / 00:14.858, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.859, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.064 / 00:14.924, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-ESOMEPRAZOLE.fsh (00:00.000 / 00:14.925, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:14.926, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:14.926, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-ESOMEPRAZOLE.fsh (00:00.000 / 00:14.927, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:14.928, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.081 / 00:15.010, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-Remplacement1pour2-INEGY.fsh (00:00.000 / 00:15.011, 36Mb)
+Sushi:   Line: 15                                                                                    (00:00.000 / 00:15.012, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.012, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-Remplacement1pour2-INEGY.fsh (00:00.000 / 00:15.013, 36Mb)
+Sushi:   Line: 16                                                                                    (00:00.000 / 00:15.014, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.086 / 00:15.100, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-Remplacement2pour1-COTAREG.fsh (00:00.000 / 00:15.101, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.001 / 00:15.102, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.103, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type3-Remplacement2pour1-COTAREG.fsh (00:00.000 / 00:15.104, 36Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.105, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.098 / 00:15.203, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type4-CETAFEN-INJ.fsh (00:00.000 / 00:15.203, 36Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.204, 36Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.205, 36Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type4-CETAFEN-INJ.fsh (00:00.000 / 00:15.206, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.207, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.081 / 00:15.289, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type5-DOSTINEX.fsh (00:00.000 / 00:15.289, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.290, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.291, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type5-DOSTINEX.fsh (00:00.000 / 00:15.292, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.292, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.066 / 00:15.359, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type5-INNOHEP.fsh (00:00.001 / 00:15.360, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.361, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.361, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type5-INNOHEP.fsh (00:00.000 / 00:15.362, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.363, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.085 / 00:15.449, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type6-CALCIDOSE.fsh (00:00.001 / 00:15.450, 37Mb)
+Sushi:   Line: 15                                                                                    (00:00.002 / 00:15.453, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.453, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type6-CALCIDOSE.fsh (00:00.051 / 00:15.505, 37Mb)
+Sushi:   Line: 16                                                                                    (00:00.008 / 00:15.514, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.093 / 00:15.607, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type6-LOXAPAC.fsh (00:00.001 / 00:15.608, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.609, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.610, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type6-LOXAPAC.fsh (00:00.000 / 00:15.611, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.611, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.067 / 00:15.679, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type7-BINOCRIT.fsh (00:00.000 / 00:15.680, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.681, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.682, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type7-BINOCRIT.fsh (00:00.000 / 00:15.682, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.683, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.065 / 00:15.749, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type7-ELIQUIS.fsh (00:00.000 / 00:15.750, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.751, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.751, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Intervention-Type7-ELIQUIS.fsh (00:00.000 / 00:15.752, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.753, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.090 / 00:15.843, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Ajout-Morphine.fsh (00:00.001 / 00:15.844, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.845, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.846, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Ajout-Morphine.fsh (00:00.000 / 00:15.846, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.847, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.055 / 00:15.903, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-Diazepam.fsh (00:00.000 / 00:15.903, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:15.904, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.905, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-Diazepam.fsh (00:00.000 / 00:15.906, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.003 / 00:15.910, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.048 / 00:15.958, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-LACRIFLUID.fsh (00:00.001 / 00:15.959, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.001 / 00:15.960, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:15.961, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-LACRIFLUID.fsh (00:00.000 / 00:15.962, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:15.963, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.066 / 00:16.029, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-Morphine.fsh (00:00.000 / 00:16.030, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:16.031, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:16.032, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-Morphine.fsh (00:00.000 / 00:16.032, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:16.033, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.045 / 00:16.079, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-Trad-PN13-FHIR.fsh (00:00.000 / 00:16.080, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:16.081, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:16.081, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Commentaire-Trad-PN13-FHIR.fsh (00:00.000 / 00:16.082, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:16.083, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.048 / 00:16.131, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Intervention-Liee-Trad-PN13-FHIR.fsh (00:00.000 / 00:16.132, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:16.133, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:16.134, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Intervention-Liee-Trad-PN13-FHIR.fsh (00:00.000 / 00:16.134, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:16.135, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.055 / 00:16.191, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Sans-Commentaire-Trad-PN13-FHIR.fsh (00:00.000 / 00:16.192, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.001 / 00:16.193, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:16.193, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Sans-Commentaire-Trad-PN13-FHIR.fsh (00:00.001 / 00:16.194, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:16.195, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.038 / 00:16.234, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Simple-Paracetamol.fsh (00:00.000 / 00:16.234, 37Mb)
+Sushi:   Line: 13                                                                                    (00:00.000 / 00:16.235, 37Mb)
+Sushi: warn  Sliced element Task.output is being accessed via numeric index. Use slice names in rule paths when possible. (00:00.000 / 00:16.236, 37Mb)
+Sushi:   File: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input/fsh/instances/Analyse-Validation-Simple-Paracetamol.fsh (00:00.000 / 00:16.237, 37Mb)
+Sushi:   Line: 14                                                                                    (00:00.000 / 00:16.237, 37Mb)
+Sushi: info  Converted 88 FHIR instances.                                                            (00:03.607 / 00:19.845, 37Mb)
+Sushi: info  Exporting FHIR resources as JSON...                                                     (00:00.001 / 00:19.846, 37Mb)
+Sushi: info  Exported 91 FHIR resources as JSON.                                                     (00:00.027 / 00:19.873, 37Mb)
+Sushi: info  Assembling Implementation Guide sources...                                              (00:00.003 / 00:19.877, 37Mb)
+Sushi: info  Generated ImplementationGuide-hl7.fhir.fr.analyse-pharma.json                           (00:00.036 / 00:19.913, 37Mb)
+Sushi: info  Assembled Implementation Guide sources; ready for IG Publisher.                         (00:00.000 / 00:19.914, 37Mb)
+Sushi: ========================= SUSHI RESULTS ===========================                           (00:00.000 / 00:19.915, 37Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:19.916, 37Mb)
+Sushi: | |    Profiles   |  Extensions  |   Logicals   |   Resources   | |                           (00:00.000 / 00:19.917, 37Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:19.918, 37Mb)
+Sushi: | |       2       |      0       |      1       |       0       | |                           (00:00.000 / 00:19.918, 37Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:19.919, 37Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:19.920, 37Mb)
+Sushi: | |      ValueSets     |    CodeSystems    |     Instances      | |                           (00:00.000 / 00:19.921, 37Mb)
+Sushi: | |-------------------------------------------------------------| |                           (00:00.000 / 00:19.922, 37Mb)
+Sushi: | |         5          |         4         |         88         | |                           (00:00.000 / 00:19.922, 37Mb)
+Sushi: |  -------------------------------------------------------------  |                           (00:00.000 / 00:19.923, 37Mb)
+Sushi: |                                                                 |                           (00:00.000 / 00:19.924, 37Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:19.925, 37Mb)
+Sushi: | You might need some Vitamin Sea        0 Errors     59 Warnings |                           (00:00.000 / 00:19.925, 37Mb)
+Sushi: ===================================================================                           (00:00.000 / 00:19.926, 37Mb)
+Root directory: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot   (00:00.018 / 00:19.945, 37Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.370 / 00:20.315, 57Mb)
+Load Template from https://github.com/Interop-Sante/hl7.ig.fr.template                               (00:00.321 / 00:20.636, 45Mb)
+ Load Template from fhir.base.template#current                                                       (00:01.134 / 00:21.771, 54Mb)
+[33mThis content depends on fhir.base.template which is no longer considered secure to use
+[0;39m[33mSee Security notification at https://www.fhir.org/guides/security-notices/2026-03-npm-dependencies.html
+[0;39m[39mInstalling fhir.base.template#current to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling fhir.base.template#current
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/fhir.base.template#current
+[0;39mScanning directory: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/template
+======================================================================
+Terminology Cache is at /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/input-cache/txcache. Clearing now (00:04.279 / 00:26.050, 164Mb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.003 / 00:26.054, 164Mb)
+[39mInstalling hl7.fhir.r4.core#4.0.1 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.r4.core#4.0.1
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.r4.core#4.0.1
+[0;39mRunning Terminology Log: /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/ohfu-fhir-ig-17710005395690180588.html
+Connect to Terminology Server at http://tx.fhir.org                                                  (00:10.451 / 00:36.505, 305Mb)
+[39mInstalling hl7.fhir.pubpack#0.2.5 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.pubpack#0.2.5
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.pubpack#0.2.5
+[0;39m[39mLoad Package hl7.fhir.pubpack#0.2.5
+[0;39m[39mInstalling hl7.fhir.xver-extensions#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.xver-extensions#0.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mInstalling hl7.terminology.r4#7.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#7.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.terminology.r4#7.1.0
+[0;39m[39mLoad Package hl7.terminology.r4#7.1.0
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.3.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39mInstalling hl7.terminology.r4#6.0.2 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#6.0.2
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.terminology.r4#6.0.2
+[0;39m[39mLoad Package hl7.terminology.r4#6.0.2
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.uv.extensions.r4#5.1.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.1.0
+[0;39m[39mInstalling ans.fr.nos#1.3.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling ans.fr.nos#1.3.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/ans.fr.nos#1.3.0
+[0;39m[39mLoad Package ans.fr.nos#1.3.0
+[0;39m[39mLoad Package hl7.fhir.fr.core#2.1.0
+[0;39m[39mInstalling hl7.fhir.uv.xver-r5.r4#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.xver-r5.r4#0.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.uv.xver-r5.r4#0.1.0
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.uv.extensions.r4#5.2.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.2.0
+[0;39m[39mLoad Package hl7.fhir.uv.xver-r5.r4#0.1.0
+[0;39m[39mLoad Package ans.fhir.fr.eprescription#1.1.0-ballot
+[0;39m[39mInstalling hl7.fhir.uv.tools.r4#1.1.2 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.tools.r4#1.1.2
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.uv.tools.r4#1.1.2
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r4#1.1.2
+[0;39mLoad R5 Specials
+[39mInstalling hl7.fhir.r5.core#5.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.r5.core#5.0.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.r5.core#5.0.0
+[0;39mInitialization complete                                                                              (00:45.522 / 01:22.027, 1Gb)
+Load IG                                                                                              (00:00.001 / 01:22.028, 1Gb)
+Load Content                                                                                         (00:00.011 / 01:22.040, 1Gb)
+Using fr_FR as the default narrative language. (inferred from ImplementationGuide.jurisdiction=FR)   (00:00.039 / 01:22.079, 1Gb)
+Process Loaded Resources                                                                             (00:00.366 / 01:22.446, 837Mb)
+Generating Snapshots                                                                                 (00:00.476 / 01:22.923, 1Gb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch https://hl7.fr/ig/fhir/analyse-pharma/package-list.json for version check                      (00:00.173 / 01:23.096, 1Gb)
+Checking Language                                                                                    (00:00.057 / 01:23.153, 1Gb)
+Load Dependency Info                                                                                 (00:00.002 / 01:23.156, 1Gb)
+Load Info                                                                                            (00:00.001 / 01:23.157, 1Gb)
+Load Paths                                                                                           (00:00.000 / 01:23.158, 1Gb)
+Check R4 / R4B                                                                                       (00:00.000 / 01:23.159, 1Gb)
+Assign Comparison Ids                                                                                (00:00.022 / 01:23.182, 1Gb)
+Propagating status                                                                                   (00:00.000 / 01:23.183, 1Gb)
+Generating Narratives                                                                                (00:00.000 / 01:23.184, 1Gb)
+Validating Conformance Resources                                                                     (00:11.193 / 01:34.377, 1Gb)
+[33mError fetching https://packages2.fhir.org/packages/ans.fhir.fr.eprescription: Not Found
+[0;39m[33mError fetching https://packages2.fhir.org/packages/ans.fhir.fr.eprescription: Not Found
+[0;39m[39mFailed to determine latest version of package ans.fhir.fr.eprescription from server: https://packages2.fhir.org/packages
+[0;39m[39mFailed to determine latest version of package ans.fhir.fr.eprescription from server: https://packages.fhir.org
+[0;39m[39mFailed to determine latest version of package ans.fhir.fr.eprescription from server: build.fhir.org
+[0;39m[39mLatest version of package ans.fhir.fr.eprescription found locally is 1.1.0-ballot - using that
+[0;39mCheck profiles & code systems                                                                        (00:08.011 / 01:42.389, 1Gb)
+Check realm rules                                                                                    (00:00.002 / 01:42.391, 1Gb)
+Previous Version Comparison                                                                          (00:00.001 / 01:42.393, 1Gb)
+.. loaded. Process                                                                                   (00:00.001 / 01:42.395, 1Gb)
+  ...ImplementationGuide hl7.fhir.fr.analyse-pharma                                                  (00:00.001 / 01:42.396, 1Gb)
+  ...CodeSystem fr-pharmaceutical-analysis-result-code                                               (00:00.000 / 01:42.397, 1Gb)
+  ...CodeSystem fr-pharmaceutical-intervention-devenir-code                                          (00:00.001 / 01:42.398, 1Gb)
+  ...CodeSystem fr-pharmaceutical-intervention-problem-code                                          (00:00.001 / 01:42.399, 1Gb)
+  ...CodeSystem fr-pharmaceutical-intervention-type-code                                             (00:00.001 / 01:42.401, 1Gb)
+  ...ConceptMap PN13-FHIR-analpharm-interv-avec-prop-conceptmap                                      (00:00.001 / 01:42.402, 1Gb)
+  ...ConceptMap PN13-FHIR-analpharm-interv-sans-prop-conceptmap                                      (00:00.000 / 01:42.403, 1Gb)
+  ...ConceptMap PN13-FHIR-analpharm-val-conceptmap                                                   (00:00.000 / 01:42.404, 1Gb)
+  ...StructureDefinition fr-analyse-pharmaceutique-logical                                           (00:00.001 / 01:42.406, 1Gb)
+  ...StructureDefinition fr-inpatient-pharmaceutical-analysis-result                                 (00:00.001 / 01:42.407, 1Gb)
+  ...StructureDefinition fr-inpatient-pharmaceutical-intervention-suggestion                         (00:00.000 / 01:42.408, 1Gb)
+  ...ValueSet fr-pharmaceutical-analysis-perfomer-type-value-set                                     (00:00.001 / 01:42.409, 1Gb)
+  ...ValueSet fr-pharmaceutical-analysis-result-code-value-set                                       (00:00.001 / 01:42.410, 1Gb)
+  ...ValueSet fr-pharmaceutical-intervention-devenir-code-value-set                                  (00:00.000 / 01:42.411, 1Gb)
+  ...ValueSet fr-pharmaceutical-intervention-problem-code-value-set                                  (00:00.001 / 01:42.413, 1Gb)
+  ...ValueSet fr-pharmaceutical-intervention-type-code-value-set                                     (00:00.001 / 01:42.414, 1Gb)
+finish previous version comparison                                                                   (00:00.000 / 01:42.415, 1Gb)
+finish ipa version                                                                                   (00:00.000 / 01:42.416, 1Gb)
+finish ips version                                                                                   (00:00.000 / 01:42.416, 1Gb)
+comparisons done                                                                                     (00:00.000 / 01:42.417, 1Gb)
+Checking for Bundles to sign                                                                         (00:00.010 / 01:42.427, 1Gb)
+Validating Resources                                                                                 (00:00.000 / 01:42.428, 1Gb)
+Processing Provenance Records                                                                        (00:25.241 / 02:07.669, 1Gb)
+Generating Outputs in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/output (00:00.001 / 02:07.671, 1Gb)
+Warning @ Git URL is not a valid URl. Source: git remote origin url
+Generate Native Outputs                                                                              (00:00.403 / 02:08.075, 1Gb)
+Run Template                                                                                         (00:03.124 / 02:11.199, 1Gb)
+Generate HTML Outputs                                                                                (00:01.542 / 02:12.741, 977Mb)
+Generate Spreadsheets                                                                                (00:02.846 / 02:15.588, 1016Mb)
+Generate Summaries                                                                                   (00:03.405 / 02:18.993, 1Gb)
+Generating Summary Outputs                                                                           (00:00.001 / 02:18.994, 1Gb)
+Error expanding 3-character country codes: Error from https://tx.fhir.org/r4: Error: Invalid regex pattern: ^[A-Z]{3}$
+Error expanding 2-character country codes: Error from https://tx.fhir.org/r4: Error: Invalid regex pattern: ^[A-Z]{2}$
+Error expanding numeric country codes: Error from https://tx.fhir.org/r4: Error: Invalid regex pattern: ^[0-9]{3}$
+ERROR: Unable to populate IG flag information: Error expanding ISO country-code & state value sets
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+ERROR: Unable to populate IG flag information: Unable to find 2-char ISO country code: FR
+DB Cumulative Time invested: 00:00:00.106
+Sending Usage Stats to Server                                                                        (00:12.497 / 02:31.492, 1Gb)
+## Memory (MB): Use = 1550, Free = 518, Total = 2068, Max = 4096                                     (00:00.003 / 02:31.495, 1Gb)
+Reclaiming memory...                                                                                 (00:00.000 / 02:31.496, 1Gb)
+## Memory (MB): Use = 1110, Free = 957, Total = 2068, Max = 4096                                     (00:00.532 / 02:32.029, 1Gb)
+Run jekyll: jekyll build --destination "/Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/output" (in folder /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/temp/pages) (00:00.004 / 02:32.033, 1Gb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.001 / 02:32.035, 1Gb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.001 / 02:32.036, 1Gb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 02:32.037, 1Gb)
+Jekyll: Source: /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/temp/pages (00:00.457 / 02:32.494, 1Gb)
+Jekyll: Generating...                                                                                (00:00.001 / 02:32.495, 1Gb)
+Jekyll: done in 1.936 seconds.                                                                       (00:01.935 / 02:34.430, 1Gb)
+Generating combined package                                                                          (00:00.740 / 02:35.170, 1Gb)
+[33mExpanding https://interop.esante.gouv.fr/ig/fhir/eprescription/ValueSet/fr-inpatient-medication-code|1.1.0-ballot: Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://data.esante.gouv.fr/ansm/medicament/UCD' could not be found, so the value set cannot be expanded
+[0;39m[33mExpanding https://interop.esante.gouv.fr/ig/fhir/eprescription/ValueSet/fr-medication-code|1.1.0-ballot: Error from https://tx.fhir.org/r4: Error: A definition for CodeSystem 'http://data.esante.gouv.fr/ansm/medicament/UCD' could not be found, so the value set cannot be expanded
+[0;39m[39mProducing Output Package in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/output/package-combined.tgz
+[0;39m[39mDone
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.fr.analyse-pharma#0.1.0-ballot
+[0;39m[39m done.
+[0;39m[39m loaded @ /var/root/.fhir/packages/hl7.fhir.fr.analyse-pharma#0.1.0-ballot
+[0;39mChecking Output HTML                                                                                 (00:02.379 / 02:37.550, 1Gb)
+Processed /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/output - % reduction = 98 (23697952 ==> 520808)
+found 1505 files                                                                                     (00:00.927 / 02:38.477, 1Gb)
+........................................
+........................................
+  ... 1505 html files, 0 pages invalid xhtml (0%)                                                    (00:08.976 / 02:47.453, 1Gb)
+  ... 103817 links, 112 broken links (0%)                                                            (00:00.001 / 02:47.455, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.001 / 02:47.456, 1Gb)
+Build final .zip                                                                                     (00:00.010 / 02:47.467, 1Gb)
+Final .zip built                                                                                     (00:01.358 / 02:48.825, 1Gb)
+Built. Times: loading: 00:01.114, generate: 01:28.063, narrative generation: 00:11.193, realm-rules: 00:00.001, previous-version: 00:00.023, jekyll: 00:02.406, validation: 00:33.247 (#92), template: 00:01.477 (#3) (00:02.392 / 02:51.217, 1Gb)
+Generating QA                                                                                        (00:00.001 / 02:51.219, 1Gb)
+Validation output in /Library/WebServer/Documents/tmp/ig-builds/hl7.fhir.fr.analyse-pharma#0.1.0-ballot/output/qa.html
+Errors: 606, Warnings: 215, Info: 43, Broken Links: 112 (00:00.646 / 02:51.865, 1Gb)
+Finished @ 29/05/2026 13:29. Max Memory Used = 1Gb. Log file saved in /var/folders/zz/zyxvpxvq6csfxvn_n0000000000000/T/fhir-ig-publisher-tmp.log (00:00.021 / 02:51.886, 1Gb)
+Keep a copy of the build directory at /Library/WebServer/Documents/tmp/web-root/run-20260529/ig-build-zips/hl7.fhir.fr.analyse-pharma#0.1.0-ballot.zip
+
+ok. All checks passed. Publish v0.1.0-ballot to /Library/WebServer/Documents/tmp/web-root/run-20260529/analyse-pharma/0.1.0-ballot
+Copy the IG to /Library/WebServer/Documents/tmp/web-root/run-20260529/analyse-pharma/0.1.0-ballot
+Update /Library/WebServer/Documents/tmp/web-root/run-20260529/analyse-pharma/package-list.json
+Publish Box Statement: This page is part of the Guide d'implémentation de l'analyse pharmaceutique hospitalière (v0.1.0-ballot: draft Ballot 1) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://hl7.fr/ig/fhir/analyse-pharma/history.html">Directory of published versions</a>
+  .. 497 files checked, 497 updated
+  .. 187 clones checked, 374 updated
+  .. 92 redirections (92 created/updated)
+hl7.fhir.fr.analyse-pharma (https://hl7.fr/ig/fhir/analyse-pharma): Guide d'implémentation de l'analyse pharmaceutique hospitalière @ https://interop-sante.github.io/hl7.fhir.fr.analyse-pharma/main/ig
+  edition: draft Ballot 0.1.0-ballot/4.0.1 @ https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot
+Build is complete. Copy from /Library/WebServer/Documents/tmp/web-root/run-20260529
+Update history page at /Library/WebServer/Documents/tmp/web-root/run-20260529/analyse-pharma from /Library/WebServer/Documents/InteropSante/IG-website-release/ig-history and /Library/WebServer/Documents/InteropSante/IG-website-release/templates

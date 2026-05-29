@@ -17,5 +17,19 @@
       "date" : "2026-03-25",
       "path" : "https://hl7.fr/ig/fhir/core/2.2.0"
     }
+  },
+  {
+    "path" : "analyse-pharma/package-list.json",
+    "package-id" : "hl7.fhir.fr.analyse-pharma",
+    "title" : "Guide d'implémentation de l'analyse pharmaceutique hospitalière",
+    "canonical" : "https://hl7.fr/ig/fhir/analyse-pharma",
+    "category" : "Pharmacy",
+    "ci-build" : "https://interop-sante.github.io/hl7.fhir.fr.analyse-pharma/main/ig/",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "0.1.0-ballot",
+      "date" : "2026-05-29",
+      "path" : "https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot"
+    }
   }]
 }
