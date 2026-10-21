@@ -31,5 +31,19 @@
       "date" : "2026-05-29",
       "path" : "https://hl7.fr/ig/fhir/analyse-pharma/0.1.0-ballot"
     }
+  },
+  {
+    "path" : "preadmission/package-list.json",
+    "package-id" : "hl7.fhir.fr.preadmission",
+    "title" : "Guide d'Implémentation FHIR – Pré-admission Hospitalière en Ligne",
+    "canonical" : "https://hl7.fr/ig/fhir/preadmission",
+    "category" : "Administrative",
+    "ci-build" : "https://interop-sante.github.io/hl7.fhir.fr.preadmission/main/ig/",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "1.0.0-ballot",
+      "date" : "2026-10-21",
+      "path" : "https://hl7.fr/ig/fhir/preadmission/1.0.0-ballot"
+    }
   }]
 }
