@@ -6,11 +6,11 @@
     "canonical" : "https://hl7.fr/ig/fhir/core",
     "category" : "National Base",
     "ci-build" : "https://interop-sante.github.io/hl7.fhir.fr.core/main/ig",
-    "version-count" : 10,
+    "version-count" : 11,
     "latest" : {
-      "version" : "2.2.0",
-      "date" : "2026-03-25",
-      "path" : "https://hl7.fr/ig/fhir/core/2.2.0"
+      "version" : "3.0.0-ballot",
+      "date" : "2026-11-09",
+      "path" : "https://hl7.fr/ig/fhir/core/3.0.0-ballot"
     },
     "milestone" : {
       "version" : "2.2.0",

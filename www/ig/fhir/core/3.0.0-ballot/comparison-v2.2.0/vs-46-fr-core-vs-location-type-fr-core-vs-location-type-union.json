@@ -1,0 +1,16 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "51860a76-d423-4c6b-89d4-a1fb9af238bf-131",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/51860a76-d423-4c6b-89d4-a1fb9af238bf-131",
+  "name" : "UnionFRCoreValueSetLocationTypeAndFRCoreValueSetLocationType",
+  "title" : "Union of FR Core ValueSet Location type And FR Core ValueSet Location type",
+  "status" : "active",
+  "date" : "2026-11-09T10:44:34+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }]
+}

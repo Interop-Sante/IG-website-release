@@ -7,6 +7,16 @@
     "descmd" : "Guide d'implémentation en intégration continue."
   },
   {
+    "version" : "3.0.0-ballot",
+    "path" : "https://hl7.fr/ig/fhir/core/3.0.0-ballot",
+    "status" : "ballot",
+    "sequence" : "final-text",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-11-09",
+    "desc" : "Guide d'implémentation FR Core 3.0.0-ballot - profils génériques à usage national",
+    "changes" : "change_notes.html"
+  },
+  {
     "version" : "2.2.0",
     "path" : "https://hl7.fr/ig/fhir/core/2.2.0",
     "status" : "trial-use",

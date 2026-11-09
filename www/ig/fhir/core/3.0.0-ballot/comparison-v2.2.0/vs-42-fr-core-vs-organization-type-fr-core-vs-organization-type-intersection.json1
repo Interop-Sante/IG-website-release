@@ -1,0 +1,60 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "51860a76-d423-4c6b-89d4-a1fb9af238bf-120",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/51860a76-d423-4c6b-89d4-a1fb9af238bf-120",
+  "name" : "IntersectionFRCoreValueSetOrganizationTypeAndFRCoreValueSetOrganizationType",
+  "title" : "Intersection of FR Core ValueSet Organization type And FR Core ValueSet Organization type",
+  "status" : "active",
+  "date" : "2026-11-09T10:44:34+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "compose" : {
+    "include" : [{
+      "concept" : [{
+        "code" : "GHT",
+        "display" : "Groupement hospitalier de territoire"
+      },
+      {
+        "code" : "GROUP",
+        "display" : "Groupe privé/hospitalier"
+      },
+      {
+        "code" : "STRUCT-INTERNE",
+        "display" : "Structure interne"
+      },
+      {
+        "code" : "SECTEUR",
+        "display" : "Secteur"
+      },
+      {
+        "code" : "DEPARTEMENT",
+        "display" : "Département"
+      },
+      {
+        "code" : "SERVICE",
+        "display" : "Service"
+      },
+      {
+        "code" : "UM",
+        "display" : "Unité médicale"
+      },
+      {
+        "code" : "POLE",
+        "display" : "Pôle"
+      },
+      {
+        "code" : "CENTRE-RESP",
+        "display" : "Centre de responsabilité"
+      },
+      {
+        "code" : "CENTRE-ACTIVITE",
+        "display" : "Centre d'activité"
+      }]
+    }]
+  }
+}

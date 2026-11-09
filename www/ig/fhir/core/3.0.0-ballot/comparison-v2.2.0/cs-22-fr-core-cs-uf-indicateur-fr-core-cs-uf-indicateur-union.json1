@@ -1,0 +1,51 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "51860a76-d423-4c6b-89d4-a1fb9af238bf-62",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/51860a76-d423-4c6b-89d4-a1fb9af238bf-62",
+  "name" : "UnionFRCoreCodeSystemUFIndicateurAndFRCoreCodeSystemUFIndicateur",
+  "title" : "Union of FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle And FR Core CodeSystem UF Indicator - indicateur d'une unité fonctionnelle",
+  "status" : "draft",
+  "date" : "2026-11-09T10:44:34+00:00",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "FR",
+      "display" : "France (la)"
+    }]
+  }],
+  "concept" : [{
+    "code" : "HEB",
+    "display" : "Hébergement",
+    "definition" : "Hébergement"
+  },
+  {
+    "code" : "SOIN",
+    "display" : "Soin",
+    "definition" : "Soin"
+  },
+  {
+    "code" : "ADMIN",
+    "display" : "Administrative",
+    "definition" : "Administrative"
+  },
+  {
+    "code" : "MED",
+    "display" : "Médicale",
+    "definition" : "Médicale"
+  },
+  {
+    "code" : "TECH",
+    "display" : "Technique",
+    "definition" : "Technique"
+  },
+  {
+    "code" : "MEDICOTECH",
+    "display" : "Médico technique (radio, scanner, ...)",
+    "definition" : "Médico technique (radio, scanner, ...)"
+  },
+  {
+    "code" : "MAG",
+    "display" : "Magasin",
+    "definition" : "Magasin"
+  }]
+}
